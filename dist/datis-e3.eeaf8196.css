@@ -3000,87 +3000,14 @@ a.text-dark:hover, a.text-dark:focus {
 /*********************************************************
   Variables
 *********************************************************/
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block; }
-
-body {
-  line-height: 1; }
-
-ol, ul {
-  list-style: none; }
-
-blockquote, q {
-  quotes: none; }
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
 /*********************************************************
   Base
 *********************************************************/
-*, *:before, *:after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit; }
-
-html {
-  background-color: white;
-  font-size: 1rem;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  min-width: 300px;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  text-rendering: optimizeLegibility;
-  -webkit-text-size-adjust: 100%;
-     -moz-text-size-adjust: 100%;
-      -ms-text-size-adjust: 100%;
-          text-size-adjust: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
-
 body {
   color: #111;
   font-size: 1rem;
   font-family: "Lato", sans-serif;
-  font-weight: 300;
-  line-height: 1.4;
   overflow-x: hidden; }
-
-img {
-  width: 100%;
-  height: auto; }
 
 a {
   text-decoration: none;
@@ -3200,39 +3127,6 @@ p {
 /*********************************************************
   Buttons
 *********************************************************/
-.btn {
-  display: inline-block;
-  padding: 0.5rem 0.625rem;
-  font-size: font-scale(0);
-  color: #fff;
-  background-color: #790000;
-  border-radius: 0.125rem;
-  text-decoration: none;
-  cursor: pointer;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear; }
-  .btn:hover, .btn:focus {
-    text-decoration: none;
-    color: #fff;
-    background-color: #2d0000; }
-  .btn--secondary {
-    background-color: #1a2940; }
-    .btn--secondary:hover, .btn--secondary:focus {
-      background-color: #04060a; }
-  .btn--transparent {
-    color: #fff;
-    background-color: transparent;
-    border: 2px solid #790000; }
-    .btn--transparent:hover, .btn--transparent:focus {
-      background-color: #790000;
-      border-color: #2d0000; }
-  .btn--large {
-    padding: 0.9375rem 1.5625rem;
-    font-size: 1.125rem; }
-  .btn--disabled {
-    opacity: 0.8;
-    cursor: not-allowed; }
-
 /*********************************************************
   Utility
 *********************************************************/
