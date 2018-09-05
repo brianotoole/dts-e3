@@ -41,7 +41,7 @@
     text-align: center;
     color: $color__white;
     z-index: 10;
-    @include bp_md {
+    @include media-breakpoint-up(md) {
       margin: 0 auto;
       max-width: 65%;
     }
@@ -52,9 +52,6 @@
     font-size: 30px; 
     color: $color__white;
     margin-bottom: 10px;
-    @include bp_md {
-      font-size: rem(58);
-    }
   }
 
   &__subtitle {

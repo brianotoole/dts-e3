@@ -13,8 +13,10 @@
     Mobile first approach
     Default rules are set below sm-sized screens
     Usage:
-    @include bp_md {
-      width: 50%;
+    @include media-breakpoint-up(sm) {
+      .some-class {
+        display: block;
+      }
     }
 *********************************************************/
 /*********************************************************
@@ -288,7 +290,7 @@ p {
     text-align: center;
     color: #fff;
     z-index: 10; }
-    @media (min-width: 800px) {
+    @media (min-width: 768px) {
       .hero__content {
         margin: 0 auto;
         max-width: 65%; } }
@@ -297,9 +299,6 @@ p {
     font-size: 30px;
     color: #fff;
     margin-bottom: 10px; }
-    @media (min-width: 800px) {
-      .hero__title {
-        font-size: 3.625rem; } }
   .hero__subtitle {
     font-weight: 100;
     margin: 0; }
