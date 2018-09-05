@@ -7,13 +7,13 @@ $orange:  #ea8c2a;
 $navy: #1a2940;
 $blue: #bfe0f7;
 $white:#fff;
-$grey: #555;
+$grey: #ccc;
 $black: #111;
 $green: green;
 $red: #790000;
 
 // color brands
-$color__primary: $red;
+$color__primary: $orange;
 $color__secondary: $navy;
 $color__tertiary: $blue;
 $color__muted: $grey;
@@ -27,6 +27,9 @@ $color__secondary--dark: darken($color__secondary, 15%);
 // color utilites
 $color__error: $red;
 $color__success: $green;
+
+// color borders
+$color__border: $grey;
 
 // fonts
 $font__body: "Lato", sans-serif;

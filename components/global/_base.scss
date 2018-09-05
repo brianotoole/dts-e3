@@ -17,3 +17,13 @@ a {
     color: $color__primary--dark;
   }
 }
+
+.site-wrap {
+  background-color: $color__primary;
+  height: 100vh; /* testing only */
+}
+
+.container--center {
+  margin: 0 auto;
+  text-align: center;
+}

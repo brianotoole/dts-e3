@@ -1,0 +1,49 @@
+/*********************************************************
+  Profile
+*********************************************************/
+
+$profile-img-width: 125px;
+
+.card-profile {
+  margin-top: rem(100);
+  padding: rem(20);
+  text-align: center;
+  background-color: $color__border;
+  border-radius: $border-radius;
+  @include media-breakpoint-up(md) {
+    margin-top: rem(200);
+  }
+}
+
+.card-profile--has-img {
+  position: relative;
+  padding-top: rem($profile-img-width - 25); // padding for img
+}
+
+.card-profile--has-img img {
+  position: absolute;
+  width: $profile-img-width;
+  height: auto;
+  top: calc(-0% - (#{$profile-img-width} / 2) );
+  left: calc(50% - (#{$profile-img-width} / 2) );
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include media-breakpoint-up(md) {
+    width: $profile-img-width + 25px;
+    top: calc(-0% - (#{$profile-img-width + 25} / 2) );
+    left: calc(50% - (#{$profile-img-width + 25} / 2) );
+  }
+}
+
+.card-title,
+.card-text {
+  margin-bottom: rem(1);
+}
+
+.card-title--bold {
+  font-weight: bold;
+}
+
+.card-employee-title {
+  padding-top: rem(7.5);
+}
