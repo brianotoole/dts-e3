@@ -2,8 +2,12 @@
   Main = scss entry point
 *********************************************************/
 
+
+// Import Bootstrap config first
+@import './assets/bootstrap/config';
+
 // Global
-@import 'components/global/style';
+@import './components/global/style';
 
 // Components
-@import 'components/hero/style';
+@import './components/hero/style';
