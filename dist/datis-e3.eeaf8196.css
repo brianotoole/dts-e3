@@ -4264,3 +4264,11 @@ a {
 
 .card-nav__icon {
   display: block; }
+
+.card-nav--bottom .card-nav__col {
+  padding: 0; }
+
+.card-nav__btns a {
+  padding: 1.25rem 0.625rem; }
+  .card-nav__btns a:hover {
+    color: #fff; }

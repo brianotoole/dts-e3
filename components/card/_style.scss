@@ -76,6 +76,16 @@ $profile-img-width: 125px;
   display: block;
 }
 
-.card-nav__title {
-
+.card-nav--bottom .card-nav__col {
+  padding: 0;
 }
+
+.card-nav__btns {
+  a {
+    padding: rem(20) rem(10);
+    &:hover {
+      color: $color__white;
+    }
+  }
+}
+
