@@ -65,7 +65,7 @@ $profile-img-width: 125px;
 }
 
 .card-nav__col {
-  padding: rem(20) rem(10);
+  padding: 0;
   border-right: 1px solid $color__border;
   &:last-child {
     border-right: none;
@@ -74,18 +74,35 @@ $profile-img-width: 125px;
 
 .card-nav__icon {
   display: block;
+  color: $color__primary;
 }
 
-.card-nav--bottom .card-nav__col {
-  padding: 0;
+.card-nav__title {
+  color: $color__text;
 }
+
+
 
 .card-nav__btns {
   a {
     padding: rem(20) rem(10);
-    &:hover {
-      color: $color__white;
+    border-radius: 0;
+    &:hover, &:focus {
+      background: $color__border;
+      outline: none;
+      box-shadow: none;
     }
   }
+}
+
+.card-nav--bottom .card-nav__btns {
+  a:hover, &:focus {
+    background: $color__secondary--dark;
+    color: $color__white;
+  }
+}
+
+.card-nav--bottom .card-nav__col {
+  border-color: lighten($color__secondary, 5%);
 }
 

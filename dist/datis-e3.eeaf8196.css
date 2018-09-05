@@ -4126,7 +4126,7 @@ a {
   -webkit-transition: 0.2s color ease-out;
   transition: 0.2s color ease-out; }
   a:hover {
-    color: #b66512; }
+    color: #e47f16; }
 
 .page-body-header {
   background-color: #ea8c2a; }
@@ -4224,6 +4224,9 @@ a {
 /*********************************************************
   Buttons
 *********************************************************/
+.btn {
+  border: 0; }
+
 /*********************************************************
   Utility
 *********************************************************/
@@ -4279,18 +4282,30 @@ a {
     border-bottom-right-radius: 0.25rem; }
 
 .card-nav__col {
-  padding: 1.25rem 0.625rem;
+  padding: 0;
   border-right: 1px solid #ccc; }
   .card-nav__col:last-child {
     border-right: none; }
 
 .card-nav__icon {
-  display: block; }
+  display: block;
+  color: #ea8c2a; }
 
-.card-nav--bottom .card-nav__col {
-  padding: 0; }
+.card-nav__title {
+  color: #111; }
 
 .card-nav__btns a {
-  padding: 1.25rem 0.625rem; }
-  .card-nav__btns a:hover {
-    color: #fff; }
+  padding: 1.25rem 0.625rem;
+  border-radius: 0; }
+  .card-nav__btns a:hover, .card-nav__btns a:focus {
+    background: #ccc;
+    outline: none;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+
+.card-nav--bottom .card-nav__btns a:hover, .card-nav--bottom .card-nav__btns:focus {
+  background: #131d2e;
+  color: #fff; }
+
+.card-nav--bottom .card-nav__col {
+  border-color: #213552; }

@@ -21,8 +21,8 @@ $color__white: $white;
 $color__text: $black;
 
 // color darkens
-$color__primary--dark: darken($color__primary, 15%);
-$color__secondary--dark: darken($color__secondary, 15%);
+$color__primary--dark: darken($color__primary, 5%);
+$color__secondary--dark: darken($color__secondary, 5%);
 
 // color utilites
 $color__error: $red;
@@ -31,6 +31,9 @@ $color__success: $green;
 // color borders
 $color__border: $grey;
 $color__border--light: lighten($grey, 5%);
+$color__border--dark: darken($grey, 5%);
+$color__border--primary: lighten($color__primary, 5%);
+$color__border--secondary: lighten($color__secondary, 5%);
 
 // fonts
 $font__body: "Open Sans", sans-serif;
