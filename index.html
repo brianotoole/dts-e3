@@ -9,13 +9,17 @@
 </head>
 
 <body>
+  
+  <include src="components/header/header.html"></include>
 
-  <div class="site-wrap">
-    <div class="container">
-      <include src="components/header/header.html"></include>
+  <div class="page-wrap">
+    <div class="page-body-header">
       <include src="components/card/card.html"></include>
-    </div><!-- /.container -->
-  </div><!-- /.site-wrap -->
+    </div><!-- /.page-body-header -->
+    <div class="page-body-content">
+      <include src="components/accordion/accordion.html"></include>
+    </div><!-- /.page-body-content -->
+  </div><!-- /.page-wrap -->
 
   <script src="index.js"></script>
 </body>

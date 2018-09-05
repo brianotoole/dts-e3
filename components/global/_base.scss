@@ -17,3 +17,15 @@ a {
     color: $color__primary--dark;
   }
 }
+
+.page-body-header {
+  background-color: $color__primary;
+  //@TODO: add background image
+}
+
+.page-body-content {
+  min-height: 250px;
+  margin-top: rem(-152);
+  padding-top: rem(200);
+  background-color: $color__white;
+}
