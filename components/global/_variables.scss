@@ -30,6 +30,7 @@ $color__success: $green;
 
 // color borders
 $color__border: $grey;
+$color__border--light: lighten($grey, 5%);
 
 // fonts
 $font__body: "Open Sans", sans-serif;

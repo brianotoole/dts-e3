@@ -4206,11 +4206,10 @@ a {
   Utility
 *********************************************************/
 /*********************************************************
-  Profile
+  Card / Card Profile
 *********************************************************/
 .card-profile {
   margin-top: 6.25rem;
-  padding: 1.25rem;
   text-align: center;
   background-color: #ccc;
   border-radius: 0.25rem; }
@@ -4236,6 +4235,9 @@ a {
       top: calc(-0% - (150px / 2));
       left: calc(50% - (150px / 2)); } }
 
+.card-body {
+  padding: 1.25rem; }
+
 .card-title,
 .card-text {
   margin-bottom: 0.0625rem; }
@@ -4245,3 +4247,20 @@ a {
 
 .card-employee-title {
   padding-top: 0.46875rem; }
+
+.card-nav {
+  background-color: #d9d9d9; }
+  .card-nav--bottom {
+    background: #1a2940;
+    color: #fff;
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem; }
+
+.card-nav__col {
+  padding: 1.25rem 0.625rem;
+  border-right: 1px solid #ccc; }
+  .card-nav__col:last-child {
+    border-right: none; }
+
+.card-nav__icon {
+  display: block; }

@@ -1,12 +1,13 @@
 /*********************************************************
-  Profile
+  Card / Card Profile
 *********************************************************/
 
+
+// Card Profile
 $profile-img-width: 125px;
 
 .card-profile {
   margin-top: rem(100);
-  padding: rem(20);
   text-align: center;
   background-color: $color__border;
   border-radius: $border-radius;
@@ -35,6 +36,10 @@ $profile-img-width: 125px;
   }
 }
 
+.card-body {
+  padding: rem(20);
+}
+
 .card-title,
 .card-text {
   margin-bottom: rem(1);
@@ -46,4 +51,31 @@ $profile-img-width: 125px;
 
 .card-employee-title {
   padding-top: rem(7.5);
+}
+
+// Card Nav
+.card-nav {
+  background-color: $color__border--light;
+  &--bottom {
+    background: $color__secondary;
+    color: $color__white;
+    border-bottom-left-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
+  }
+}
+
+.card-nav__col {
+  padding: rem(20) rem(10);
+  border-right: 1px solid $color__border;
+  &:last-child {
+    border-right: none;
+  }
+}
+
+.card-nav__icon {
+  display: block;
+}
+
+.card-nav__title {
+
 }
