@@ -1,0 +1,307 @@
+/*********************************************************
+  Main = scss entry point
+*********************************************************/
+/*********************************************************
+  Global
+*********************************************************/
+/*********************************************************
+    Px to Rem Conversion
+    Usage: .class {font-size: rem(18)}
+*********************************************************/
+/*********************************************************
+    Media Query Breakpoints
+    Mobile first approach
+    Default rules are set below sm-sized screens
+    Usage:
+    @include bp_md {
+      width: 50%;
+    }
+*********************************************************/
+/*********************************************************
+  Variables
+*********************************************************/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*********************************************************
+  Base
+*********************************************************/
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit; }
+
+html {
+  background-color: white;
+  font-size: 1rem;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  min-width: 300px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  color: #111;
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  line-height: 1.4;
+  overflow-x: hidden; }
+
+img {
+  width: 100%;
+  height: auto; }
+
+a {
+  text-decoration: none;
+  color: #790000;
+  -webkit-transition: 0.2s color ease-out;
+  transition: 0.2s color ease-out; }
+  a:hover {
+    color: #2d0000; }
+
+/*********************************************************
+    Fonts
+*********************************************************/
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Lato Regular"), local("Lato-Regular"), url(https://fonts.gstatic.com/s/lato/v14/S6uyw4BMUTPHjxAwXiWtFCfQ7A.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Lato Regular"), local("Lato-Regular"), url(https://fonts.gstatic.com/s/lato/v14/S6uyw4BMUTPHjx4wXiWtFCc.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), local("Roboto-Regular"), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu72xKKTU1Kvnz.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), local("Roboto-Regular"), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu5mxKKTU1Kvnz.woff2) format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
+
+/* greek-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), local("Roboto-Regular"), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu7mxKKTU1Kvnz.woff2) format("woff2");
+  unicode-range: U+1F00-1FFF; }
+
+/* greek */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), local("Roboto-Regular"), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4WxKKTU1Kvnz.woff2) format("woff2");
+  unicode-range: U+0370-03FF; }
+
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), local("Roboto-Regular"), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu7WxKKTU1Kvnz.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB; }
+
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), local("Roboto-Regular"), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu7GxKKTU1Kvnz.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), local("Roboto-Regular"), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+/*********************************************************
+  Typography
+*********************************************************/
+/*********************************************************
+    Typography
+*********************************************************/
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
+  line-height: 1.2;
+  font-family: "Roboto", sans-serif; }
+
+h1 {
+  font-size: font-scale(6); }
+
+h2 {
+  font-size: font-scale(5); }
+
+h3 {
+  font-size: font-scale(4); }
+
+h4 {
+  font-size: font-scale(3); }
+
+h5 {
+  font-size: font-scale(2); }
+
+h6 {
+  font-size: font-scale(0); }
+
+p {
+  margin: 0 0 1.25rem 0; }
+
+/*********************************************************
+  Buttons
+*********************************************************/
+.btn {
+  display: inline-block;
+  padding: 0.5rem 0.625rem;
+  font-size: font-scale(0);
+  color: #fff;
+  background-color: #790000;
+  border-radius: 0.125rem;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear; }
+  .btn:hover, .btn:focus {
+    text-decoration: none;
+    color: #fff;
+    background-color: #2d0000; }
+  .btn--secondary {
+    background-color: #1a2940; }
+    .btn--secondary:hover, .btn--secondary:focus {
+      background-color: #04060a; }
+  .btn--transparent {
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #790000; }
+    .btn--transparent:hover, .btn--transparent:focus {
+      background-color: #790000;
+      border-color: #2d0000; }
+  .btn--large {
+    padding: 0.9375rem 1.5625rem;
+    font-size: 1.125rem; }
+  .btn--disabled {
+    opacity: 0.8;
+    cursor: not-allowed; }
+
+/*********************************************************
+  Utility
+*********************************************************/
+/*********************************************************
+  Hero
+*********************************************************/
+.hero {
+  position: relative;
+  height: 550px; }
+  .hero--has-overlay:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(26, 41, 64, 0.6);
+    z-index: 1; }
+  .hero__background-image {
+    height: 100%; }
+  .hero__logo {
+    width: 1em;
+    height: 1em;
+    font-size: 100px;
+    margin: 0 auto;
+    background-size: 100%; }
+  .hero__content {
+    position: relative;
+    top: 60%;
+    -webkit-transform: translateY(-60%);
+            transform: translateY(-60%);
+    left: 0;
+    text-align: center;
+    color: #fff;
+    z-index: 10; }
+    @media (min-width: 800px) {
+      .hero__content {
+        margin: 0 auto;
+        max-width: 65%; } }
+  .hero__title {
+    font-weight: 300;
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 10px; }
+    @media (min-width: 800px) {
+      .hero__title {
+        font-size: 3.625rem; } }
+  .hero__subtitle {
+    font-weight: 100;
+    margin: 0; }
+  .hero__btn-container {
+    margin-top: 20px; }

@@ -3,15 +3,22 @@
 *********************************************************/
 
 // colors
-$red:  #c80000;
-$gold: #ffc300;
-$grey: #959595;
+$orange:  #ea8c2a;
+$navy: #1a2940;
+$blue: #bfe0f7;
+$white:#fff;
+$grey: #555;
+$black: #111;
 $green: green;
-$white:#ffffff;
+$red: #790000;
+
+// color brands
 $color__primary: $red;
-$color__secondary: $gold;
+$color__secondary: $navy;
+$color__tertiary: $blue;
 $color__muted: $grey;
-$color__white: $grey;
+$color__white: $white;
+$color__text: $black;
 
 // color darkens
 $color__primary--dark: darken($color__primary, 15%);
