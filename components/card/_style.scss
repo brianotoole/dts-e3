@@ -18,7 +18,7 @@ $profile-img-width: 125px;
 
 .card-profile--has-img {
   position: relative;
-  padding-top: rem($profile-img-width - 25); // padding for img
+  padding-top: rem($profile-img-width - 50); // padding for img
 }
 
 .card-profile--has-img img {
@@ -50,7 +50,7 @@ $profile-img-width: 125px;
 }
 
 .card-employee-title {
-  padding-top: rem(7.5);
+  padding-top: rem(10);
 }
 
 // Card Nav

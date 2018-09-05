@@ -4219,7 +4219,7 @@ a {
 
 .card-profile--has-img {
   position: relative;
-  padding-top: 6.25rem; }
+  padding-top: 4.6875rem; }
 
 .card-profile--has-img img {
   position: absolute;
@@ -4246,7 +4246,7 @@ a {
   font-weight: bold; }
 
 .card-employee-title {
-  padding-top: 0.46875rem; }
+  padding-top: 0.625rem; }
 
 .card-nav {
   background-color: #d9d9d9; }
