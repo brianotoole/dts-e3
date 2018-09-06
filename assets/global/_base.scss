@@ -26,7 +26,7 @@ a {
 
 .page-body__header {
   background-color: $color__primary;
-  background: $color__primary url('./assets/global/images/bg-icons.png');
+  //background: $color__primary url('./assets/global/images/bg-icons.png');
   background-repeat: no-repeat;
   background-size: 100%;
   background-attachment: fixed;
@@ -34,11 +34,11 @@ a {
 
 .page-body__content {
   min-height: 900px; /* test only */
-  margin-top: rem(-122);
+  margin-top: rem(-126);
   padding-top: rem(165);
   background-color: $color__white;
   @include media-breakpoint-up(md) {
-    margin-top: rem(-126);
+    margin-top: rem(-100);
   }
 }
 

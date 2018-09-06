@@ -4147,7 +4147,6 @@ a {
 
 .page-body__header {
   background-color: #ea8c2a;
-  background: #ea8c2a url("bg-icons.735454e1.png");
   background-repeat: no-repeat;
   background-size: 100%;
   background-attachment: fixed; }
@@ -4155,12 +4154,12 @@ a {
 .page-body__content {
   min-height: 900px;
   /* test only */
-  margin-top: -7.625rem;
+  margin-top: -7.875rem;
   padding-top: 10.3125rem;
   background-color: #fff; }
   @media (min-width: 768px) {
     .page-body__content {
-      margin-top: -7.875rem; } }
+      margin-top: -6.25rem; } }
 
 .container--narrow {
   width: 88%; }
@@ -4305,6 +4304,26 @@ a {
 /*********************************************************
   Typography
 *********************************************************/
+h1, .h1 {
+  font-size: 1.75rem; }
+  @media (min-width: 768px) {
+    h1, .h1 {
+      font-size: 2.25rem; } }
+
+h2, .h2 {
+  font-size: 1.625rem; }
+  @media (min-width: 768px) {
+    h2, .h2 {
+      font-size: 2rem; } }
+
+p,
+.p {
+  font-size: 0.875rem; }
+  @media (min-width: 768px) {
+    p,
+    .p {
+      font-size: 1rem; } }
+
 /*********************************************************
   Buttons
 *********************************************************/
@@ -4328,21 +4347,21 @@ a {
 
 .card-profile--has-img {
   position: relative;
-  padding-top: 4.6875rem; }
+  padding-top: 2.8125rem; }
 
 .card-profile--has-img img {
   position: absolute;
-  width: 150px;
+  width: 105px;
   height: auto;
-  top: calc(-0% - (150px / 2));
-  left: calc(50% - (150px / 2));
+  top: calc(-0% - (105px / 2));
+  left: calc(50% - (105px / 2));
   background-repeat: no-repeat;
   background-size: cover; }
   @media (min-width: 768px) {
     .card-profile--has-img img {
-      width: 165px;
-      top: calc(-0% - (175px / 2));
-      left: calc(50% - (175px / 2)); } }
+      width: 130px;
+      top: calc(-0% - (130px / 2));
+      left: calc(50% - (130px / 2)); } }
 
 .card__body {
   padding: 1.25rem; }
@@ -4378,12 +4397,9 @@ a {
           flex: 1 0 auto; }
 
 .card-nav__col {
-  min-width: 25%;
+  min-width: 20%;
   padding: 0;
   border-right: 1px solid #ddd; }
-  @media (min-width: 768px) {
-    .card-nav__col {
-      min-width: 20%; } }
   .card-nav__col:last-child {
     border-right: none; }
 
@@ -4395,8 +4411,8 @@ a {
   color: #111; }
 
 .card-nav__btns a {
-  padding: 0.625rem 0.75rem;
-  font-size: 0.8125rem;
+  padding: 0.3125rem;
+  font-size: 0.75rem;
   border-radius: 0; }
   @media (min-width: 768px) {
     .card-nav__btns a {
@@ -4408,7 +4424,7 @@ a {
             box-shadow: none; }
 
 .card-nav--bottom .card-nav__btns a {
-  padding: 1.25rem 0.625rem;
+  padding: 0.9375rem;
   color: #fff; }
 
 .card-nav--bottom .card-nav__btns a:hover, .card-nav--bottom .card-nav__btns a:focus {
