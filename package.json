@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel index.html --no-cache",
-    "build": "parcel build index.html --public-url /dts-e3/"
+    "build": "parcel build index.html --public-url https://brianotoole.github.io/dts-e3/dist/"
   },
   "keywords": [],
   "author": "",
