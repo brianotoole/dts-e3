@@ -9,7 +9,7 @@ body {
   overflow-x: hidden;
 }
 
-@include scrollbars(.5em, $color__primary);
+@include scrollbars(.5em, $color__secondary);
 
 a {
   text-decoration: none;
@@ -33,9 +33,9 @@ a {
 }
 
 .page-body__content {
-  min-height: 900px; /* test only */
+  min-height: 500px; /* test only */
   margin-top: rem(-100);
-  padding-top: rem(165);
+  padding-top: rem(125);
   background-color: $color__white;
   @include media-breakpoint-up(md) {
     margin-top: rem(-107);
