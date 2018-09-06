@@ -4125,14 +4125,14 @@ body {
   height: 0.5em; }
 
 ::-webkit-scrollbar-thumb {
-  background: #ea8c2a; }
+  background: #1a2940; }
 
 ::-webkit-scrollbar-track {
-  background: #f5c695; }
+  background: #8d94a0; }
 
 body {
-  scrollbar-face-color: #ea8c2a;
-  scrollbar-track-color: #f5c695; }
+  scrollbar-face-color: #1a2940;
+  scrollbar-track-color: #8d94a0; }
 
 a {
   text-decoration: none;
@@ -4152,10 +4152,10 @@ a {
   background-attachment: fixed; }
 
 .page-body__content {
-  min-height: 900px;
+  min-height: 500px;
   /* test only */
   margin-top: -6.25rem;
-  padding-top: 10.3125rem;
+  padding-top: 7.8125rem;
   background-color: #fff; }
   @media (min-width: 768px) {
     .page-body__content {
@@ -4315,6 +4315,30 @@ h2, .h2 {
   @media (min-width: 768px) {
     h2, .h2 {
       font-size: 2rem; } }
+
+h3, .h3 {
+  font-size: 1.375rem; }
+  @media (min-width: 768px) {
+    h3, .h3 {
+      font-size: 1.75rem; } }
+
+h4, .h4 {
+  font-size: 1.25rem; }
+  @media (min-width: 768px) {
+    h4, .h4 {
+      font-size: 1.5rem; } }
+
+h5, .h5 {
+  font-size: 1.125rem; }
+  @media (min-width: 768px) {
+    h5, .h5 {
+      font-size: 1.25rem; } }
+
+h6, .h6 {
+  font-size: 0.875rem; }
+  @media (min-width: 768px) {
+    h6, .h6 {
+      font-size: 1rem; } }
 
 p,
 .p {
