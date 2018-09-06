@@ -9,7 +9,7 @@ body {
   overflow-x: hidden;
 }
 
-@include scrollbars(.4em, $color__primary);
+@include scrollbars(.3em, #999);
 
 a {
   text-decoration: none;
