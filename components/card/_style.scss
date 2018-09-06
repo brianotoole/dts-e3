@@ -64,7 +64,19 @@ $profile-img-width: 125px;
   }
 }
 
+.card-nav--scroller > .row {
+  flex-wrap: nowrap;
+  overflow-x: scroll; 
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.card-nav--scroller .card-nav__col {
+  flex: 0 0 20%; //grow, shrink, basis
+}
+
 .card-nav__col {
+  width: 20%;
   padding: 0;
   border: 1px solid $color__border;
   &:last-child {

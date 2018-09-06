@@ -4120,6 +4120,20 @@ body {
   font-family: "Open Sans", sans-serif;
   overflow-x: hidden; }
 
+::-webkit-scrollbar {
+  width: 0.4em;
+  height: 0.4em; }
+
+::-webkit-scrollbar-thumb {
+  background: #ea8c2a; }
+
+::-webkit-scrollbar-track {
+  background: #f5c695; }
+
+body {
+  scrollbar-face-color: #ea8c2a;
+  scrollbar-track-color: #f5c695; }
+
 a {
   text-decoration: none;
   color: #ea8c2a;
@@ -4343,7 +4357,20 @@ a {
     border-bottom-left-radius: 0.25rem;
     border-bottom-right-radius: 0.25rem; }
 
+.card-nav--scroller > .row {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar; }
+
+.card-nav--scroller .card-nav__col {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 20%;
+          flex: 0 0 20%; }
+
 .card-nav__col {
+  width: 20%;
   padding: 0;
   border: 1px solid #ddd; }
   .card-nav__col:last-child {
