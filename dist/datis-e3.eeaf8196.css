@@ -4128,10 +4128,13 @@ a {
   a:hover {
     color: #e47f16; }
 
-.page-body-header {
+.page-body {
+  position: relative; }
+
+.page-body__header {
   background-color: #ea8c2a; }
 
-.page-body-content {
+.page-body__content {
   min-height: 250px;
   margin-top: -9.6875rem;
   padding-top: 12.5rem;

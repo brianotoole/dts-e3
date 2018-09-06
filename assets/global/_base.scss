@@ -18,12 +18,16 @@ a {
   }
 }
 
-.page-body-header {
+.page-body {
+  position: relative;
+}
+
+.page-body__header {
   background-color: $color__primary;
   //@TODO: add background image
 }
 
-.page-body-content {
+.page-body__content {
   min-height: 250px;
   margin-top: rem(-155);
   padding-top: rem(200);
