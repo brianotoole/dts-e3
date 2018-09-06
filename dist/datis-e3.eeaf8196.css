@@ -4425,7 +4425,8 @@ p,
 
 .card-nav--bottom .card-nav__btns a {
   padding: 0.9375rem;
-  color: #fff; }
+  color: #fff;
+  background: #1a2940; }
 
 .card-nav--bottom .card-nav__btns a:hover, .card-nav--bottom .card-nav__btns a:focus {
   background: #131d2e; }

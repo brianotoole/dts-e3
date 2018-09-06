@@ -112,6 +112,7 @@ $profile-img-width: 105px;
   a {
     padding: rem(15);
     color: $color__white;
+    background: $color__secondary;
   }
   a:hover, a:focus {
     background: $color__secondary--dark;
