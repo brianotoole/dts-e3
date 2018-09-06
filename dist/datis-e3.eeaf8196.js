@@ -17193,7 +17193,7 @@ module.exports = reloadCSS;
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
+},{"./assets/global/images/bg-icons.png":[["bg-icons.735454e1.png","assets/global/images/bg-icons.png"],"assets/global/images/bg-icons.png"],"_css_loader":"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
 'use strict';
 
 require('bootstrap');
@@ -17228,7 +17228,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '56100' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '65495' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 

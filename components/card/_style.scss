@@ -4,7 +4,7 @@
 
 
 // Card Profile
-$profile-img-width: 125px;
+$profile-img-width: 150px;
 
 .card-profile {
   margin-top: rem(150);
@@ -18,7 +18,7 @@ $profile-img-width: 125px;
 
 .card-profile--has-img {
   position: relative;
-  padding-top: rem($profile-img-width - 50); // padding for img
+  padding-top: rem($profile-img-width - 75); // padding for img
 }
 
 .card-profile--has-img img {
@@ -30,7 +30,7 @@ $profile-img-width: 125px;
   background-repeat: no-repeat;
   background-size: cover;
   @include media-breakpoint-up(md) {
-    width: $profile-img-width + 25px;
+    width: $profile-img-width + 15px;
     top: calc(-0% - (#{$profile-img-width + 25} / 2) );
     left: calc(50% - (#{$profile-img-width + 25} / 2) );
   }
@@ -60,8 +60,6 @@ $profile-img-width: 125px;
 
 .card-nav--bottom > .row {
   background: $color__secondary--dark;
-  border-bottom-left-radius: $border-radius;
-  border-bottom-right-radius: $border-radius;
 }
 
 .card-nav--scroller > .row {
@@ -70,9 +68,6 @@ $profile-img-width: 125px;
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: -ms-autohiding-scrollbar;
   &::-webkit-scrollbar { display: none;}
-  @include media-breakpoint-up(md) {
-    &::-webkit-scrollbar { display: block;}
-  }
 }
 
 .card-nav--scroller .card-nav__col {
@@ -82,7 +77,7 @@ $profile-img-width: 125px;
 .card-nav__col {
   min-width: 25%;
   padding: 0;
-  border: 1px solid $color__border;
+  border-right: 1px solid $color__border;
   @include media-breakpoint-up(md) {
     min-width: 20%;
   }
@@ -102,12 +97,11 @@ $profile-img-width: 125px;
 
 .card-nav__btns {
   a {
-    padding: rem(8);
+    padding: rem(10) rem(12);
+    font-size: rem(13);
     border-radius: 0;
-    font-size: rem(13.5);
     @include media-breakpoint-up(md) {
-      font-size: rem(16);
-      padding: rem(10);
+      font-size: rem(14);
     }
     &:hover, &:focus {
       background: $color__border;
