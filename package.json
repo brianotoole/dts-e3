@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "parcel index.html --no-cache"
+    "start": "parcel index.html --no-cache",
+    "build": "parcel build index.html --public-url /dts-e3/"
   },
   "keywords": [],
   "author": "",
