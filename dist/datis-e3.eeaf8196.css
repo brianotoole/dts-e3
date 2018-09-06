@@ -4360,17 +4360,17 @@ a {
 .card-nav--scroller > .row {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  overflow-x: scroll;
+  overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: -ms-autohiding-scrollbar; }
 
 .card-nav--scroller .card-nav__col {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 20%;
-          flex: 0 0 20%; }
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto; }
 
 .card-nav__col {
-  width: 20%;
+  min-width: 20%;
   padding: 0;
   border: 1px solid #ddd; }
   .card-nav__col:last-child {
@@ -4401,7 +4401,7 @@ a {
   padding: 1.25rem 0.625rem;
   color: #fff; }
 
-.card-nav--bottom .card-nav__btns a:hover, .card-nav--bottom .card-nav__btns:focus {
+.card-nav--bottom .card-nav__btns a:hover, .card-nav--bottom .card-nav__btns a:focus {
   background: #131d2e; }
 
 .card-nav--bottom .card-nav__col {

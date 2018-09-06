@@ -66,17 +66,17 @@ $profile-img-width: 125px;
 
 .card-nav--scroller > .row {
   flex-wrap: nowrap;
-  overflow-x: scroll; 
+  overflow-x: auto; 
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: -ms-autohiding-scrollbar;
 }
 
 .card-nav--scroller .card-nav__col {
-  flex: 0 0 20%; //grow, shrink, basis
+  flex: 1 0 auto; //grow, shrink, basis
 }
 
 .card-nav__col {
-  width: 20%;
+  min-width: 20%;
   padding: 0;
   border: 1px solid $color__border;
   &:last-child {
@@ -115,7 +115,7 @@ $profile-img-width: 125px;
     padding: rem(20) rem(10);
     color: $color__white;
   }
-  a:hover, &:focus {
+  a:hover, a:focus {
     background: $color__secondary--dark;
   }
 }
