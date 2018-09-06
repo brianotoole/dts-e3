@@ -7,12 +7,12 @@
 $profile-img-width: 105px;
 
 .card-profile {
-  margin-top: rem(150);
+  margin-top: rem(125);
   text-align: center;
   background-color: $color__border;
   border-radius: $border-radius;
   @include media-breakpoint-up(md) {
-    margin-top: rem(175);
+    margin-top: rem(150);
   }
 }
 

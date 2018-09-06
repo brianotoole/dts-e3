@@ -4337,13 +4337,13 @@ p,
   Card / Card Profile
 *********************************************************/
 .card-profile {
-  margin-top: 9.375rem;
+  margin-top: 7.8125rem;
   text-align: center;
   background-color: #ddd;
   border-radius: 0.25rem; }
   @media (min-width: 768px) {
     .card-profile {
-      margin-top: 10.9375rem; } }
+      margin-top: 9.375rem; } }
 
 .card-profile--has-img {
   position: relative;
