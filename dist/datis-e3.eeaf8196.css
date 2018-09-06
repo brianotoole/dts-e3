@@ -4136,9 +4136,12 @@ a {
 
 .page-body__content {
   min-height: 250px;
-  margin-top: -9.6875rem;
+  margin-top: -8.4375rem;
   padding-top: 12.5rem;
   background-color: #fff; }
+
+.container--narrow {
+  width: 90%; }
 
 /*********************************************************
     Fonts
@@ -4293,7 +4296,7 @@ a {
   Card / Card Profile
 *********************************************************/
 .card-profile {
-  margin-top: 6.25rem;
+  margin-top: 9.375rem;
   text-align: center;
   background-color: #ddd;
   border-radius: 0.25rem; }
@@ -4354,8 +4357,13 @@ a {
   color: #111; }
 
 .card-nav__btns a {
-  padding: 1.25rem 0.625rem;
-  border-radius: 0; }
+  padding: 0.5rem;
+  border-radius: 0;
+  font-size: 0.84375rem; }
+  @media (min-width: 768px) {
+    .card-nav__btns a {
+      font-size: 1rem;
+      padding: 0.625rem; } }
   .card-nav__btns a:hover, .card-nav__btns a:focus {
     background: #ddd;
     outline: none;
@@ -4363,6 +4371,7 @@ a {
             box-shadow: none; }
 
 .card-nav--bottom .card-nav__btns a {
+  padding: 1.25rem 0.625rem;
   color: #fff; }
 
 .card-nav--bottom .card-nav__btns a:hover, .card-nav--bottom .card-nav__btns:focus {
