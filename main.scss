@@ -3,11 +3,11 @@
 *********************************************************/
 
 
-// Import Bootstrap config first
-@import './assets/bootstrap/config';
+// Import Vendors first
+@import './assets/vendor/bootstrap/config';
 
 // Global
-@import './components/global/style';
+@import './assets/global/style';
 
 // Components
 @import './components/header/style';
