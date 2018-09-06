@@ -4133,7 +4133,7 @@ a {
 
 .page-body-content {
   min-height: 250px;
-  margin-top: -9.5rem;
+  margin-top: -9.6875rem;
   padding-top: 12.5rem;
   background-color: #fff; }
 
@@ -4240,7 +4240,7 @@ a {
   border-radius: 0.25rem; }
   @media (min-width: 768px) {
     .card-profile {
-      margin-top: 12.5rem; } }
+      margin-top: 10.9375rem; } }
 
 .card-profile--has-img {
   position: relative;
@@ -4283,7 +4283,7 @@ a {
 
 .card-nav__col {
   padding: 0;
-  border-right: 1px solid #ccc; }
+  border: 1px solid #ccc; }
   .card-nav__col:last-child {
     border-right: none; }
 
