@@ -36,20 +36,20 @@ $profile-img-width: 125px;
   }
 }
 
-.card-body {
+.card__body {
   padding: rem(20);
 }
 
-.card-title,
-.card-text {
+.card__title,
+.card__text {
   margin-bottom: rem(1);
 }
 
-.card-title--bold {
+.card__title--bold {
   font-weight: bold;
 }
 
-.card-employee-title {
+.card__title--employee-title {
   padding-top: rem(10);
 }
 
