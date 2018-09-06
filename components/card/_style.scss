@@ -96,9 +96,11 @@ $profile-img-width: 125px;
 }
 
 .card-nav--bottom .card-nav__btns {
+  a {
+    color: $color__white;
+  }
   a:hover, &:focus {
     background: $color__secondary--dark;
-    color: $color__white;
   }
 }
 
