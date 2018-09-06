@@ -31,9 +31,12 @@ a {
 
 .page-body__content {
   min-height: 250px;
-  margin-top: rem(-143);
+  margin-top: rem(-123);
   padding-top: rem(200);
   background-color: $color__white;
+  @include media-breakpoint-up(md) {
+    margin-top: rem(-143);
+  }
 }
 
 .container {

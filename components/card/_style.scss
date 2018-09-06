@@ -54,14 +54,14 @@ $profile-img-width: 125px;
 }
 
 // Card Nav
-.card-nav {
+.card-nav > .row {
   background-color: $color__border--light;
-  &--bottom {
-    background: $color__secondary;
-    color: $color__white;
-    border-bottom-left-radius: $border-radius;
-    border-bottom-right-radius: $border-radius;
-  }
+}
+
+.card-nav--bottom > .row {
+  background: $color__secondary--dark;
+  border-bottom-left-radius: $border-radius;
+  border-bottom-right-radius: $border-radius;
 }
 
 .card-nav--scroller > .row {

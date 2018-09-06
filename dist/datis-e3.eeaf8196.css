@@ -4150,9 +4150,12 @@ a {
 
 .page-body__content {
   min-height: 250px;
-  margin-top: -8.9375rem;
+  margin-top: -7.6875rem;
   padding-top: 12.5rem;
   background-color: #fff; }
+  @media (min-width: 768px) {
+    .page-body__content {
+      margin-top: -8.9375rem; } }
 
 .container--narrow {
   width: 88%; }
@@ -4349,13 +4352,13 @@ a {
 .card__title--employee-title {
   padding-top: 0.625rem; }
 
-.card-nav {
+.card-nav > .row {
   background-color: #eaeaea; }
-  .card-nav--bottom {
-    background: #1a2940;
-    color: #fff;
-    border-bottom-left-radius: 0.25rem;
-    border-bottom-right-radius: 0.25rem; }
+
+.card-nav--bottom > .row {
+  background: #131d2e;
+  border-bottom-left-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem; }
 
 .card-nav--scroller > .row {
   -ms-flex-wrap: nowrap;
