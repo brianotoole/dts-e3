@@ -4147,7 +4147,7 @@ a {
 
 .page-body__header {
   background-color: #ea8c2a;
-  background: #444 url("bg-icons.735454e1.png");
+  background: #ea8c2a url("bg-icons.735454e1.png");
   background-repeat: no-repeat;
   background-size: 100%;
   background-attachment: fixed; }
@@ -4155,12 +4155,12 @@ a {
 .page-body__content {
   min-height: 900px;
   /* test only */
-  margin-top: -7.8125rem;
+  margin-top: -7.625rem;
   padding-top: 10.3125rem;
   background-color: #fff; }
   @media (min-width: 768px) {
     .page-body__content {
-      margin-top: -8.4375rem; } }
+      margin-top: -7.875rem; } }
 
 .container--narrow {
   width: 88%; }

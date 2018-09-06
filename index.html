@@ -1,24 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="ie=edge" http-equiv="X-UA-Compatible">
   <title>Datis e3</title>
 </head>
+
 <body>
 
   <include src="components/header/header.html"></include>
 
   <div class="page-body">
     <div class="page-body__header">
-      <include src="components/card/card.html"></include>
+      <div class="container container--narrow">
+        <div class="row no-gutters mx-auto">
+          <div class="col-lg-6 col-md-8 col-sm-12 mx-auto">
+            <include src="components/card/card.html"></include>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
     </div><!-- /.page-body__header -->
     <div class="page-body__content">
-      <include src="components/accordion/accordion.html"></include>
+      <div class="container container--narrow">
+        <div class="row no-gutters">
+          <div class="col-lg-6 col-md-8 col-sm-12 mx-auto">
+            <include src="components/accordion/accordion.html"></include>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
     </div><!-- /.page-body__content -->
   </div><!-- /.page-body -->
 
   <script src="index.js"></script>
 </body>
+
 </html>
