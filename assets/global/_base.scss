@@ -9,7 +9,7 @@ body {
   overflow-x: hidden;
 }
 
-@include scrollbars(.3em, #999);
+@include scrollbars(.5em, $color__primary);
 
 a {
   text-decoration: none;
@@ -26,16 +26,19 @@ a {
 
 .page-body__header {
   background-color: $color__primary;
-  //@TODO: add background image
+  background: #444 url('./assets/global/images/bg-icons.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
 }
 
 .page-body__content {
-  min-height: 250px;
-  margin-top: rem(-123);
-  padding-top: rem(200);
+  min-height: 900px; /* test only */
+  margin-top: rem(-125);
+  padding-top: rem(165);
   background-color: $color__white;
   @include media-breakpoint-up(md) {
-    margin-top: rem(-143);
+    margin-top: rem(-135);
   }
 }
 
