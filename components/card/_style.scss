@@ -100,7 +100,7 @@ $profile-img-width: 105px;
   position: relative;
   z-index: 2;
   a {
-    padding: rem(5);
+    padding: rem(10) rem(5);
     font-size: rem(12);
     border-radius: 0;
     @include media-breakpoint-up(md) {
@@ -116,11 +116,10 @@ $profile-img-width: 105px;
 
 .card-nav--bottom .card-nav__btns {
   a {
-    padding: rem(17);
+    padding: rem(20) rem(17);
     color: $color__white;
     background: $color__secondary;
-    border-bottom-left-radius: $border-radius;
-    border-bottom-right-radius: $border-radius;
+    border-radius: 0;
   }
   a:hover, a:focus {
     background: $color__secondary--dark;
@@ -129,7 +128,5 @@ $profile-img-width: 105px;
 
 .card-nav--bottom .card-nav__col {
   border-color: lighten($color__secondary, 5%);
-  border-bottom-left-radius: $border-radius;
-  border-bottom-right-radius: $border-radius;
 }
 
