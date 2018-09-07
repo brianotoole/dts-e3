@@ -66,6 +66,7 @@ $profile-img-width: 105px;
 }
 
 .card-nav--scroller > .row {
+  max-width: 100%;
   flex-wrap: nowrap;
   overflow-x: auto; 
   -webkit-overflow-scrolling: touch;
