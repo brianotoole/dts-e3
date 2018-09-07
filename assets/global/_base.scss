@@ -26,8 +26,12 @@ a {
 
 .page-body__header {
   background-color: $color__primary;
-  background: $color__primary url('./assets/global/images/bg-icons.png') 0 0 repeat-x;
+  background: $color__primary url('./assets/global/images/bg-icons.png') center center repeat;
   background-attachment: fixed;
+  background-size: contain;
+  @include media-breakpoint-up(md) {
+    background-size: auto;
+  }
 }
 
 .page-body__content {
