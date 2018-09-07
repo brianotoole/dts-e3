@@ -59,7 +59,8 @@ $profile-img-width: 105px;
 }
 
 .card-nav--bottom > .row {
-  background: $color__secondary--dark;
+  border-bottom-left-radius: $border-radius;
+  border-bottom-right-radius: $border-radius;
 }
 
 .card-nav--scroller > .row {
@@ -110,7 +111,7 @@ $profile-img-width: 105px;
 
 .card-nav--bottom .card-nav__btns {
   a {
-    padding: rem(15);
+    padding: rem(17);
     color: $color__white;
     background: $color__secondary;
   }
