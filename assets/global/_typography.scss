@@ -4,7 +4,7 @@
 
 h1,
 .h1 {
-  font-size: rem(28);
+  font-size: rem(26);
   @include media-breakpoint-up(md) {
     font-size: rem(36);
   }
@@ -12,7 +12,7 @@ h1,
 
 h2,
 .h2 {
-  font-size: rem(26);
+  font-size: rem(24);
   @include media-breakpoint-up(md) {
     font-size: rem(32);
   }

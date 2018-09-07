@@ -4147,7 +4147,7 @@ a {
 
 .page-body__header {
   background-color: #ea8c2a;
-  background: #ea8c2a url("bg-icons.735454e1.png") center center repeat;
+  background: #ea8c2a url("bg-icons.87b3c056.png") center center repeat;
   background-attachment: fixed;
   background-size: contain; }
   @media (min-width: 768px) {
@@ -4308,13 +4308,13 @@ a {
   Typography
 *********************************************************/
 h1, .h1 {
-  font-size: 1.75rem; }
+  font-size: 1.625rem; }
   @media (min-width: 768px) {
     h1, .h1 {
       font-size: 2.25rem; } }
 
 h2, .h2 {
-  font-size: 1.625rem; }
+  font-size: 1.5rem; }
   @media (min-width: 768px) {
     h2, .h2 {
       font-size: 2rem; } }
