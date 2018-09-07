@@ -4147,8 +4147,7 @@ a {
 
 .page-body__header {
   background-color: #ea8c2a;
-  background-repeat: no-repeat;
-  background-size: 100%;
+  background: #ea8c2a url("bg-icons.735454e1.png") 0 0 repeat-x;
   background-attachment: fixed; }
 
 .page-body__content {
