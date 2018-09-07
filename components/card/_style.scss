@@ -59,6 +59,7 @@ $profile-img-width: 105px;
 }
 
 .card-nav--bottom > .row {
+  background-color: $color__secondary;
   border-bottom-left-radius: $border-radius;
   border-bottom-right-radius: $border-radius;
 }
@@ -114,6 +115,8 @@ $profile-img-width: 105px;
     padding: rem(17);
     color: $color__white;
     background: $color__secondary;
+    border-bottom-left-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
   }
   a:hover, a:focus {
     background: $color__secondary--dark;

@@ -4364,7 +4364,7 @@ p,
   margin-top: 7.8125rem;
   text-align: center;
   background-color: #e6e6e6;
-  border-radius: 0.625rem; }
+  border-radius: 0.5rem; }
   @media (min-width: 768px) {
     .card-profile {
       margin-top: 9.375rem; } }
@@ -4404,8 +4404,9 @@ p,
   background-color: #f3f3f3; }
 
 .card-nav--bottom > .row {
-  border-bottom-left-radius: 0.625rem;
-  border-bottom-right-radius: 0.625rem; }
+  background-color: #1a2940;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem; }
 
 .card-nav--scroller > .row {
   -ms-flex-wrap: nowrap;
@@ -4451,7 +4452,8 @@ p,
 .card-nav--bottom .card-nav__btns a {
   padding: 1.0625rem;
   color: #fff;
-  background: #1a2940; }
+  background: #1a2940;
+  border-radius: 0.5rem; }
 
 .card-nav--bottom .card-nav__btns a:hover, .card-nav--bottom .card-nav__btns a:focus {
   background: #131d2e; }
