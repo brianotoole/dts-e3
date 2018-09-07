@@ -26,9 +26,7 @@ a {
 
 .page-body__header {
   background-color: $color__primary;
-  //background: $color__primary url('./assets/global/images/bg-icons.png');
-  background-repeat: no-repeat;
-  background-size: 100%;
+  background: $color__primary url('./assets/global/images/bg-icons.png') 0 0 repeat-x;
   background-attachment: fixed;
 }
 
