@@ -4403,6 +4403,7 @@ p,
 .card-nav > .row {
   background-color: #f3f3f3; }
 
+.card-nav--bottom,
 .card-nav--bottom > .row {
   background-color: #1a2940;
   border-bottom-left-radius: 0.5rem;
@@ -4453,7 +4454,8 @@ p,
   padding: 1.0625rem;
   color: #fff;
   background: #1a2940;
-  border-radius: 0.5rem; }
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem; }
 
 .card-nav--bottom .card-nav__btns a:hover, .card-nav--bottom .card-nav__btns a:focus {
   background: #131d2e; }
