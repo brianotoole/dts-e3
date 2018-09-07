@@ -75,7 +75,7 @@ $profile-img-width: 105px;
 }
 
 .card-nav--scroller .card-nav__col {
-  flex: 1 0 auto; //grow, shrink, basis
+  flex: 0 0 auto; //grow, shrink, basis
 }
 
 .card-nav__col {
@@ -97,6 +97,8 @@ $profile-img-width: 105px;
 }
 
 .card-nav__btns {
+  position: relative;
+  z-index: 2;
   a {
     padding: rem(5);
     font-size: rem(12);
@@ -127,5 +129,7 @@ $profile-img-width: 105px;
 
 .card-nav--bottom .card-nav__col {
   border-color: lighten($color__secondary, 5%);
+  border-bottom-left-radius: $border-radius;
+  border-bottom-right-radius: $border-radius;
 }
 
