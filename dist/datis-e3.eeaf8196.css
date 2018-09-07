@@ -4154,12 +4154,12 @@ a {
 .page-body__content {
   min-height: 500px;
   /* test only */
-  margin-top: -6.25rem;
+  margin-top: -6.5rem;
   padding-top: 7.8125rem;
   background-color: #fff; }
   @media (min-width: 768px) {
     .page-body__content {
-      margin-top: -6.6875rem; } }
+      margin-top: -6.9375rem; } }
 
 .container--narrow {
   width: 88%; }

@@ -34,11 +34,11 @@ a {
 
 .page-body__content {
   min-height: 500px; /* test only */
-  margin-top: rem(-100);
+  margin-top: rem(-104);
   padding-top: rem(125);
   background-color: $color__white;
   @include media-breakpoint-up(md) {
-    margin-top: rem(-107);
+    margin-top: rem(-111);
   }
 }
 
