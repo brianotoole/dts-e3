@@ -4650,3 +4650,31 @@ p,
 .accordion .card .card-body {
   background-color: #e6e6e6;
   padding: 1.875rem; }
+
+.accordion .card .card-inner {
+  background: #fff;
+  border-radius: 0.5rem; }
+  .accordion .card .card-inner.card-inner-active {
+    border-left: 8px solid #ea8c2a; }
+
+.accordion .card .card-inner .card-inner-body {
+  padding: 0.9375rem; }
+
+.accordion .card .card-inner .card-inner-body .card-inner-title,
+.accordion .card .card-inner .card-inner-body .card-inner-subtitle {
+  font-weight: bold;
+  color: #111; }
+
+.accordion .card .card-inner .card-inner-body hr {
+  max-width: 1.875rem;
+  margin-left: 0; }
+
+.accordion .card .card-inner .card-inner-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 1.25rem;
+  color: #e6e6e6; }

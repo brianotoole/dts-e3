@@ -41,3 +41,33 @@
   background-color: $color__border;
   padding: rem(30);
 }
+
+.accordion .card .card-inner {
+  background: $color__white;
+  border-radius: $border-radius;
+  &.card-inner-active {
+    border-left: 8px solid $color__primary;
+  }
+}
+
+.accordion .card .card-inner .card-inner-body {
+  padding: rem(15);
+}
+
+.accordion .card .card-inner .card-inner-body .card-inner-title,
+.accordion .card .card-inner .card-inner-body .card-inner-subtitle {
+  font-weight: bold;
+  color: $color__text;
+}
+
+.accordion .card .card-inner .card-inner-body hr {
+  max-width: rem(30);
+  margin-left: 0;
+}
+
+.accordion .card .card-inner .card-inner-footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: rem(20);
+  color: $color__border;
+}
