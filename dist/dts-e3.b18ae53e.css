@@ -4498,6 +4498,14 @@ p,
 /*********************************************************
   Utility
 *********************************************************/
+@media (max-width: 576px) {
+  .u-sm-m-x {
+    margin: 0 auto !important; } }
+
+@media (max-width: 576px) {
+  .u-sm-p-0 {
+    padding: 0 !important; } }
+
 /*********************************************************
   Card / Card Profile
 *********************************************************/
@@ -4614,26 +4622,14 @@ p,
   position: relative;
   background-color: #fff;
   border: 0;
-  border-radius: 0;
-  padding-top: 1.5625rem;
-  padding-bottom: 1.5625rem; }
-
-.accordion .card + .card:after {
-  content: '';
-  position: absolute;
-  top: -7px;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: #e6e6e6; }
-
-.accordion .card:first-child {
-  padding-top: 0; }
+  border-radius: 0; }
 
 .accordion .card .card-header a:hover, .accordion .card .card-header a:focus, .accordion .card .card-header a:active {
   text-decoration: none; }
 
 .accordion .card .card-title {
+  margin: 0;
+  padding-bottom: 1.875rem;
   color: #111;
   font-weight: 300; }
 
@@ -4642,3 +4638,15 @@ p,
   margin-top: -0.3125rem;
   font-size: 2.5rem;
   color: #ea8c2a; }
+
+.accordion .card .card-header,
+.accordion .card .card-body {
+  padding: 0 1.875rem; }
+  @media (min-width: 576px) {
+    .accordion .card .card-header,
+    .accordion .card .card-body {
+      padding: inherit; } }
+
+.accordion .card .card-body {
+  background-color: #e6e6e6;
+  padding: 1.875rem; }

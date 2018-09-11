@@ -1,3 +1,17 @@
 /*********************************************************
   Utility
 *********************************************************/
+
+
+.u-sm-m-x {
+  @media (max-width: 576px) {
+    margin: 0 auto !important;
+  }
+}
+
+
+.u-sm-p-0 {
+  @media (max-width: 576px) {
+    padding: 0 !important;
+  }
+}
