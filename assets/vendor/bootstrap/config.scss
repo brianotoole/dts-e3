@@ -1,11 +1,7 @@
-// READ MORE
+// Bootstrap Scss Config
 // https://github.com/twbs/bootstrap
-// https://get.getbootstrap.com
 
 @import './pre_default';
-
-// Core variables and mixins
-// state in March 2018
 
 // *** Core with grid
 @import '~bootstrap/scss/functions';
@@ -24,9 +20,9 @@
 @import '~bootstrap/scss/buttons';
 
 // *** Components
-// @import "~bootstrap/scss/transitions";
-// @import "~bootstrap/scss/dropdown";
-// @import "~bootstrap/scss/button-group";
+@import "~bootstrap/scss/transitions";
+//@import "~bootstrap/scss/dropdown";
+@import "~bootstrap/scss/button-group";
 // @import '~bootstrap/scss/input-group';
 // @import "~bootstrap/scss/custom-forms";
 // @import "~bootstrap/scss/nav";
