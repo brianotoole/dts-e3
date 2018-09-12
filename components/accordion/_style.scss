@@ -2,9 +2,17 @@
 
 .accordion .card {
   position: relative;
+  padding-top: rem(30);
   background-color: $color__white;
-  border: 0;
   border-radius: 0;
+}
+
+.accordion .card:first-child {
+  padding-top: 0;
+}
+
+.accordion .card + .card {
+  border-top: 2px solid $color__border--light;
 }
 
 .accordion .card .card-header a {
@@ -16,31 +24,46 @@
 }
 
 .accordion .card .card-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin: 0;
   padding-bottom: rem(30);
   color: $color__text;
   font-weight: 300;
 }
 
+.accordion .card .collapsed .card-arrow {
+  transform: rotate(0deg);
+}
+
+.accordion .card .card-badge {
+  display: flex;
+  flex: 1 0 auto;
+  margin-left: rem(30);
+}
+
+.accordion .card .card-badge .badge {
+  background-color: $color__primary;
+  color: $color__white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  padding: rem(8);
+}
+
 .accordion .card .card-arrow {
   margin-right: rem(-5);
-  margin-top: rem(-5);
+  margin-top: rem(6);
   font-size: rem(40);
   color: $color__primary;
   transform: rotate(-180deg);
   transition: .3s transform ease-in-out;
 }
 
-.accordion .card .collapsed .card-arrow {
-  transform: rotate(0deg);
-}
-
 .accordion .card .card-header,
 .accordion .card .card-body {
   padding: 0 rem(30);
-  @include media-breakpoint-up(sm) {
-    padding: inherit;
-  }
 }
 
 .accordion .card .card-body {
