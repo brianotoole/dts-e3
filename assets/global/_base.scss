@@ -20,6 +20,11 @@ a {
   }
 }
 
+hr {
+  border-width: 2px;
+  border-color: $color__muted;
+}
+
 .page-body {
   position: relative;
 }

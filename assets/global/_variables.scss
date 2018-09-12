@@ -8,6 +8,7 @@ $navy: #1a2940;
 $blue: #bfe0f7;
 $white:#fff;
 $grey: #e6e6e6;
+$grey-light: #f0f0f0;
 $black: #111;
 $green: green;
 $red: #790000;
@@ -16,7 +17,7 @@ $red: #790000;
 $color__primary: $orange;
 $color__secondary: $navy;
 $color__tertiary: $blue;
-$color__muted: $grey;
+$color__muted: rgba(black, 0.3);
 $color__white: $white;
 $color__text: $black;
 
@@ -30,7 +31,7 @@ $color__success: $green;
 
 // color borders
 $color__border: $grey;
-$color__border--light: lighten($grey, 5%);
+$color__border--light: $grey-light;
 $color__border--dark: darken($grey, 5%);
 $color__border--primary: lighten($color__primary, 5%);
 $color__border--secondary: lighten($color__secondary, 5%);

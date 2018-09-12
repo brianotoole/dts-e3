@@ -3045,7 +3045,7 @@ button.bg-dark:focus {
   -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
           box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important; }
 
-.shadow {
+.shadow, .accordion .card .card-inner {
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
           box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important; }
 
@@ -4280,6 +4280,10 @@ a {
   a:hover {
     color: #e47f16; }
 
+hr {
+  border-width: 2px;
+  border-color: rgba(0, 0, 0, 0.3); }
+
 .page-body {
   position: relative; }
 
@@ -4550,7 +4554,7 @@ p,
   padding-top: 0.625rem; }
 
 .card-nav > .row {
-  background-color: #f3f3f3; }
+  background-color: #f0f0f0; }
 
 .card-nav--bottom,
 .card-nav--bottom > .row {
@@ -4633,11 +4637,19 @@ p,
   color: #111;
   font-weight: 300; }
 
-.accordion .card .card-icon {
+.accordion .card .card-arrow {
   margin-right: -0.3125rem;
   margin-top: -0.3125rem;
   font-size: 2.5rem;
-  color: #ea8c2a; }
+  color: #ea8c2a;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  -webkit-transition: .3s transform ease-in-out;
+  transition: .3s transform ease-in-out; }
+
+.accordion .card .collapsed .card-arrow {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg); }
 
 .accordion .card .card-header,
 .accordion .card .card-body {
@@ -4658,16 +4670,22 @@ p,
     border-left: 8px solid #ea8c2a; }
 
 .accordion .card .card-inner .card-inner-body {
-  padding: 0.9375rem; }
+  padding: 0.625rem; }
 
 .accordion .card .card-inner .card-inner-body .card-inner-title,
 .accordion .card .card-inner .card-inner-body .card-inner-subtitle {
   font-weight: bold;
   color: #111; }
 
+.accordion .card .card-inner .card-inner-body .card-inner-title {
+  margin-bottom: 0.9375rem; }
+
 .accordion .card .card-inner .card-inner-body hr {
-  max-width: 1.875rem;
-  margin-left: 0; }
+  max-width: 0.9375rem;
+  margin: 0;
+  margin-bottom: 0.3125rem;
+  border-width: 2px;
+  border-color: rgba(0, 0, 0, 0.3); }
 
 .accordion .card .card-inner .card-inner-footer {
   display: -webkit-box;
@@ -4676,5 +4694,13 @@ p,
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 1.25rem;
-  color: #e6e6e6; }
+  padding-top: 1.875rem; }
+
+.accordion .card .card-inner-text {
+  font-size: 0.8125rem; }
+  @media (min-width: 576px) {
+    .accordion .card .card-inner-text {
+      font-size: 0.875rem; } }
+
+.accordion .card .card-inner-text-muted {
+  color: rgba(0, 0, 0, 0.3); }
