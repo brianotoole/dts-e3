@@ -2,7 +2,7 @@
 
 .accordion .card {
   position: relative;
-  padding-top: rem(30);
+  padding-top: rem(20);
   background-color: $color__white;
   border-radius: 0;
 }
@@ -28,7 +28,7 @@
   justify-content: space-between;
   align-items: center;
   margin: 0;
-  padding-bottom: rem(30);
+  padding-bottom: rem(20);
   color: $color__text;
   font-weight: 300;
 }
@@ -69,6 +69,10 @@
 .accordion .card .card-body {
   background-color: $color__border;
   padding: rem(30);
+}
+
+.accordion .card .card-body + .card-body {
+  padding-top: rem(0);
 }
 
 .accordion .card .card-inner {

@@ -4817,7 +4817,7 @@ p,
 
 .accordion .card {
   position: relative;
-  padding-top: 1.875rem;
+  padding-top: 1.25rem;
   background-color: #fff;
   border-radius: 0; }
 
@@ -4841,7 +4841,7 @@ p,
       -ms-flex-align: center;
           align-items: center;
   margin: 0;
-  padding-bottom: 1.875rem;
+  padding-bottom: 1.25rem;
   color: #111;
   font-weight: 300; }
 
@@ -4883,6 +4883,9 @@ p,
 .accordion .card .card-body {
   background-color: #e6e6e6;
   padding: 1.875rem; }
+
+.accordion .card .card-body + .card-body {
+  padding-top: 0rem; }
 
 .accordion .card .card-inner {
   background: #fff;
