@@ -1,0 +1,14 @@
+/*********************************************************
+  Card Nav Footer
+*********************************************************/
+
+.card-nav-footer {}
+
+.card-nav-footer,
+.card-nav-footer > .row {
+  border-radius: 0;
+}
+
+.card-nav-footer .card-nav__col {
+  min-width: 16.666666%;
+}
