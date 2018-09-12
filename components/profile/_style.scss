@@ -1,12 +1,11 @@
 /*********************************************************
-  Card / Card Profile
+  Profile
 *********************************************************/
 
-
-// Card Profile
+// Profile
 $profile-img-width: 105px;
 
-.card-profile {
+.profile {
   margin-top: rem(80);
   text-align: center;
   background-color: $color__border;
@@ -16,12 +15,12 @@ $profile-img-width: 105px;
   }
 }
 
-.card-profile--has-img {
+.profile--has-img {
   position: relative;
   padding-top: rem($profile-img-width - 60); // padding for img
 }
 
-.card-profile--has-img img {
+.profile--has-img img {
   position: absolute;
   width: $profile-img-width;
   height: auto;
@@ -36,16 +35,16 @@ $profile-img-width: 105px;
   }
 }
 
-.card__body {
+.profile__body {
   padding: rem(20);
 }
 
-.card__title,
-.card__text {
+.profile__title,
+.profile__text {
   margin-bottom: rem(1);
 }
 
-.card__title--bold {
+.profile__title--bold {
   font-weight: bold;
 }
 
@@ -53,32 +52,13 @@ $profile-img-width: 105px;
   padding-top: rem(10);
 }
 
-// Card Nav
-.card-nav > .row {
-  background-color: $color__border--light;
-}
-
-.card-nav--bottom,
-.card-nav--bottom > .row {
+// Nav - Default
+.nav {
   background-color: $color__secondary;
-  border-bottom-left-radius: $border-radius;
-  border-bottom-right-radius: $border-radius;
+  color: $color__white;
 }
 
-.card-nav--scroller > .row {
-  max-width: 100%;
-  flex-wrap: nowrap;
-  overflow-x: auto; 
-  //-webkit-overflow-scrolling: touch;
-  -ms-overflow-style: -ms-autohiding-scrollbar;
-  &::-webkit-scrollbar { display: none;}
-}
-
-.card-nav--scroller .card-nav__col {
-  flex: 0 0 auto; //grow, shrink, basis
-}
-
-.card-nav__col {
+.nav__col {
   min-width: 20%;
   padding: 0;
   border-right: 1px solid $color__border;
@@ -87,16 +67,16 @@ $profile-img-width: 105px;
   }
 }
 
-.card-nav__icon {
+.nav__icon {
   display: block;
   color: $color__primary;
 }
 
-.card-nav__title {
+.nav__title {
   color: $color__text;
 }
 
-.card-nav__btns {
+.nav__btns {
   position: relative;
   z-index: 2;
   a {
@@ -114,7 +94,23 @@ $profile-img-width: 105px;
   }
 }
 
-.card-nav--bottom .card-nav__btns {
+// Nav-Profile-Top
+.nav-profile-top {
+  background-color: $color__border--light;
+}
+
+
+// Nav-Profile-Bottom
+.nav-profile-bottom {}
+
+.nav-profile-bottom,
+.nav-profile-bottom > .row {
+  background-color: $color__secondary;
+  border-bottom-left-radius: $border-radius;
+  border-bottom-right-radius: $border-radius;
+}
+
+.nav-profile-bottom .nav__btns {
   a {
     padding: rem(18);
     font-size: rem(13);
@@ -130,7 +126,23 @@ $profile-img-width: 105px;
   }
 }
 
-.card-nav--bottom .card-nav__col {
+.nav-profile-bottom .nav__col {
   border-color: lighten($color__secondary, 5%);
+}
+
+// Nav-scroller
+// Allows to scroll/swipe through items, no wrapping
+.nav-scroller > .row {
+  width: auto;
+  min-width: 100%;
+  flex-wrap: nowrap;
+  overflow-x: auto; 
+  //-webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  &::-webkit-scrollbar { display: none;}
+}
+
+.nav-scroller .nav__col {
+  flex: 0 0 auto; //grow, shrink, basis
 }
 

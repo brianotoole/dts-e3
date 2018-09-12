@@ -1,14 +1,31 @@
 /*********************************************************
-  Card Nav Footer
+  Footer / Nav Footer
 *********************************************************/
 
-.card-nav-footer {}
+.nav-footer {
+	background-color: $color__secondary;
+	color: $color__white;
+}
 
-.card-nav-footer,
-.card-nav-footer > .row {
+.nav-footer,
+.nav-footer > .row {
   border-radius: 0;
 }
 
-.card-nav-footer .card-nav__col {
+.nav-footer .nav__col {
   min-width: 16.666666%;
+}
+
+.nav-footer .nav__btns {
+  a {
+    padding: rem(15);
+    color: $color__white;
+    border-radius: 0;
+    @include media-breakpoint-up(md) {
+      font-size: rem(14);
+    }
+  }
+  a:hover, a:focus {
+    background: $color__secondary--dark;
+  }
 }

@@ -5264,22 +5264,22 @@ p,
     padding: 0 !important; } }
 
 /*********************************************************
-  Card / Card Profile
+  Profile
 *********************************************************/
-.card-profile {
+.profile {
   margin-top: 5rem;
   text-align: center;
   background-color: #e6e6e6;
   border-radius: 0.5rem; }
   @media (min-width: 768px) {
-    .card-profile {
+    .profile {
       margin-top: 10rem; } }
 
-.card-profile--has-img {
+.profile--has-img {
   position: relative;
   padding-top: 2.8125rem; }
 
-.card-profile--has-img img {
+.profile--has-img img {
   position: absolute;
   width: 105px;
   height: auto;
@@ -5288,92 +5288,97 @@ p,
   background-repeat: no-repeat;
   background-size: cover; }
   @media (min-width: 768px) {
-    .card-profile--has-img img {
+    .profile--has-img img {
       width: 130px;
       top: calc(-0% - (130px / 2));
       left: calc(50% - (130px / 2)); } }
 
-.card__body {
+.profile__body {
   padding: 1.25rem; }
 
-.card__title,
-.card__text {
+.profile__title,
+.profile__text {
   margin-bottom: 0.0625rem; }
 
-.card__title--bold {
+.profile__title--bold {
   font-weight: bold; }
 
 .card__title--employee-title {
   padding-top: 0.625rem; }
 
-.card-nav > .row {
-  background-color: #f0f0f0; }
-
-.card-nav--bottom,
-.card-nav--bottom > .row {
+.nav {
   background-color: #1a2940;
-  border-bottom-left-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem; }
+  color: #fff; }
 
-.card-nav--scroller > .row {
-  max-width: 100%;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  overflow-x: auto;
-  -ms-overflow-style: -ms-autohiding-scrollbar; }
-  .card-nav--scroller > .row::-webkit-scrollbar {
-    display: none; }
-
-.card-nav--scroller .card-nav__col {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto; }
-
-.card-nav__col {
+.nav__col {
   min-width: 20%;
   padding: 0;
   border-right: 1px solid #e6e6e6; }
-  .card-nav__col:last-child {
+  .nav__col:last-child {
     border-right: none; }
 
-.card-nav__icon {
+.nav__icon {
   display: block;
   color: #ea8c2a; }
 
-.card-nav__title {
+.nav__title {
   color: #111; }
 
-.card-nav__btns {
+.nav__btns {
   position: relative;
   z-index: 2; }
-  .card-nav__btns a {
+  .nav__btns a {
     padding: 0.4375rem 0.3125rem;
     font-size: 0.6875rem;
     border-radius: 0; }
     @media (min-width: 768px) {
-      .card-nav__btns a {
+      .nav__btns a {
         font-size: 0.875rem; } }
-    .card-nav__btns a:hover, .card-nav__btns a:focus {
+    .nav__btns a:hover, .nav__btns a:focus {
       background: #e6e6e6;
       outline: none;
       -webkit-box-shadow: none;
               box-shadow: none; }
 
-.card-nav--bottom .card-nav__btns a {
+.nav-profile-top {
+  background-color: #f0f0f0; }
+
+.nav-profile-bottom,
+.nav-profile-bottom > .row {
+  background-color: #1a2940;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem; }
+
+.nav-profile-bottom .nav__btns a {
   padding: 1.125rem;
   font-size: 0.8125rem;
   color: #fff;
   background: #1a2940;
   border-radius: 0; }
   @media (min-width: 768px) {
-    .card-nav--bottom .card-nav__btns a {
+    .nav-profile-bottom .nav__btns a {
       font-size: 0.875rem; } }
 
-.card-nav--bottom .card-nav__btns a:hover, .card-nav--bottom .card-nav__btns a:focus {
+.nav-profile-bottom .nav__btns a:hover, .nav-profile-bottom .nav__btns a:focus {
   background: #131d2e; }
 
-.card-nav--bottom .card-nav__col {
+.nav-profile-bottom .nav__col {
   border-color: #213552; }
+
+.nav-scroller > .row {
+  width: auto;
+  min-width: 100%;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  overflow-x: auto;
+  -ms-overflow-style: -ms-autohiding-scrollbar; }
+  .nav-scroller > .row::-webkit-scrollbar {
+    display: none; }
+
+.nav-scroller .nav__col {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto; }
 
 .accordion .card {
   position: relative;
@@ -5490,11 +5495,26 @@ p,
   color: rgba(0, 0, 0, 0.3); }
 
 /*********************************************************
-  Card Nav Footer
+  Footer / Nav Footer
 *********************************************************/
-.card-nav-footer,
-.card-nav-footer > .row {
+.nav-footer {
+  background-color: #1a2940;
+  color: #fff; }
+
+.nav-footer,
+.nav-footer > .row {
   border-radius: 0; }
 
-.card-nav-footer .card-nav__col {
+.nav-footer .nav__col {
   min-width: 16.666666%; }
+
+.nav-footer .nav__btns a {
+  padding: 0.9375rem;
+  color: #fff;
+  border-radius: 0; }
+  @media (min-width: 768px) {
+    .nav-footer .nav__btns a {
+      font-size: 0.875rem; } }
+
+.nav-footer .nav__btns a:hover, .nav-footer .nav__btns a:focus {
+  background: #131d2e; }
