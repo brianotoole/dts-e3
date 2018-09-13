@@ -17194,15 +17194,46 @@ var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
 },{"./assets/global/images/bg-icons.png":[["bg-icons.421d38af.png","assets/global/images/bg-icons.png"],"assets/global/images/bg-icons.png"],"_css_loader":"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
-'use strict';
+"use strict";
 
-require('jquery');
+var _jquery = require("jquery");
 
-require('popper.js');
+var _jquery2 = _interopRequireDefault(_jquery);
 
-require('bootstrap');
+require("popper.js");
 
-require('./main.scss');
+require("bootstrap");
+
+require("./main.scss");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+window.$ = window.jQuery = _jquery2.default; /*********************************************************
+                                               Main.js = main js entry point
+                                             *********************************************************/
+
+
+// Header fixed scroll
+jQuery("document").ready(function ($) {
+  var header = $(".header");
+  var scrollToEl = $("#js-scroll-to");
+  var visible = false;
+
+  $(window).scroll(function () {
+
+    if ($(this).scrollTop() >= scrollToEl.offset().top) {
+      header.addClass("header-fixed");
+      if (!visible) {
+        visible = true;
+      }
+    } else {
+      header.removeClass("header-fixed");
+      if (visible) {
+        visible = false;
+      }
+    }
+  });
+});
 },{"jquery":"node_modules/jquery/dist/jquery.js","popper.js":"node_modules/popper.js/dist/esm/popper.js","bootstrap":"node_modules/bootstrap/dist/js/bootstrap.js","./main.scss":"main.scss"}],"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -17232,7 +17263,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '59485' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '51243' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 

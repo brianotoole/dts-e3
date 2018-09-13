@@ -5270,7 +5270,8 @@ p,
   margin-top: 5rem;
   text-align: center;
   background-color: #e6e6e6;
-  border-radius: 0.5rem; }
+  border-radius: 0.5rem;
+  z-index: 2; }
   @media (min-width: 768px) {
     .profile {
       margin-top: 10rem; } }
