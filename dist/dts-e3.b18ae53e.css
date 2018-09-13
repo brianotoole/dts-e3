@@ -5283,9 +5283,6 @@ p,
   z-index: 30;
   -webkit-animation: fade_in_down 0.4s forwards;
           animation: fade_in_down 0.4s forwards; }
-  @media (min-width: 768px) {
-    .header-fixed {
-      padding: 1.875rem; } }
 
 .header-fixed .header-fixed-wrap {
   background: #e6e6e6;
@@ -5305,8 +5302,8 @@ p,
   margin-right: 1.875rem; }
   @media (min-width: 768px) {
     .header-fixed .profile__img {
-      width: 125px;
-      height: 125px; } }
+      width: 105px;
+      height: 105px; } }
 
 .header-fixed .profile__header {
   padding: 0.3125rem 0.9375rem; }

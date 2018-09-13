@@ -17,9 +17,6 @@
   z-index: 30;
   animation: fade_in_down 0.4s forwards;
   @extend .page-body__header;
-  @include media-breakpoint-up(md) {
-    padding: rem(30);
-  }
 }
 
 .header-fixed .header-fixed-wrap {
@@ -37,8 +34,8 @@
   height: 75px;
   margin-right: rem(30);
   @include media-breakpoint-up(md) {
-    width: 125px;
-    height: 125px;
+    width: 105px;
+    height: 105px;
   }
 }
 

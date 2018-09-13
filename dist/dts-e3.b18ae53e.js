@@ -17216,7 +17216,7 @@ window.$ = window.jQuery = _jquery2.default; /**********************************
 // Header fixed scroll
 (function ($) {
   var header = $(".header");
-  var profile = $(".page-body__header .profile__header");
+  var profile = $(".page-body__header .profile__header .profile__img");
   var profileTop = profile.offset().top;
   var profileHeight = profile.outerHeight();
   var visible = false;
@@ -17245,12 +17245,11 @@ window.$ = window.jQuery = _jquery2.default; /**********************************
   // we need value without precentage (4th match)
   var convertToRGB = getRGBValue(targetBgColor);
   var targetRGBString = 'rgba(' + convertToRGB.red + ',' + convertToRGB.green + ',' + convertToRGB.blue;
-  console.log(targetRGBString);
   //console.log(convertToRGB.red, convertToRGB.green, convertToRGB.blue);
 
   $(document).scroll(function (e) {
     var scrollPercent = (targetHeight - window.scrollY) / targetHeight;
-    if (scrollPercent >= 0.1) {
+    if (scrollPercent >= 0) {
       //target.css('opacity', scrollPercent);
       target.css('background-color', targetRGBString + ',' + scrollPercent);
     }
