@@ -5042,7 +5042,7 @@ hr {
 
 .page-body__header, .header-fixed {
   background-color: #ea8c2a;
-  background-image: url("bg-icons.421d38af.png");
+  background-image: url("bg-icons.98e73c60.png");
   background-position: center center;
   background-repeat: repeat;
   background-attachment: fixed;
@@ -5570,8 +5570,7 @@ p,
   border-radius: 0; }
 
 .nav-footer .nav__col {
-  min-width: 16.666666%;
-  border-color: #213552; }
+  min-width: 16.666666%; }
 
 .nav-footer .nav__btns a {
   padding: 0.9375rem 0 0.625rem;
