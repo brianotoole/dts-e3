@@ -5056,7 +5056,7 @@ hr {
   min-height: 500px;
   /* test for scrolling only */
   margin-top: -6.8125rem;
-  padding-top: 9.0625rem;
+  padding-top: 8.4375rem;
   background-color: #fff; }
   @media (min-width: 768px) {
     .page-body__content {
@@ -5486,12 +5486,20 @@ p,
   margin-left: 1.25rem; }
 
 .accordion .card .card-badge .badge {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #ea8c2a;
   color: #fff;
   border-radius: 50%;
   width: 30px;
-  height: 30px;
-  padding: 0.5rem; }
+  height: 30px; }
 
 .accordion .card .card-arrow {
   margin-right: -0.3125rem;
@@ -5558,6 +5566,32 @@ p,
 .accordion .card .card-inner-text-muted {
   color: rgba(0, 0, 0, 0.3); }
 
+.pagination-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+  margin-top: -10px; }
+
+.pagination-dot {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #d9d9d9; }
+  .pagination-dot-active {
+    background-color: #1a2940; }
+  .pagination-dot + .pagination-dot {
+    margin-left: 0.625rem; }
+
 /*********************************************************
   Footer / Nav Footer
 *********************************************************/
@@ -5574,7 +5608,7 @@ p,
   border-color: #213552; }
 
 .nav-footer .nav__btns a {
-  padding: 0.9375rem 0 0.625rem;
+  padding: 1.125rem 0 0.8125rem;
   color: #fff;
   border-radius: 0; }
   @media (min-width: 768px) {

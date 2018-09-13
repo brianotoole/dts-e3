@@ -45,7 +45,7 @@ hr {
   width: 100%;
   min-height: 500px; /* test for scrolling only */
   margin-top: rem(-109);
-  padding-top: rem(145);
+  padding-top: rem(135);
   background-color: $color__white;
   @include media-breakpoint-up(md) {
     margin-top: rem(-116);

@@ -44,12 +44,14 @@
 }
 
 .accordion .card .card-badge .badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: $color__primary;
   color: $color__white;
   border-radius: 50%;
   width: 30px;
   height: 30px;
-  padding: rem(8);
 }
 
 .accordion .card .card-arrow {
@@ -121,4 +123,27 @@
 
 .accordion .card .card-inner-text-muted {
   color: $color__muted;
+}
+
+// Pagination dots
+.pagination-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  margin-top: -10px;
+}
+
+.pagination-dot {
+  display: inline-flex;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: $color__border--dark;
+  &-active {
+    background-color: $color__secondary;
+  }
+  + .pagination-dot {
+    margin-left: rem(10);
+  }
 }
