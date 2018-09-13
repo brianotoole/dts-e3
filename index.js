@@ -9,14 +9,16 @@ import "bootstrap";
 import "./main.scss";
 
 // Header fixed scroll
-jQuery("document").ready(function($) {
+jQuery("document").ready(function ($) {
   var header = $(".header");
-  var scrollToEl = $("#js-scroll-to");
+  var profile = $(".profile");
+  var profileTop = profile.offset().top;
+  var profileHeight = profile.outerHeight();
   var visible = false;
 
-  $(window).scroll(function() {
+  $(window).scroll(function () {
 
-    if ($(this).scrollTop() >= scrollToEl.offset().top) {
+    if ($(this).scrollTop() >= (profileTop + profileHeight)) {
       header.addClass("header-fixed");
       if (!visible) {
         visible = true;

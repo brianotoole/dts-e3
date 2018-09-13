@@ -17216,12 +17216,14 @@ window.$ = window.jQuery = _jquery2.default; /**********************************
 // Header fixed scroll
 jQuery("document").ready(function ($) {
   var header = $(".header");
-  var scrollToEl = $("#js-scroll-to");
+  var profile = $(".profile");
+  var profileTop = profile.offset().top;
+  var profileHeight = profile.outerHeight();
   var visible = false;
 
   $(window).scroll(function () {
 
-    if ($(this).scrollTop() >= scrollToEl.offset().top) {
+    if ($(this).scrollTop() >= profileTop + profileHeight) {
       header.addClass("header-fixed");
       if (!visible) {
         visible = true;
@@ -17263,7 +17265,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '51243' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '51392' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
