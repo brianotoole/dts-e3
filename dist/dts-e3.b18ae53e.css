@@ -5258,9 +5258,15 @@ p,
 /*********************************************************
   Utility
 *********************************************************/
+.u-m-x {
+  margin: 0 auto !important; }
+
 @media (max-width: 576px) {
   .u-sm-m-x {
     margin: 0 auto !important; } }
+
+.u-p-0 {
+  padding: 0 !important; }
 
 @media (max-width: 576px) {
   .u-sm-p-0 {
@@ -5516,6 +5522,10 @@ p,
 .accordion .card .card-header,
 .accordion .card .card-body {
   padding: 0 1.875rem; }
+  @media (min-width: 576px) {
+    .accordion .card .card-header,
+    .accordion .card .card-body {
+      padding: 0; } }
 
 .accordion .card .card-body {
   background-color: #e6e6e6;

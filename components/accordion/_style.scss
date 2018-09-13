@@ -66,6 +66,9 @@
 .accordion .card .card-header,
 .accordion .card .card-body {
   padding: 0 rem(30);
+  @include media-breakpoint-up(sm) {
+    padding: 0;
+  }
 }
 
 .accordion .card .card-body {

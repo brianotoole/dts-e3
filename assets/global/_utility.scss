@@ -2,6 +2,9 @@
   Utility
 *********************************************************/
 
+.u-m-x {
+  margin: 0 auto !important;
+}
 
 .u-sm-m-x {
   @media (max-width: 576px) {
@@ -9,6 +12,10 @@
   }
 }
 
+
+.u-p-0 {
+  padding: 0 !important;
+}
 
 .u-sm-p-0 {
   @media (max-width: 576px) {
