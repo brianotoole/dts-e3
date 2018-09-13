@@ -21,7 +21,7 @@ $profile-img-width: 105px;
   padding-top: rem($profile-img-width - 60); // padding for img
 }
 
-.profile--has-img img {
+.profile--has-img .profile__img {
   position: absolute;
   width: $profile-img-width;
   height: auto;
@@ -36,7 +36,7 @@ $profile-img-width: 105px;
   }
 }
 
-.profile__body {
+.profile__header {
   padding: rem(20);
 }
 
