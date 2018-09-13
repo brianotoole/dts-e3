@@ -10,10 +10,12 @@
   display: block;
   position: fixed;
   width: 100%;
+  height: auto;
   left: 0;
   top: 0;
   padding: rem(15);
   z-index: 30;
+  animation: fade_in_down 0.4s forwards;
   @extend .page-body__header;
   @include media-breakpoint-up(md) {
     padding: rem(30);
@@ -31,8 +33,8 @@
 }
 
 .header-fixed .profile__img {
-  width: 105px;
-  height: 105px;
+  width: 75px;
+  height: 75px;
   margin-right: rem(30);
   @include media-breakpoint-up(md) {
     width: 125px;
@@ -41,6 +43,15 @@
 }
 
 .header-fixed .profile__header {
-  padding: rem(15);
+  padding: rem(5) rem(15);
 }
 
+
+@keyframes fade_in_down {
+	0% {
+		transform: translateY(-40px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}

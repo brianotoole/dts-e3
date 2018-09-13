@@ -31,7 +31,9 @@ hr {
 
 .page-body__header {
   background-color: $color__primary;
-  background: $color__primary url('./assets/global/images/bg-icons.png') center center repeat;
+  background-image: url('./assets/global/images/bg-icons.png');
+  background-position: center center;
+  background-repeat: repeat;
   background-attachment: fixed;
   background-size: contain;
   @include media-breakpoint-up(md) {
@@ -40,7 +42,8 @@ hr {
 }
 
 .page-body__content {
-  min-height: 500px; /* test only */
+  width: 100%;
+  min-height: 900px; /* test for scrolling only */
   margin-top: rem(-109);
   padding-top: rem(145);
   background-color: $color__white;
