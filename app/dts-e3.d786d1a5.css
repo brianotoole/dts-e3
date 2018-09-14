@@ -5042,7 +5042,7 @@ hr {
 
 .page-body__header, .header-fixed {
   background-color: #ea8c2a;
-  background-image: url("bg-icons.421d38af.png");
+  background-image: url("bg-icons.98e73c60.png");
   background-position: center center;
   background-repeat: repeat;
   background-attachment: fixed;
@@ -5319,13 +5319,6 @@ p,
 
 .header-fixed .profile__header {
   padding: 0.3125rem 0.9375rem; }
-
-.header-fixed .profile__title,
-.header-fixed .profile__text--employee-number {
-  margin-bottom: -0.125rem; }
-
-.header-fixed .profile__text--employee-years {
-  margin-bottom: 0.125rem; }
 
 .page-body__header .profile, .header-fixed .profile {
   -webkit-transition: 0.3s linear;

@@ -49,6 +49,15 @@
   padding: rem(5) rem(15);
 }
 
+.header-fixed .profile__title,
+.header-fixed .profile__text--employee-number {
+  margin-bottom: rem(-2);
+}
+
+.header-fixed .profile__text--employee-years {
+  margin-bottom: rem(2);
+}
+
 .page-body__header .profile {
   transition: 0.3s linear;
   &.push-up {
