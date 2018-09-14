@@ -15,7 +15,7 @@
   top: 0;
   padding: rem(15);
   z-index: 30;
-  animation: fade_in_down 0.4s forwards;
+  animation: slideInDown 0.3s forwards;
   @extend .page-body__header;
 }
 
@@ -39,15 +39,55 @@
   }
 }
 
+.header-fixed .profile__img,
+.header-fixed .profile__content {
+  opacity: 0;
+  animation: slideInUp 0.3s 0.05s forwards;
+}
+
 .header-fixed .profile__header {
   padding: rem(5) rem(15);
 }
 
-@keyframes fade_in_down {
-	0% {
-		transform: translateY(-40px);
-	}
-	100% {
-		transform: translateY(0px);
-	}
+@keyframes slideInDown {
+  from {
+    transform: translate3d(0, -100%, 0);
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translate3d(-100%, 0, 0);
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+
+@keyframes slideInUp {
+  from {
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+    opacity: 0;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+    opacity: 1;
+  }
 }

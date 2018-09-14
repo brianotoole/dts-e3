@@ -17216,14 +17216,14 @@ window.$ = window.jQuery = _jquery2.default; /**********************************
 // Header fixed scroll
 (function ($) {
   var header = $(".header");
-  var profile = $(".page-body__header .profile__header .profile__img");
+  var profile = $(".page-body__header .profile");
   var profileTop = profile.offset().top;
   var profileHeight = profile.outerHeight();
   var visible = false;
 
   $(window).scroll(function () {
 
-    if ($(this).scrollTop() >= profileTop + profileHeight) {
+    if ($(this).scrollTop() >= profileTop) {
       header.addClass("header-fixed");
       if (!visible) {
         visible = true;
@@ -17238,20 +17238,31 @@ window.$ = window.jQuery = _jquery2.default; /**********************************
 })(jQuery);
 
 (function ($) {
-  var target = $('.page-body__header');
-  var targetBgColor = target.css('backgroundColor'); // returns rgba value: rgb(234, 140, 42)
-  var targetHeight = target.outerHeight();
+
+  // Header
+  var targetHeader = $('.page-body__header');
+  var targetHeaderBgColor = targetHeader.css('backgroundColor'); // returns rgba value: rgb(234, 140, 42)
+  var targetHeaderHeight = targetHeader.outerHeight();
+
+  // Profile image
+  var targetProfileImage = $('.page-body__header .profile__img, .page-body__header .profile__content');
+  var targetProfileImageHeight = targetProfileImage.outerHeight();
 
   // we need value without precentage (4th match)
-  var convertToRGB = getRGBValue(targetBgColor);
+  var convertToRGB = getRGBValue(targetHeaderBgColor);
   var targetRGBString = 'rgba(' + convertToRGB.red + ',' + convertToRGB.green + ',' + convertToRGB.blue;
   //console.log(convertToRGB.red, convertToRGB.green, convertToRGB.blue);
 
   $(document).scroll(function (e) {
-    var scrollPercent = (targetHeight - window.scrollY) / targetHeight;
+    var scrollPercent = (targetHeaderHeight - window.scrollY) / targetHeaderHeight;
     if (scrollPercent >= 0) {
       //target.css('opacity', scrollPercent);
-      target.css('background-color', targetRGBString + ',' + scrollPercent);
+      targetHeader.css('background-color', targetRGBString + ',' + scrollPercent);
+    }
+    var scrollPercent = (targetProfileImageHeight - window.scrollY) / targetProfileImageHeight;
+    if (scrollPercent >= 0) {
+      //target.css('opacity', scrollPercent);
+      targetProfileImage.css('transform', 'scale(' + scrollPercent + ')');
     }
   });
 })(jQuery);
@@ -17293,7 +17304,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '54024' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '55653' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 

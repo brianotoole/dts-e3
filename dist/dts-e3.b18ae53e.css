@@ -5287,8 +5287,8 @@ p,
   top: 0;
   padding: 0.9375rem;
   z-index: 30;
-  -webkit-animation: fade_in_down 0.4s forwards;
-          animation: fade_in_down 0.4s forwards; }
+  -webkit-animation: slideInDown 0.3s forwards;
+          animation: slideInDown 0.3s forwards; }
 
 .header-fixed .header-fixed-wrap {
   background: #e6e6e6;
@@ -5311,24 +5311,86 @@ p,
       width: 105px;
       height: 105px; } }
 
+.header-fixed .profile__img,
+.header-fixed .profile__content {
+  opacity: 0;
+  -webkit-animation: slideInUp 0.3s 0.05s forwards;
+          animation: slideInUp 0.3s 0.05s forwards; }
+
 .header-fixed .profile__header {
   padding: 0.3125rem 0.9375rem; }
 
-@-webkit-keyframes fade_in_down {
-  0% {
-    -webkit-transform: translateY(-40px);
-            transform: translateY(-40px); }
-  100% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px); } }
+@-webkit-keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+    visibility: hidden;
+    opacity: 0; }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    visibility: visible;
+    opacity: 1; } }
 
-@keyframes fade_in_down {
-  0% {
-    -webkit-transform: translateY(-40px);
-            transform: translateY(-40px); }
-  100% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px); } }
+@keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+    visibility: hidden;
+    opacity: 0; }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    visibility: visible;
+    opacity: 1; } }
+
+@-webkit-keyframes slideInLeft {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+    visibility: hidden;
+    opacity: 0; }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    visibility: visible;
+    opacity: 1; } }
+
+@keyframes slideInLeft {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+    visibility: hidden;
+    opacity: 0; }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    visibility: visible;
+    opacity: 1; } }
+
+@-webkit-keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+    visibility: visible;
+    opacity: 0; }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    visibility: visible;
+    opacity: 1; } }
+
+@keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+    visibility: visible;
+    opacity: 0; }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    visibility: visible;
+    opacity: 1; } }
 
 /*********************************************************
   Profile
