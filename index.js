@@ -18,7 +18,8 @@ import "./main.scss";
 
   $(window).scroll(function () {
 
-    if ($(this).scrollTop() >= (profileTop + profileHeight)) {
+    //if ($(this).scrollTop() >= (profileTop + profileHeight)) {
+    if ($(this).scrollTop() >= profileTop) {
       header.addClass("header-fixed");
       if (!visible) {
         visible = true;
