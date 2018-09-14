@@ -12,7 +12,7 @@ import "./main.scss";
 /*
 (function ($) {
   var header = $(".header");
-  var profile = $(".page-body__header .profile");
+  var profile = $(".page-body__header .profile__header");
   var profileTop = profile.offset().top;
   var profileHeight = profile.outerHeight();
   var visible = false;
@@ -57,7 +57,7 @@ import "./main.scss";
 
   $(document).scroll(function (e) {
     var scrollPercent = (targetHeaderHeight - window.scrollY) / targetHeaderHeight;
-    if (scrollPercent >= 0) {
+    if (scrollPercent >= 0.9) {
       //target.css('opacity', scrollPercent);
       //targetHeader.css('background-color', targetRGBString + ',' + scrollPercent);
     }
@@ -74,6 +74,7 @@ import "./main.scss";
 
 
 })(jQuery);
+
 
 function getRGBValue(str) {
   var match = str.match(/rgba?\((\d{1,3}), ?(\d{1,3}), ?(\d{1,3})\)?(?:, ?(\d(?:\.\d?))\))?/);
