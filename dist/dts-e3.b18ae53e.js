@@ -17217,7 +17217,7 @@ window.$ = window.jQuery = _jquery2.default; /**********************************
 /*
 (function ($) {
   var header = $(".header");
-  var profile = $(".page-body__header .profile");
+  var profile = $(".page-body__header .profile__header");
   var profileTop = profile.offset().top;
   var profileHeight = profile.outerHeight();
   var visible = false;
@@ -17262,7 +17262,7 @@ window.$ = window.jQuery = _jquery2.default; /**********************************
 
   $(document).scroll(function (e) {
     var scrollPercent = (targetHeaderHeight - window.scrollY) / targetHeaderHeight;
-    if (scrollPercent >= 0) {
+    if (scrollPercent >= 0.9) {
       //target.css('opacity', scrollPercent);
       //targetHeader.css('background-color', targetRGBString + ',' + scrollPercent);
     }
@@ -17315,7 +17315,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '59371' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '62858' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
