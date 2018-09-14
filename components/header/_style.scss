@@ -60,7 +60,7 @@
 }
 
 .page-body__header .profile {
-  transition: 0.3s linear;
+  transition: transform 0.3s linear;
   &.push-up {
     transform: translateY(-40px);
     margin-bottom: -40px;
