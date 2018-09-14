@@ -17214,6 +17214,7 @@ window.$ = window.jQuery = _jquery2.default; /**********************************
 
 
 // Header fixed scroll
+/*
 (function ($) {
   var header = $(".header");
   var profile = $(".page-body__header .profile");
@@ -17221,31 +17222,37 @@ window.$ = window.jQuery = _jquery2.default; /**********************************
   var profileHeight = profile.outerHeight();
   var visible = false;
 
-  $(window).scroll(function () {
 
-    if ($(this).scrollTop() >= profileTop) {
-      header.addClass("header-fixed");
-      if (!visible) {
-        visible = true;
+    $(window).scroll(function () {
+
+      if ($(this).scrollTop() >= profileTop) {
+        header.addClass("header-fixed");
+        if (!visible) {
+          visible = true;
+        }
+      } else {
+        header.removeClass("header-fixed");
+        if (visible) {
+          visible = false;
+        }
       }
-    } else {
-      header.removeClass("header-fixed");
-      if (visible) {
-        visible = false;
-      }
-    }
-  });
-})(jQuery);
+
+    });
+
+  })(jQuery);
+  */
 
 (function ($) {
 
   // Header
+  var fixedHeader = $(".header");
+  var profile = $('.page-body__header .profile');
   var targetHeader = $('.page-body__header');
   var targetHeaderBgColor = targetHeader.css('backgroundColor'); // returns rgba value: rgb(234, 140, 42)
   var targetHeaderHeight = targetHeader.outerHeight();
 
   // Profile image
-  var targetProfileImage = $('.page-body__header .profile__img, .page-body__header .profile__content');
+  var targetProfileImage = $('.page-body__header .profile__img');
   var targetProfileImageHeight = targetProfileImage.outerHeight();
 
   // we need value without precentage (4th match)
@@ -17257,12 +17264,16 @@ window.$ = window.jQuery = _jquery2.default; /**********************************
     var scrollPercent = (targetHeaderHeight - window.scrollY) / targetHeaderHeight;
     if (scrollPercent >= 0) {
       //target.css('opacity', scrollPercent);
-      targetHeader.css('background-color', targetRGBString + ',' + scrollPercent);
+      //targetHeader.css('background-color', targetRGBString + ',' + scrollPercent);
     }
     var scrollPercent = (targetProfileImageHeight - window.scrollY) / targetProfileImageHeight;
-    if (scrollPercent >= 0) {
-      //target.css('opacity', scrollPercent);
+    if (scrollPercent >= 0.5) {
+      fixedHeader.removeClass("header-fixed");
+      profile.removeClass("push-up");
       targetProfileImage.css('transform', 'scale(' + scrollPercent + ')');
+    } else {
+      fixedHeader.addClass("header-fixed");
+      profile.addClass("push-up");
     }
   });
 })(jQuery);
@@ -17304,7 +17315,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '55653' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '59371' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 

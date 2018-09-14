@@ -5392,6 +5392,13 @@ p,
     visibility: visible;
     opacity: 1; } }
 
+.page-body__header .profile, .header-fixed .profile {
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear; }
+  .page-body__header .profile.push-up, .header-fixed .profile.push-up {
+    -webkit-transform: translateY(-60px);
+            transform: translateY(-60px); }
+
 /*********************************************************
   Profile
 *********************************************************/

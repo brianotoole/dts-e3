@@ -9,6 +9,7 @@ import "bootstrap";
 import "./main.scss";
 
 // Header fixed scroll
+/*
 (function ($) {
   var header = $(".header");
   var profile = $(".page-body__header .profile");
@@ -16,34 +17,37 @@ import "./main.scss";
   var profileHeight = profile.outerHeight();
   var visible = false;
 
-  $(window).scroll(function () {
 
-    if ($(this).scrollTop() >= profileTop) {
-      header.addClass("header-fixed");
-      if (!visible) {
-        visible = true;
+    $(window).scroll(function () {
+
+      if ($(this).scrollTop() >= profileTop) {
+        header.addClass("header-fixed");
+        if (!visible) {
+          visible = true;
+        }
+      } else {
+        header.removeClass("header-fixed");
+        if (visible) {
+          visible = false;
+        }
       }
-    } else {
-      header.removeClass("header-fixed");
-      if (visible) {
-        visible = false;
-      }
-    }
 
-  });
+    });
 
-})(jQuery);
-
+  })(jQuery);
+  */
 
 (function ($) {
 
   // Header
+  var fixedHeader = $(".header");
+  var profile = $('.page-body__header .profile');
   var targetHeader = $('.page-body__header');
   var targetHeaderBgColor = targetHeader.css('backgroundColor'); // returns rgba value: rgb(234, 140, 42)
   var targetHeaderHeight = targetHeader.outerHeight();
 
   // Profile image
-  var targetProfileImage = $('.page-body__header .profile__img, .page-body__header .profile__content');
+  var targetProfileImage = $('.page-body__header .profile__img');
   var targetProfileImageHeight = targetProfileImage.outerHeight();
 
   // we need value without precentage (4th match)
@@ -55,12 +59,16 @@ import "./main.scss";
     var scrollPercent = (targetHeaderHeight - window.scrollY) / targetHeaderHeight;
     if (scrollPercent >= 0) {
       //target.css('opacity', scrollPercent);
-      targetHeader.css('background-color', targetRGBString + ',' + scrollPercent);
+      //targetHeader.css('background-color', targetRGBString + ',' + scrollPercent);
     }
     var scrollPercent = (targetProfileImageHeight - window.scrollY) / targetProfileImageHeight;
-    if (scrollPercent >= 0) {
-      //target.css('opacity', scrollPercent);
+    if (scrollPercent >= 0.5) {
+      fixedHeader.removeClass("header-fixed");
+      profile.removeClass("push-up");
       targetProfileImage.css('transform', 'scale(' + scrollPercent + ')');
+    } else {
+      fixedHeader.addClass("header-fixed");
+      profile.addClass("push-up");
     }
   });
 
