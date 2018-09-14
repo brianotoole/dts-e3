@@ -49,8 +49,12 @@ $profile-img-width: 105px;
   font-weight: bold;
 }
 
-.card__title--employee-title {
+.profile__title--employee-title {
   padding-top: rem(10);
+}
+
+.profile__text--employee-number {
+  margin-bottom: rem(-2);
 }
 
 // Nav - Default
