@@ -11,14 +11,14 @@ import "./main.scss";
 // Header fixed scroll
 (function ($) {
   var header = $(".header");
-  var profile = $(".page-body__header .profile");
+  var profile = $(".page-body__header .profile__header");
   var profileTop = profile.offset().top;
   var profileHeight = profile.outerHeight();
   var visible = false;
 
   $(window).scroll(function () {
 
-    if ($(this).scrollTop() >= profileTop) {
+    if ($(this).scrollTop() >= (profileTop + profileHeight)) {
       header.addClass("header-fixed");
       if (!visible) {
         visible = true;
@@ -53,12 +53,12 @@ import "./main.scss";
 
   $(document).scroll(function (e) {
     var scrollPercent = (targetHeaderHeight - window.scrollY) / targetHeaderHeight;
-    if (scrollPercent >= 0) {
+    if (scrollPercent >= 0.9) {
       //target.css('opacity', scrollPercent);
       targetHeader.css('background-color', targetRGBString + ',' + scrollPercent);
     }
     var scrollPercent = (targetProfileImageHeight - window.scrollY) / targetProfileImageHeight;
-    if (scrollPercent >= 0) {
+    if (scrollPercent >= 0.75) {
       //target.css('opacity', scrollPercent);
       targetProfileImage.css('transform', 'scale(' + scrollPercent + ')');
     }
@@ -66,6 +66,7 @@ import "./main.scss";
 
 
 })(jQuery);
+
 
 function getRGBValue(str) {
   var match = str.match(/rgba?\((\d{1,3}), ?(\d{1,3}), ?(\d{1,3})\)?(?:, ?(\d(?:\.\d?))\))?/);
