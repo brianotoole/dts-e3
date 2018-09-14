@@ -49,6 +49,15 @@
   padding: rem(5) rem(15);
 }
 
+.page-body__header .profile {
+  transition: 0.3s linear;
+  &.push-up {
+    transform: translateY(-40px);
+    margin-bottom: -40px;
+  }
+}
+
+
 @keyframes slideInDown {
   from {
     transform: translate3d(0, -100%, 0);
@@ -89,12 +98,5 @@
     transform: translate3d(0, 0, 0);
     visibility: visible;
     opacity: 1;
-  }
-}
-
-.page-body__header .profile {
-  transition: 0.3s linear;
-  &.push-up {
-    transform: translateY(-40px);
   }
 }
