@@ -13,6 +13,7 @@ import "bootstrap";
 
 // components
 require("./components/header/header.js");
+require("./components/sidebar/sidebar.js");
 
 //import MobileMenu from './MobileMenu';
 //import Modal from './Modal';
