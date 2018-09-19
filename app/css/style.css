@@ -4892,7 +4892,16 @@ p,
 *********************************************************/
 .org-card {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem; }
+
+.org-card + .org-card {
+  margin-top: 0.625rem;
+  border: 0; }
+  @media (min-width: 768px) {
+    .org-card + .org-card {
+      margin-top: 1.25rem; } }
 
 .org-card .card-header .profile__img {
   width: 75px;

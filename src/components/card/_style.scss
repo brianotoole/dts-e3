@@ -61,6 +61,16 @@
 .org-card {
   display: flex;
   align-items: center;
+  border-top-left-radius: $border-radius;
+  border-bottom-left-radius: $border-radius;
+}
+
+.org-card + .org-card {
+  margin-top: rem(10);
+  border: 0;
+  @include media-breakpoint-up(md) {
+    margin-top: rem(20);
+  }
 }
 
 .org-card .card-header .profile__img {
