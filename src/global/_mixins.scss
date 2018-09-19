@@ -2,7 +2,7 @@
     Px to Rem Conversion
     Usage: .class {font-size: rem(18)}
 *********************************************************/
-$baseFontSize : 16; 
+$baseFontSize: 16;
 @function rem($pixels, $context: $baseFontSize) {
   @if (unitless($pixels)) {
     $pixels: $pixels * 1px;
@@ -12,7 +12,6 @@ $baseFontSize : 16;
   }
   @return $pixels / $context * 1rem;
 }
-
 
 /*********************************************************
     Media Query Breakpoints
@@ -41,9 +40,17 @@ $baseFontSize : 16;
 //    md
 //    >> breakpoint-next(sm, $breakpoint-names: (xs sm md lg xl))
 //    md
-@function breakpoint-next($name, $breakpoints: $grid-breakpoints, $breakpoint-names: map-keys($breakpoints)) {
+@function breakpoint-next(
+  $name,
+  $breakpoints: $grid-breakpoints,
+  $breakpoint-names: map-keys($breakpoints)
+) {
   $n: index($breakpoint-names, $name);
-  @return if($n < length($breakpoint-names), nth($breakpoint-names, $n + 1), null);
+  @return if(
+    $n < length($breakpoint-names),
+    nth($breakpoint-names, $n + 1),
+    null
+  );
 }
 
 // Minimum breakpoint width. Null for the smallest (first) breakpoint.
@@ -66,7 +73,7 @@ $baseFontSize : 16;
 //    767.98px
 @function breakpoint-max($name, $breakpoints: $grid-breakpoints) {
   $next: breakpoint-next($name, $breakpoints);
-  @return if($next, breakpoint-min($next, $breakpoints) - .02px, null);
+  @return if($next, breakpoint-min($next, $breakpoints) - 0.02px, null);
 }
 
 // Returns a blank string if smallest breakpoint, otherwise returns the name with a dash in front.
@@ -108,7 +115,11 @@ $baseFontSize : 16;
 
 // Media that spans multiple breakpoint widths.
 // Makes the @content apply between the min and max breakpoints
-@mixin media-breakpoint-between($lower, $upper, $breakpoints: $grid-breakpoints) {
+@mixin media-breakpoint-between(
+  $lower,
+  $upper,
+  $breakpoints: $grid-breakpoints
+) {
   $min: breakpoint-min($lower, $breakpoints);
   $max: breakpoint-max($upper, $breakpoints);
 
@@ -146,36 +157,5 @@ $baseFontSize : 16;
     @include media-breakpoint-down($name, $breakpoints) {
       @content;
     }
-  }
-}
-
-
-/// Mixin to customize scrollbars
-/// Beware, this does not work in all browsers
-/// @author Hugo Giraudel
-/// @param {Length} $size - Horizontal scrollbar's height and vertical scrollbar's width
-/// @param {Color} $foreground-color - Scrollbar's color
-/// @param {Color} $background-color [mix($foreground-color, white, 50%)] - Scrollbar's color
-/// @example scss - Scrollbar styling
-///   @include scrollbars(.5em, slategray);
-@mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, white,  50%)) {
-  // For Google Chrome
-  ::-webkit-scrollbar {
-      width:  $size;
-      height: $size;
-  }
-
-  ::-webkit-scrollbar-thumb {
-      background: $foreground-color;
-  }
-
-  ::-webkit-scrollbar-track {
-      background: $background-color;
-  }
-
-  // For Internet Explorer
-  body {
-    scrollbar-face-color: $foreground-color;
-    scrollbar-track-color: $background-color;
   }
 }

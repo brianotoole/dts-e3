@@ -4224,20 +4224,6 @@ body {
   font-family: "Open Sans", sans-serif;
   overflow-x: hidden; }
 
-::-webkit-scrollbar {
-  width: 0.5em;
-  height: 0.5em; }
-
-::-webkit-scrollbar-thumb {
-  background: #1a2940; }
-
-::-webkit-scrollbar-track {
-  background: #8d94a0; }
-
-body {
-  scrollbar-face-color: #1a2940;
-  scrollbar-track-color: #8d94a0; }
-
 a {
   text-decoration: none;
   color: #ea8c2a;

@@ -9,8 +9,6 @@ body {
   overflow-x: hidden;
 }
 
-@include scrollbars(.5em, $color__secondary);
-
 a {
   text-decoration: none;
   color: $color__primary;
