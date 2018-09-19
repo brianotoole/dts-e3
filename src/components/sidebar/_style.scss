@@ -2,21 +2,6 @@
   Sidebar
 *********************************************************/
 
-.overlay {
-  display: none;
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.8);
-  z-index: 998;
-  opacity: 0;
-  transition: all 0.5s ease-in-out;
-  &.sidebar-active {
-    display: block;
-    opacity: 1;
-  }
-}
-
 .sidebar {
   transition: all 0.3s ease-in-out;
 }
@@ -25,22 +10,110 @@
   display: block !important;
   position: fixed;
   top: 0;
-  left: -300px;
+  left: -250px;
   bottom: 0;
   z-index: 10000;
-  width: 300px;
+  width: 250px;
   height: 100vh !important;
   margin: 0;
   background-color: inherit;
   border: none;
   box-shadow: none;
+  overflow-y: auto;
   transition: all 0.3s ease-in-out;
 }
 
 .sidebar-collapse.sidebar-active {
-  transform: translate3d(-300px, 0, 0);
+  transform: translate3d(-250px, 0, 0);
 }
 
 body.sidebar-active .sidebar-collapse {
-  transform: translate3d(300px, 0, 0);
+  transform: translate3d(250px, 0, 0);
+}
+
+// Overlay on body when sidebar is open
+.overlay {
+  display: none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 9;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  &.sidebar-active {
+    display: block;
+    opacity: 1;
+  }
+}
+
+// Sidebar nav
+.nav-sidebar {
+  background-color: $color__white;
+  color: $color__text;
+}
+
+.nav-sidebar .nav-item {
+  padding: rem(20);
+}
+
+.nav-sidebar .nav-item + .nav-item {
+  border-top: 2px solid $color__border;
+}
+
+.nav-sidebar .nav-item a {
+  color: $color__text;
+  text-decoration: none;
+  font-size: rem(14);
+}
+
+.nav-sidebar-submenu {
+  list-style-type: none;
+  text-align: right;
+}
+
+.nav-sidebar-submenu .nav-item {
+  list-style-type: none;
+  text-align: right;
+  padding: rem(10);
+}
+
+.nav-item-accordion a {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-item-accordion .accordion-arrow {
+  margin-top: rem(-6);
+  margin-bottom: rem(-15);
+}
+
+.accordion-sidebar {
+  padding-bottom: 0;
+}
+
+// Sidebar nav footer
+.nav-sidebar-footer {
+  //position: absolute;
+  //top: calc(100vh - 150px);
+}
+
+.nav-sidebar-footer .btn-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-top: 2px solid $color__border--light;
+  border-bottom: 2px solid $color__border--light;
+}
+
+.nav-sidebar-footer .btn-wrapper .btn {
+  padding: rem(30) 0;
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+  font-size: rem(14);
+  white-space: normal;
+  + .btn {
+    border-left: 2px solid $color__border--light;
+  }
 }

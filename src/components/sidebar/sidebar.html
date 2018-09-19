@@ -1,9 +1,45 @@
 <div class="sidebar collapse sidebar-collapse" id="sidebar-collapse">
-  <div class="container-fluid">
-    <ul class="nav nav-sidebar navbar-nav">
-      sidebar nav
-    </ul>
-  </div><!-- /.container-fluid -->
+  <ul class="nav nav-sidebar navbar-nav">
+
+    <!-- Regular Nav item -->
+    <li class="nav-item"><a>Link 1</a></li>
+
+    <!-- Regular Nav item -->
+    <li class="nav-item"><a>Link 2</a></li>
+
+    <!-- Regular Nav item -->
+    <li class="nav-item"><a>Link 3</a></li>
+
+    <!-- Accordion item within Nav -->
+    <li class="nav-item nav-item-accordion">
+      <div class="accordion-sidebar">
+        <a class="collapsed" href="#accordion-sidebar-1" data-toggle="collapse"
+          data-target="#accordion-sidebar-1" aria-expanded="false"
+          aria-controls="accordion-sidebar-1">
+          Link 4
+          <i class="accordion-arrow material-icons">keyboard_arrow_down</i>
+        </a><!-- /.collapsed -->
+      </div><!-- /.accordion.accordion-sidebar -->
+      <div id="accordion-sidebar-1" class="collapse" data-parent="#accordion">
+        <ul class="nav-sidebar-submenu">
+          <li class="nav-item"><a href="#">Sub Menu Item</a></li>
+          <li class="nav-item"><a href="#">Sub Menu Item</a></li>
+          <li class="nav-item"><a href="#">Sub Menu Item</a></li>
+        </ul>
+      </div><!-- /#accordion-nav-1 -->
+    </li><!-- /.nav-item -->
+    <!-- /Accordion Item within Nav-->
+
+  </ul><!-- /.nav.nav-sidebar -->
+
+  <div class="nav-sidebar-footer">
+    <div class="btn-wrapper" role="group">
+      <a href="#" class="btn btn-white">Log Out</a>
+      <a href="#" class="btn btn-white">Change User</a>
+    </div><!-- /.btn-wrapper -->
+  </div><!-- /.nav-sidebar-footer -->
+
 </div><!-- /.sidebar.sidebar-collapse -->
 
+<!-- needed for overlay on body when sidebar is open-->
 <div class="overlay"></div>

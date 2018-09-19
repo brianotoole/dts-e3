@@ -3014,7 +3014,7 @@ button.bg-dark:focus {
 .shadow-sm {
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important; }
 
-.shadow, .accordion .card .card-inner {
+.shadow, .accordion .card-inner {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important; }
 
 .shadow-lg {
@@ -4464,7 +4464,12 @@ p,
   Buttons
 *********************************************************/
 .btn {
-  border: 0; }
+  border: 0;
+  border-radius: 0; }
+
+.btn-white {
+  background: #fff;
+  color: #111; }
 
 /*********************************************************
   Utility
@@ -4746,7 +4751,7 @@ p,
 .accordion .card:first-child {
   padding-top: 0; }
 
-.accordion .card .card-title {
+.accordion .card-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -4755,16 +4760,12 @@ p,
   color: #111;
   font-weight: 300; }
 
-.accordion .card .collapsed .card-arrow {
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg); }
-
-.accordion .card .card-badge {
+.accordion .card-badge {
   display: flex;
   flex: 1 0 auto;
   margin-left: 1.25rem; }
 
-.accordion .card .card-badge .badge {
+.accordion .card-badge .badge {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -4774,7 +4775,13 @@ p,
   width: 30px;
   height: 30px; }
 
-.accordion .card .card-arrow {
+.accordion .collapsed .card-arrow,
+.collapsed .accordion-arrow {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg); }
+
+.accordion .card-arrow,
+.accordion-arrow {
   margin-right: -0.3125rem;
   margin-top: 0.375rem;
   font-size: 2.5rem;
@@ -4785,43 +4792,43 @@ p,
   transition: 0.15s transform ease-in-out;
   transition: 0.15s transform ease-in-out, 0.15s -webkit-transform ease-in-out; }
 
-.accordion .card .card-header,
-.accordion .card .card-body {
+.accordion .card-header,
+.accordion .card-body {
   padding: 0 1.875rem; }
   @media (min-width: 576px) {
-    .accordion .card .card-header,
-    .accordion .card .card-body {
+    .accordion .card-header,
+    .accordion .card-body {
       padding: 0; } }
 
-.accordion .card .card-body {
+.accordion .card-body {
   background-color: #e6e6e6;
   padding: 1.875rem; }
 
-.accordion .card .card-body + .card-body {
+.accordion .card-body + .card-body {
   padding-top: 0rem; }
 
-.accordion .card .card-inner {
+.accordion .card-inner {
   background: #fff;
   border-radius: 0.5rem; }
-  .accordion .card .card-inner.card-inner-active {
+  .accordion .card-inner.card-inner-active {
     border-left: 8px solid #ea8c2a; }
 
-.accordion .card .card-inner .card-inner-body {
+.accordion .card-inner .card-inner-body {
   padding: 0.625rem; }
 
-.accordion .card .card-inner .card-inner-body .card-inner-title,
-.accordion .card .card-inner .card-inner-body .card-inner-subtitle {
+.accordion .card-inner .card-inner-body .card-inner-title,
+.accordion .card-inner .card-inner-body .card-inner-subtitle {
   font-weight: bold;
   color: #111; }
 
-.accordion .card .card-inner .card-inner-body .card-inner-title {
+.accordion .card-inner .card-inner-body .card-inner-title {
   margin-bottom: 0.9375rem; }
 
-.accordion .card .card-inner-text {
+.accordion .card-inner-text {
   font-size: 0.8125rem;
   color: #111; }
   @media (min-width: 576px) {
-    .accordion .card .card-inner-text {
+    .accordion .card-inner-text {
       font-size: 0.875rem; } }
 
 .accordion .card .card-inner-text-muted {
@@ -4920,19 +4927,6 @@ p,
 /*********************************************************
   Sidebar
 *********************************************************/
-.overlay {
-  display: none;
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.8);
-  z-index: 998;
-  opacity: 0;
-  transition: all 0.5s ease-in-out; }
-  .overlay.sidebar-active {
-    display: block;
-    opacity: 1; }
-
 .sidebar {
   transition: all 0.3s ease-in-out; }
 
@@ -4940,31 +4934,98 @@ p,
   display: block !important;
   position: fixed;
   top: 0;
-  left: -300px;
+  left: -250px;
   bottom: 0;
   z-index: 10000;
-  width: 300px;
+  width: 250px;
   height: 100vh !important;
   margin: 0;
   background-color: inherit;
   border: none;
   box-shadow: none;
+  overflow-y: auto;
   transition: all 0.3s ease-in-out; }
 
 .sidebar-collapse.sidebar-active {
-  -webkit-transform: translate3d(-300px, 0, 0);
-          transform: translate3d(-300px, 0, 0); }
+  -webkit-transform: translate3d(-250px, 0, 0);
+          transform: translate3d(-250px, 0, 0); }
 
 body.sidebar-active .sidebar-collapse {
-  -webkit-transform: translate3d(300px, 0, 0);
-          transform: translate3d(300px, 0, 0); }
+  -webkit-transform: translate3d(250px, 0, 0);
+          transform: translate3d(250px, 0, 0); }
+
+.overlay {
+  display: none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 9;
+  opacity: 0;
+  transition: all 0.3s ease-in-out; }
+  .overlay.sidebar-active {
+    display: block;
+    opacity: 1; }
+
+.nav-sidebar {
+  background-color: #fff;
+  color: #111; }
+
+.nav-sidebar .nav-item {
+  padding: 1.25rem; }
+
+.nav-sidebar .nav-item + .nav-item {
+  border-top: 2px solid #e6e6e6; }
+
+.nav-sidebar .nav-item a {
+  color: #111;
+  text-decoration: none;
+  font-size: 0.875rem; }
+
+.nav-sidebar-submenu {
+  list-style-type: none;
+  text-align: right; }
+
+.nav-sidebar-submenu .nav-item {
+  list-style-type: none;
+  text-align: right;
+  padding: 0.625rem; }
+
+.nav-item-accordion a {
+  display: flex;
+  justify-content: space-between; }
+
+.nav-item-accordion .accordion-arrow {
+  margin-top: -0.375rem;
+  margin-bottom: -0.9375rem; }
+
+.accordion-sidebar {
+  padding-bottom: 0; }
+
+.nav-sidebar-footer .btn-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-top: 2px solid #f0f0f0;
+  border-bottom: 2px solid #f0f0f0; }
+
+.nav-sidebar-footer .btn-wrapper .btn {
+  padding: 1.875rem 0;
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+  font-size: 0.875rem;
+  white-space: normal; }
+  .nav-sidebar-footer .btn-wrapper .btn + .btn {
+    border-left: 2px solid #f0f0f0; }
 
 /*********************************************************
   Footer / Nav Footer
 *********************************************************/
 .nav-footer {
   background-color: #1a2940;
-  color: #fff; }
+  color: #fff;
+  z-index: 9999999; }
 
 .nav-footer,
 .nav-footer > .row {
@@ -4982,5 +5043,6 @@ body.sidebar-active .sidebar-collapse {
     .nav-footer .nav__btns a {
       font-size: 0.875rem; } }
 
-.nav-footer .nav__btns a:hover, .nav-footer .nav__btns a:focus {
+.nav-footer .nav__btns a:hover,
+.nav-footer .nav__btns a:focus {
   background: #131d2e; }

@@ -3,8 +3,9 @@
 *********************************************************/
 
 .nav-footer {
-	background-color: $color__secondary;
-	color: $color__white;
+  background-color: $color__secondary;
+  color: $color__white;
+  z-index: 9999999;
 }
 
 .nav-footer,
@@ -26,7 +27,8 @@
       font-size: rem(14);
     }
   }
-  a:hover, a:focus {
+  a:hover,
+  a:focus {
     background: $color__secondary--dark;
   }
 }

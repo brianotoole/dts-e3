@@ -4,4 +4,10 @@
 
 .btn {
   border: 0;
+  border-radius: 0;
+}
+
+.btn-white {
+  background: $color__white;
+  color: $color__text;
 }

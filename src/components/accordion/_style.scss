@@ -14,7 +14,7 @@
   padding-top: 0;
 }
 
-.accordion .card .card-title {
+.accordion .card-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,17 +24,13 @@
   font-weight: 300;
 }
 
-.accordion .card .collapsed .card-arrow {
-  transform: rotate(0deg);
-}
-
-.accordion .card .card-badge {
+.accordion .card-badge {
   display: flex;
   flex: 1 0 auto;
   margin-left: rem(20);
 }
 
-.accordion .card .card-badge .badge {
+.accordion .card-badge .badge {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -45,7 +41,13 @@
   height: 30px;
 }
 
-.accordion .card .card-arrow {
+.accordion .collapsed .card-arrow,
+.collapsed .accordion-arrow {
+  transform: rotate(0deg);
+}
+
+.accordion .card-arrow,
+.accordion-arrow {
   margin-right: rem(-5);
   margin-top: rem(6);
   font-size: rem(40);
@@ -54,24 +56,24 @@
   transition: 0.15s transform ease-in-out;
 }
 
-.accordion .card .card-header,
-.accordion .card .card-body {
+.accordion .card-header,
+.accordion .card-body {
   padding: 0 rem(30);
   @include media-breakpoint-up(sm) {
     padding: 0;
   }
 }
 
-.accordion .card .card-body {
+.accordion .card-body {
   background-color: $color__border;
   padding: rem(30);
 }
 
-.accordion .card .card-body + .card-body {
+.accordion .card-body + .card-body {
   padding-top: rem(0);
 }
 
-.accordion .card .card-inner {
+.accordion .card-inner {
   background: $color__white;
   border-radius: $border-radius;
   @extend .shadow;
@@ -80,21 +82,21 @@
   }
 }
 
-.accordion .card .card-inner .card-inner-body {
+.accordion .card-inner .card-inner-body {
   padding: rem(10);
 }
 
-.accordion .card .card-inner .card-inner-body .card-inner-title,
-.accordion .card .card-inner .card-inner-body .card-inner-subtitle {
+.accordion .card-inner .card-inner-body .card-inner-title,
+.accordion .card-inner .card-inner-body .card-inner-subtitle {
   font-weight: bold;
   color: $color__text;
 }
 
-.accordion .card .card-inner .card-inner-body .card-inner-title {
+.accordion .card-inner .card-inner-body .card-inner-title {
   margin-bottom: rem(15);
 }
 
-.accordion .card .card-inner-text {
+.accordion .card-inner-text {
   font-size: rem(13);
   color: $color__text;
   @include media-breakpoint-up(sm) {
