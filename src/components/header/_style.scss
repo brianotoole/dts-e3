@@ -67,6 +67,19 @@
   }
 }
 
+// Header Org
+
+.header-org {
+}
+
+.header-org .card {
+  background-color: $color__white;
+  border-radius: $border-radius;
+}
+
+.header-org .page-body__content {
+  margin-top: rem(75);
+}
 
 @keyframes slideInDown {
   from {
@@ -95,7 +108,6 @@
     opacity: 1;
   }
 }
-
 
 @keyframes slideInUp {
   from {

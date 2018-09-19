@@ -50,6 +50,13 @@ hr {
   }
 }
 
+.page-body-org .page-body__content {
+  margin-top: rem(11);
+  @include media-breakpoint-up(md) {
+    margin-top: rem(33);
+  }
+}
+
 .container {
   &--narrow {
     width: 88%;
