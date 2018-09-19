@@ -4240,6 +4240,7 @@ hr {
 
 .page-body__header, .header-fixed {
   background-color: #ea8c2a;
+  background-image: url(../img/bg-icons.png);
   background-position: center center;
   background-repeat: repeat;
   background-attachment: fixed;
