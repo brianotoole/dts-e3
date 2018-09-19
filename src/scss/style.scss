@@ -1,0 +1,16 @@
+/*********************************************************
+    Main Styles Entry Point
+*********************************************************/
+
+// Import Vendors first
+@import './assets/vendor/bootstrap/config';
+
+// Global
+@import './assets/global/style';
+
+// Components
+@import './src/components/header/style';
+@import './src/components/profile/style';
+@import './src/components/accordion/style';
+@import './src/components/footer/style';
+//@import './components/modal/style';
