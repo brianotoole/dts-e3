@@ -1,7 +1,3 @@
 module.exports = {
-  plugins: {
-    "autoprefixer": {
-      "grid": true
-    }
-  }
+  plugins: [require("autoprefixer")]
 };

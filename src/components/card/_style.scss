@@ -1,0 +1,80 @@
+/*********************************************************
+  Card Global
+*********************************************************/
+
+.card {
+  position: relative;
+  padding: rem(15) rem(30);
+}
+
+.card + .card {
+  border-top: 2px solid $color__border--light;
+}
+
+.card .card-header a {
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+  }
+}
+
+.card .card-inner-body .card-inner-title,
+.card .card-inner-body .card-inner-subtitle {
+  margin-bottom: rem(2);
+  font-weight: bold;
+  color: $color__text;
+}
+
+.card .card-inner-body hr {
+  max-width: rem(15);
+  margin: 0;
+  margin-top: rem(3.5);
+  margin-bottom: rem(3.5);
+  border-width: 2px;
+  border-color: $color__muted;
+}
+
+.card-inner-footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: rem(30);
+}
+
+.card .card-inner-text {
+  font-size: rem(13);
+  color: $color__muted;
+  @include media-breakpoint-up(sm) {
+    font-size: rem(14);
+  }
+}
+
+.card .card-inner-text-muted {
+  color: $color__muted;
+}
+
+
+/*********************************************************
+  Org Card
+*********************************************************/
+
+.org-card {
+  display: flex;
+  align-items: center;
+}
+
+.org-card .card-header .profile__img {
+  width: 75px;
+  height: 75px;
+  @include media-breakpoint-up(md) {
+    width: 105px;
+    height: 105px;
+  }
+}
+
+.org-card .card-inner-body {
+  padding-left: rem(30);
+  @include media-breakpoint-up(md) {
+    padding-left: rem(45);
+  }
+}
