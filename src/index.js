@@ -3,7 +3,7 @@
   */
 
 // extract text from webpack to bundled output file
-require("../scss/style.scss");
+require("./main.scss");
 
 import jquery from "jquery";
 window.$ = window.jQuery = jquery;

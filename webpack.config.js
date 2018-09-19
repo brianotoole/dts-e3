@@ -5,8 +5,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: {
-    app: './src/js/index.js',
-    vendor: './src/js/vendor.js'
+    app: './src//index.js'
+    //vendor: './src/js/vendor.js'
   },
   output: {
     filename: 'app/js/[name].js',
@@ -66,7 +66,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, 'src/index.html')
+      template: path.resolve(__dirname, 'src/layouts/index.html')
     }),
     new ExtractTextPlugin({
       filename: 'app/css/style.css',
