@@ -4,6 +4,7 @@
 
 .accordion .card {
   position: relative;
+  padding: 0;
   padding-top: rem(15);
   background-color: $color__white;
   border-radius: 0;
@@ -11,18 +12,6 @@
 
 .accordion .card:first-child {
   padding-top: 0;
-}
-
-.accordion .card + .card {
-  border-top: 2px solid $color__border--light;
-}
-
-.accordion .card .card-header a {
-  &:hover,
-  &:focus,
-  &:active {
-    text-decoration: none;
-  }
 }
 
 .accordion .card .card-title {
@@ -105,22 +94,9 @@
   margin-bottom: rem(15);
 }
 
-.accordion .card .card-inner .card-inner-body hr {
-  max-width: rem(15);
-  margin: 0;
-  margin-bottom: rem(5);
-  border-width: 2px;
-  border-color: $color__muted;
-}
-
-.accordion .card .card-inner .card-inner-footer {
-  display: flex;
-  justify-content: space-between;
-  padding-top: rem(30);
-}
-
 .accordion .card .card-inner-text {
   font-size: rem(13);
+  color: $color__text;
   @include media-breakpoint-up(sm) {
     font-size: rem(14);
   }
