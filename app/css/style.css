@@ -4738,18 +4738,13 @@ p,
 
 .accordion .card {
   position: relative;
+  padding: 0;
   padding-top: 0.9375rem;
   background-color: #fff;
   border-radius: 0; }
 
 .accordion .card:first-child {
   padding-top: 0; }
-
-.accordion .card + .card {
-  border-top: 2px solid #f0f0f0; }
-
-.accordion .card .card-header a:hover, .accordion .card .card-header a:focus, .accordion .card .card-header a:active {
-  text-decoration: none; }
 
 .accordion .card .card-title {
   display: flex;
@@ -4822,20 +4817,9 @@ p,
 .accordion .card .card-inner .card-inner-body .card-inner-title {
   margin-bottom: 0.9375rem; }
 
-.accordion .card .card-inner .card-inner-body hr {
-  max-width: 0.9375rem;
-  margin: 0;
-  margin-bottom: 0.3125rem;
-  border-width: 2px;
-  border-color: rgba(0, 0, 0, 0.3); }
-
-.accordion .card .card-inner .card-inner-footer {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 1.875rem; }
-
 .accordion .card .card-inner-text {
-  font-size: 0.8125rem; }
+  font-size: 0.8125rem;
+  color: #111; }
   @media (min-width: 576px) {
     .accordion .card .card-inner-text {
       font-size: 0.875rem; } }
@@ -4860,6 +4844,69 @@ p,
     background-color: #1a2940; }
   .pagination-dot + .pagination-dot {
     margin-left: 0.625rem; }
+
+/*********************************************************
+  Card Global
+*********************************************************/
+.card {
+  position: relative;
+  padding: 0.9375rem 1.875rem; }
+
+.card + .card {
+  border-top: 2px solid #f0f0f0; }
+
+.card .card-header a:hover, .card .card-header a:focus, .card .card-header a:active {
+  text-decoration: none; }
+
+.card .card-inner-body .card-inner-title,
+.card .card-inner-body .card-inner-subtitle {
+  margin-bottom: 0.125rem;
+  font-weight: bold;
+  color: #111; }
+
+.card .card-inner-body hr {
+  max-width: 0.9375rem;
+  margin: 0;
+  margin-top: 0.21875rem;
+  margin-bottom: 0.21875rem;
+  border-width: 2px;
+  border-color: rgba(0, 0, 0, 0.3); }
+
+.card-inner-footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1.875rem; }
+
+.card .card-inner-text {
+  font-size: 0.8125rem;
+  color: rgba(0, 0, 0, 0.3); }
+  @media (min-width: 576px) {
+    .card .card-inner-text {
+      font-size: 0.875rem; } }
+
+.card .card-inner-text-muted {
+  color: rgba(0, 0, 0, 0.3); }
+
+/*********************************************************
+  Org Card
+*********************************************************/
+.org-card {
+  display: flex;
+  align-items: center; }
+
+.org-card .card-header .profile__img {
+  width: 75px;
+  height: 75px; }
+  @media (min-width: 768px) {
+    .org-card .card-header .profile__img {
+      width: 105px;
+      height: 105px; } }
+
+.org-card .card-inner-body {
+  padding-left: 1.875rem; }
+  @media (min-width: 768px) {
+    .org-card .card-inner-body {
+      padding-left: 2.8125rem; } }
 
 /*********************************************************
   Footer / Nav Footer

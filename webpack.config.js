@@ -36,7 +36,7 @@ module.exports = {
         test: /\.(woff|woff2|eot|ttf)/,
         loader: 'url-loader?limit=10000&name=dist/fonts/[name].[ext]', //font files to './dist/fonts/**.'
       },
-      { // HTML LOADER 
+      { // HTML LOADER
         test: /\.html$/,
         use: [
           'html-loader',
@@ -65,9 +65,8 @@ module.exports = {
     ]
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, 'src/layouts/index.html')
-    }),
+    new HtmlWebpackPlugin({ template: path.resolve(__dirname, 'src/layouts/index.html') }),
+    new HtmlWebpackPlugin({ filename: 'org.html', template: path.resolve(__dirname, 'src/layouts/org.html') }),
     new ExtractTextPlugin({
       filename: 'app/css/style.css',
       allChunks: true,

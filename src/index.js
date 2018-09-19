@@ -5,10 +5,14 @@
 // extract text from webpack to bundled output file
 require("./main.scss");
 
+// imports from vendors
 import jquery from "jquery";
 window.$ = window.jQuery = jquery;
 import "popper.js";
 import "bootstrap";
+
+// components
+require("./components/header/header.js");
 
 //import MobileMenu from './MobileMenu';
 //import Modal from './Modal';
