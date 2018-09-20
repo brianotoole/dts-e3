@@ -4238,7 +4238,7 @@ hr {
   margin-top: 0.21875rem;
   margin-bottom: 0.21875rem;
   border-width: 2px;
-  border-color: rgba(0, 0, 0, 0.3); }
+  border-color: #767676; }
 
 .page-body {
   position: relative; }
@@ -4260,6 +4260,7 @@ hr {
   /* test for scrolling only */
   margin-top: -6.8125rem;
   padding-top: 8.4375rem;
+  padding-bottom: 4.0625rem;
   background-color: #fff; }
   @media (min-width: 768px) {
     .page-body__content {
@@ -4813,7 +4814,7 @@ p,
       padding: 0; } }
 
 .accordion .card-body {
-  background-color: #e6e6e6;
+  background-color: #767676;
   padding: 1.875rem; }
 
 .accordion .card-body + .card-body {
@@ -4844,7 +4845,7 @@ p,
       font-size: 0.875rem; } }
 
 .accordion .card .card-inner-text-muted {
-  color: rgba(0, 0, 0, 0.3); }
+  color: #767676; }
 
 .pagination-dots {
   display: flex;
@@ -4860,9 +4861,9 @@ p,
   border-radius: 50%;
   background-color: #d9d9d9; }
   .pagination-dot-active {
-    background-color: #1a2940; }
+    background-color: #fff; }
   .pagination-dot + .pagination-dot {
-    margin-left: 0.625rem; }
+    margin-left: 0.9375rem; }
 
 /*********************************************************
   Card Global
@@ -4889,7 +4890,7 @@ p,
   margin-top: 0.21875rem;
   margin-bottom: 0.21875rem;
   border-width: 2px;
-  border-color: rgba(0, 0, 0, 0.3); }
+  border-color: #767676; }
 
 .card-inner-footer {
   display: flex;
@@ -4898,13 +4899,13 @@ p,
 
 .card .card-inner-text {
   font-size: 0.8125rem;
-  color: rgba(0, 0, 0, 0.3); }
+  color: #767676; }
   @media (min-width: 576px) {
     .card .card-inner-text {
       font-size: 0.875rem; } }
 
 .card .card-inner-text-muted {
-  color: rgba(0, 0, 0, 0.3); }
+  color: #767676; }
 
 /*********************************************************
   Org Card

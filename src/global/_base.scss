@@ -49,6 +49,7 @@ hr {
   min-height: 500px; /* test for scrolling only */
   margin-top: rem(-109);
   padding-top: rem(135);
+  padding-bottom: rem(65);
   background-color: $color__white;
   @include media-breakpoint-up(md) {
     margin-top: rem(-116);
@@ -56,7 +57,7 @@ hr {
 }
 
 .page-body-org .page-body__content {
-  background: $grey-dark;
+  background: $color__muted;
   margin-top: rem(-6);
   @include media-breakpoint-up(md) {
     margin-top: rem(12);

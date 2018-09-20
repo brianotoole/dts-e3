@@ -65,7 +65,7 @@
 }
 
 .accordion .card-body {
-  background-color: $color__border;
+  background-color: $color__muted;
   padding: rem(30);
 }
 
@@ -124,9 +124,9 @@
   border-radius: 50%;
   background-color: $color__border--dark;
   &-active {
-    background-color: $color__secondary;
+    background-color: $color__white;
   }
   + .pagination-dot {
-    margin-left: rem(10);
+    margin-left: rem(15);
   }
 }
