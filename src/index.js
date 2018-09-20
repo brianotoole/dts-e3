@@ -1,6 +1,6 @@
 /**
-  * MAIN APP SCRIPTS ENTRY POINT
-  */
+ * MAIN APP SCRIPTS ENTRY POINT
+ */
 
 // extract text from webpack to bundled output file
 require("./main.scss");
@@ -10,6 +10,9 @@ import jquery from "jquery";
 window.$ = window.jQuery = jquery;
 import "popper.js";
 import "bootstrap";
+
+// globals
+require("./global/animations.js");
 
 // components
 require("./components/header/header.js");
