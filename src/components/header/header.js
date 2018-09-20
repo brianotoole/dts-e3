@@ -12,17 +12,6 @@ $(document).ready(function() {
   var targetProfileImage = $(".page-body__header .profile__img");
   var targetProfileImageHeight = targetProfileImage.outerHeight();
 
-  // we need value without precentage (4th match)
-  var convertToRGB = getRGBValue(targetHeaderBgColor);
-  var targetRGBString =
-    "rgba(" +
-    convertToRGB.red +
-    "," +
-    convertToRGB.green +
-    "," +
-    convertToRGB.blue;
-  //console.log(convertToRGB.red, convertToRGB.green, convertToRGB.blue);
-
   $(document).scroll(function(e) {
     var scrollPercent =
       (targetHeaderHeight - window.scrollY) / targetHeaderHeight;
@@ -42,16 +31,3 @@ $(document).ready(function() {
     }
   });
 });
-
-function getRGBValue(str) {
-  var match = str.match(
-    /rgba?\((\d{1,3}), ?(\d{1,3}), ?(\d{1,3})\)?(?:, ?(\d(?:\.\d?))\))?/
-  );
-  return match
-    ? {
-        red: match[1],
-        green: match[2],
-        blue: match[3]
-      }
-    : {};
-}
