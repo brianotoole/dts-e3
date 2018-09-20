@@ -4238,7 +4238,7 @@ hr {
   margin-top: 0.21875rem;
   margin-bottom: 0.21875rem;
   border-width: 2px;
-  border-color: #767676; }
+  border-color: #d9d9d9; }
 
 .page-body {
   position: relative; }
@@ -4844,9 +4844,6 @@ p,
     .accordion .card-inner-text {
       font-size: 0.875rem; } }
 
-.accordion .card .card-inner-text-muted {
-  color: #767676; }
-
 .pagination-dots {
   display: flex;
   justify-content: center;
@@ -4890,7 +4887,7 @@ p,
   margin-top: 0.21875rem;
   margin-bottom: 0.21875rem;
   border-width: 2px;
-  border-color: #767676; }
+  border-color: #d9d9d9; }
 
 .card-inner-footer {
   display: flex;
@@ -4905,7 +4902,7 @@ p,
       font-size: 0.875rem; } }
 
 .card .card-inner-text-muted {
-  color: #767676; }
+  color: rgba(118, 118, 118, 0.5); }
 
 /*********************************************************
   Org Card

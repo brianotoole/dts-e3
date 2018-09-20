@@ -32,7 +32,7 @@
   margin-top: rem(3.5);
   margin-bottom: rem(3.5);
   border-width: 2px;
-  border-color: $color__muted;
+  border-color: $color__border--dark;
 }
 
 .card-inner-footer {
@@ -43,7 +43,7 @@
 
 .card .card-inner-text {
   font-size: rem(13);
-  color: $color__muted;
+  color: $color__grey;
   @include media-breakpoint-up(sm) {
     font-size: rem(14);
   }

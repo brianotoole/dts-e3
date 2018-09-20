@@ -25,7 +25,7 @@ hr {
   margin-top: rem(3.5);
   margin-bottom: rem(3.5);
   border-width: 2px;
-  border-color: $color__muted;
+  border-color: $color__border--dark;
 }
 
 .page-body {
@@ -57,7 +57,7 @@ hr {
 }
 
 .page-body-org .page-body__content {
-  background: $color__muted;
+  background: $color__grey;
   margin-top: rem(-6);
   @include media-breakpoint-up(md) {
     margin-top: rem(12);

@@ -65,7 +65,7 @@
 }
 
 .accordion .card-body {
-  background-color: $color__muted;
+  background-color: $color__grey;
   padding: rem(30);
 }
 
@@ -102,10 +102,6 @@
   @include media-breakpoint-up(sm) {
     font-size: rem(14);
   }
-}
-
-.accordion .card .card-inner-text-muted {
-  color: $color__muted;
 }
 
 // Pagination dots

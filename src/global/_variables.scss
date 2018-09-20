@@ -18,7 +18,8 @@ $red: #790000;
 $color__primary: $orange;
 $color__secondary: $navy;
 $color__tertiary: $blue;
-$color__muted: $grey-dark;
+$color__grey: $grey-dark;
+$color__muted: rgba($color__grey, 0.5);
 $color__white: $white;
 $color__text: $black;
 
