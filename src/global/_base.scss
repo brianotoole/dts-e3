@@ -20,6 +20,11 @@ a {
 
 hr {
   border-width: 2px;
+  max-width: rem(15);
+  margin: 0;
+  margin-top: rem(3.5);
+  margin-bottom: rem(3.5);
+  border-width: 2px;
   border-color: $color__muted;
 }
 
@@ -51,9 +56,10 @@ hr {
 }
 
 .page-body-org .page-body__content {
-  margin-top: rem(11);
+  background: $grey-dark;
+  margin-top: rem(-6);
   @include media-breakpoint-up(md) {
-    margin-top: rem(33);
+    margin-top: rem(12);
   }
 }
 

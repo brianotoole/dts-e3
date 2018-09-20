@@ -53,29 +53,38 @@
   color: $color__muted;
 }
 
-
 /*********************************************************
   Org Card
 *********************************************************/
 
 .org-card {
+  position: relative;
   display: flex;
   align-items: center;
+  border-radius: 0;
   border-top-left-radius: $border-radius;
   border-bottom-left-radius: $border-radius;
-}
-
-.org-card + .org-card {
-  margin-top: rem(10);
-  border: 0;
+  background-color: $color__white;
+  margin: rem(15) 0;
   @include media-breakpoint-up(md) {
-    margin-top: rem(20);
+    border-radius: $border-radius;
   }
 }
 
-.org-card .card-header .profile__img {
+$card-img-width: 75px;
+
+.org-card .card-header {
+  position: absolute;
+  left: calc(0% - (#{$card-img-width} / 2));
+  @include media-breakpoint-up(md) {
+    left: calc(0% - (#{$card-img-width + 25} / 2));
+  }
+}
+
+.org-card .profile__img {
   width: 75px;
   height: 75px;
+  border: 3.5px solid $color__white;
   @include media-breakpoint-up(md) {
     width: 105px;
     height: 105px;
@@ -87,4 +96,12 @@
   @include media-breakpoint-up(md) {
     padding-left: rem(45);
   }
+}
+
+.org-card .profile__content {
+  width: 100%;
+}
+
+.org-card .card-inner-footer {
+  padding-top: 0;
 }

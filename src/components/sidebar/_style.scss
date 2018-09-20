@@ -94,8 +94,10 @@ body.sidebar-active .sidebar-collapse {
 
 // Sidebar nav footer
 .nav-sidebar-footer {
-  //position: absolute;
-  //top: calc(100vh - 150px);
+  position: absolute;
+  width: 100%;
+  bottom: rem(65);
+  left: 0;
 }
 
 .nav-sidebar-footer .btn-wrapper {

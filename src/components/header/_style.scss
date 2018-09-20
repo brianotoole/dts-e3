@@ -81,6 +81,15 @@
   margin-top: rem(75);
 }
 
+.header-org .profile__content {
+  width: 100%;
+}
+
+.header-org .card-inner-footer {
+  padding-top: 0;
+}
+
+// Fixed header animations
 @keyframes slideInDown {
   from {
     transform: translate3d(0, -100%, 0);
