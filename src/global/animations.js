@@ -13,28 +13,36 @@ var tl = new TimelineMax();
 
 // Fade in each card list item
 var cardItem = $(".card-list .card");
-cardItem.each(function() {
-  //build tween
-  var tween = TweenMax.from($(this), 1, {
-    autoAlpha: 0,
-    //scale: 0.95,
-    y: "+=10",
-    ease: Power1.easeOut
-  });
-  //build scene
-  var projectScene = new ScrollMagic.Scene({
+
+// Stagger News Items
+// when scrolled to triggerElement return a tween to timeline
+function staggerCardItems() {
+  var newsScene = new ScrollMagic.Scene({
     //scene options
     triggerElement: this,
-    triggerHook: 0.8,
-    reverse: false //dont repeat scene on scroll back up
+    triggerHook: 0.9,
+    reverse: false
   })
-    .setTween(tween) //trigger tween
-    //.addIndicators({name: 'tween:module',}) //DEBUG ONLY; uses plugin
+    .setTween(tl)
+    //.addIndicators() //debug only
     .addTo(controller);
+  return tl.staggerFrom(
+    cardItem,
+    0.5,
+    { y: 5, autoAlpha: 0, ease: Power1.easeOut },
+    0.15
+  );
+}
+
+// On ready
+$(function() {
+  // If has items
+  if ($(".card-list").length > 0) {
+    staggerCardItems();
+  }
 });
 
 var navFooterItem = $(".nav-footer .nav__btns a");
-
 navFooterItem.click(function() {
   $(this).addClass("active");
 });
