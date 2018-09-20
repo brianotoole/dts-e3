@@ -17073,7 +17073,7 @@ $(function () {
 });
 
 $(document).click(function (e) {
-  if (!$(e.target).closest(".sidebar-collapse, #js-sidebar-toggle").length && $("body").hasClass("sidebar-active")) {
+  if (!e.target.closest(".sidebar-collapse, #js-sidebar-toggle") && $("body").hasClass("sidebar-active")) {
     e.preventDefault();
     $("#js-sidebar-toggle").trigger("click");
   }

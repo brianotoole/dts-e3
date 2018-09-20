@@ -16,7 +16,7 @@ $(function() {
 $(document)
   .click(function(e) {
     if (
-      !$(e.target).closest(".sidebar-collapse, #js-sidebar-toggle").length &&
+      !e.target.closest(".sidebar-collapse, #js-sidebar-toggle") &&
       $("body").hasClass("sidebar-active")
     ) {
       e.preventDefault();
