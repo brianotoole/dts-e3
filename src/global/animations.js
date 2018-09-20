@@ -30,7 +30,7 @@ function staggerCardItems() {
     cardItem,
     0.5,
     { y: 5, autoAlpha: 0, ease: Power1.easeOut },
-    0.15
+    0.2
   );
 }
 

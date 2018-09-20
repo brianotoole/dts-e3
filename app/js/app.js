@@ -31144,7 +31144,7 @@ function staggerCardItems() {
   }).setTween(tl)
   //.addIndicators() //debug only
   .addTo(controller);
-  return tl.staggerFrom(cardItem, 0.5, { y: 5, autoAlpha: 0, ease: Power1.easeOut }, 0.15);
+  return tl.staggerFrom(cardItem, 0.5, { y: 5, autoAlpha: 0, ease: Power1.easeOut }, 0.2);
 }
 
 // On ready
