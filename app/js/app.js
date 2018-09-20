@@ -31151,6 +31151,12 @@ cardItem.each(function () {
   .addTo(controller);
 });
 
+var navFooterItem = $(".nav-footer .nav__btns a");
+
+navFooterItem.click(function () {
+  $(this).addClass("active");
+});
+
 /***/ }),
 /* 11 */
 /***/ (function(module, exports, __webpack_require__) {
@@ -32170,11 +32176,6 @@ $(document).ready(function () {
   var targetProfileImage = $(".page-body__header .profile__img");
   var targetProfileImageHeight = targetProfileImage.outerHeight();
 
-  // we need value without precentage (4th match)
-  var convertToRGB = getRGBValue(targetHeaderBgColor);
-  var targetRGBString = "rgba(" + convertToRGB.red + "," + convertToRGB.green + "," + convertToRGB.blue;
-  //console.log(convertToRGB.red, convertToRGB.green, convertToRGB.blue);
-
   $(document).scroll(function (e) {
     var scrollPercent = (targetHeaderHeight - window.scrollY) / targetHeaderHeight;
     if (scrollPercent >= 0.9) {
@@ -32193,15 +32194,6 @@ $(document).ready(function () {
   });
 });
 
-function getRGBValue(str) {
-  var match = str.match(/rgba?\((\d{1,3}), ?(\d{1,3}), ?(\d{1,3})\)?(?:, ?(\d(?:\.\d?))\))?/);
-  return match ? {
-    red: match[1],
-    green: match[2],
-    blue: match[3]
-  } : {};
-}
-
 /***/ }),
 /* 14 */
 /***/ (function(module, exports, __webpack_require__) {
@@ -32216,6 +32208,7 @@ $(function () {
     $("body").toggleClass("sidebar-active");
     $(".sidebar").toggleClass("sidebar-active");
     $(".overlay").toggleClass("sidebar-active");
+    $(".nav-sidebar .nav-item a").toggleClass("sidebar-active");
     if ($("body").hasClass("sidebar-active")) {
       $(this).focus();
     } else {

@@ -5,6 +5,7 @@ $(function() {
     $("body").toggleClass("sidebar-active");
     $(".sidebar").toggleClass("sidebar-active");
     $(".overlay").toggleClass("sidebar-active");
+    $(".nav-sidebar .nav-item a").toggleClass("sidebar-active");
     if ($("body").hasClass("sidebar-active")) {
       $(this).focus();
     } else {

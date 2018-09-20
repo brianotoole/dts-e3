@@ -32,3 +32,9 @@ cardItem.each(function() {
     //.addIndicators({name: 'tween:module',}) //DEBUG ONLY; uses plugin
     .addTo(controller);
 });
+
+var navFooterItem = $(".nav-footer .nav__btns a");
+
+navFooterItem.click(function() {
+  $(this).addClass("active");
+});
