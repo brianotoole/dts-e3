@@ -5049,6 +5049,13 @@ body.sidebar-active .sidebar-collapse {
   .nav-sidebar-footer .btn-wrapper .btn + .btn {
     border-left: 2px solid #f0f0f0; }
 
+.nav-sidebar-footer .sidebar-logo {
+  padding: 1.875rem 0;
+  text-align: center;
+  width: 100%;
+  background: #f0f0f0 url(../img/logo.svg) center center no-repeat;
+  background-size: 135px; }
+
 /*********************************************************
   Footer / Nav Footer
 *********************************************************/

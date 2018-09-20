@@ -119,3 +119,12 @@ body.sidebar-active .sidebar-collapse {
     border-left: 2px solid $color__border--light;
   }
 }
+
+.nav-sidebar-footer .sidebar-logo {
+  padding: rem(30) 0;
+  text-align: center;
+  width: 100%;
+  background: $color__border--light url("./img/logo.svg") center center
+    no-repeat;
+  background-size: 135px;
+}
