@@ -3,16 +3,17 @@
 *********************************************************/
 
 // Import Vendors first
-@import 'vendor/bootstrap/config';
+@import "vendor/bootstrap/config";
 
 // Global
-@import 'global/style';
+@import "global/style";
 
 // Components
-@import 'components/header/style';
-@import 'components/profile/style';
-@import 'components/accordion/style';
-@import 'components/card/style';
-@import 'components/sidebar/style';
-@import 'components/footer/style';
+@import "components/header/style";
+@import "components/profile/style";
+@import "components/accordion/style";
+@import "components/card/style";
+@import "components/form/style";
+@import "components/sidebar/style";
+@import "components/footer/style";
 //@import './components/modal/style';
