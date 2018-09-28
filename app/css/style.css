@@ -4922,8 +4922,9 @@ p,
 
 .card-body-details-data {
   display: flex;
+  justify-content: space-between;
   padding: 0.9375rem 1.25rem;
-  background-color: #e6e6e6; }
+  background-color: #f0f0f0; }
   .card-body-details-data:nth-child(even) {
     background-color: #fff; }
   .card-body-details-data:last-child {

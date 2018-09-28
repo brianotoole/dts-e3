@@ -73,8 +73,9 @@
 
 .card-body-details-data {
   display: flex;
+  justify-content: space-between;
   padding: rem(15) rem(20);
-  background-color: $color__border;
+  background-color: $color__border--light;
   &:nth-child(even) {
     background-color: $color__white;
   }
