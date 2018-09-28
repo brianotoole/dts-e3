@@ -5648,9 +5648,11 @@ p,
   An accordion card's expanded of Contact Edit Mode
 *********************************************************/
 .card-body-contacts-edit {
-  background-color: #fff !important;
-  padding-left: 0 !important;
-  padding-right: 0 !important; }
+  background-color: #fff !important; }
+  @media (min-width: 576px) {
+    .card-body-contacts-edit {
+      padding-left: 0 !important;
+      padding-right: 0 !important; } }
 
 /*********************************************************
   Org Card
