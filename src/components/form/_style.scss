@@ -2,5 +2,40 @@
   Form
 *********************************************************/
 
+form,
 .form {
+  width: 100%;
+}
+
+form,
+.form label {
+  font-weight: 700;
+}
+
+form .form-group,
+.form .form-group {
+  margin-bottom: rem(25);
+}
+
+form .form-control,
+.form .form-control {
+  border-radius: 0;
+  background-color: $color__border--light;
+  padding: rem(22) rem(15);
+  &:focus {
+    box-shadow: 0 0 0.1rem 0.2rem rgba($color__primary, 0.2);
+    border: 1px solid $color__primary;
+  }
+}
+
+form .form-button-group,
+.form .form-button-group {
+  display: flex;
+  justify-content: center;
+  margin: rem(45) auto rem(15);
+  .btn {
+  }
+  .btn + .btn {
+    margin-left: rem(20);
+  }
 }

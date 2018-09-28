@@ -5110,11 +5110,25 @@ p,
 *********************************************************/
 .btn {
   border: 0;
-  border-radius: 0; }
+  border-radius: 0;
+  padding: 0.4375rem;
+  min-width: 120px; }
+
+.btn-primary {
+  background: #ea8c2a;
+  color: #fff; }
+  .btn-primary:hover {
+    background: #e47f16; }
 
 .btn-white {
   background: #fff;
   color: #111; }
+
+.btn-muted {
+  background: #d9d9d9;
+  color: #fff; }
+  .btn-muted:hover {
+    background: #cdcdcd; }
 
 /*********************************************************
   Utility
@@ -5634,7 +5648,9 @@ p,
   An accordion card's expanded of Contact Edit Mode
 *********************************************************/
 .card-body-contacts-edit {
-  background-color: #fff !important; }
+  background-color: #fff !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important; }
 
 /*********************************************************
   Org Card
@@ -5683,6 +5699,37 @@ p,
 /*********************************************************
   Form
 *********************************************************/
+form,
+.form {
+  width: 100%; }
+
+form,
+.form label {
+  font-weight: 700; }
+
+form .form-group,
+.form .form-group {
+  margin-bottom: 1.5625rem; }
+
+form .form-control,
+.form .form-control {
+  border-radius: 0;
+  background-color: #f0f0f0;
+  padding: 1.375rem 0.9375rem; }
+  form .form-control:focus,
+  .form .form-control:focus {
+    box-shadow: 0 0 0.1rem 0.2rem rgba(234, 140, 42, 0.2);
+    border: 1px solid #ea8c2a; }
+
+form .form-button-group,
+.form .form-button-group {
+  display: flex;
+  justify-content: center;
+  margin: 2.8125rem auto 0.9375rem; }
+  form .form-button-group .btn + .btn,
+  .form .form-button-group .btn + .btn {
+    margin-left: 1.25rem; }
+
 /*********************************************************
   Sidebar
 *********************************************************/

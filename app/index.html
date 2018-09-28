@@ -280,18 +280,75 @@
       </div><!-- /.card-header -->
       <div id="accordion-contacts" class="collapse" data-parent="#accordion">
         <div class="card-body card-body-contacts-edit">
-          <form>
+          <form class="form form-contacts">
+
   <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-  </div>
+    <label for="form-contacts-name">Contact Name</label>
+    <input type="text" id="form-contacts-name" class="form-control" placeholder="Jane Smith">
+  </div><!-- /.form-group -->
+
   <div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-  </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>
+    <label for="form-contacts-relationship">Relationship</label>
+    <input type="text" id="form-contacts-relationship" class="form-control" placeholder="">
+  </div><!-- /.form-group -->
+
+  <div class="form-group">
+    <label for="form-contacts-phone-home">Home Phone</label>
+    <input type="tel" id="form-contacts-phone-home" class="form-control" placeholder="813-555-5555">
+  </div><!-- /.form-group -->
+
+  <div class="form-group">
+    <label for="form-contacts-phone-home-ext">Extension</label>
+    <input type="number" id="form-contacts-phone-home-ext" class="form-control" placeholder="">
+  </div><!-- /.form-group -->
+
+  <div class="form-group">
+    <label for="form-contacts-phone-home">Work Phone</label>
+    <input type="tel" id="form-contacts-phone-work" class="form-control" placeholder="813-555-5555">
+  </div><!-- /.form-group -->
+
+  <div class="form-group">
+    <label for="form-contacts-phone-work-ext">Extension</label>
+    <input type="number" id="form-contacts-phone-work-ext" class="form-control" placeholder="">
+  </div><!-- /.form-group -->
+
+  <div class="form-group">
+    <label for="form-contacts-phone-mobile">Mobile Phone</label>
+    <input type="tel" id="form-contacts-phone-mobile" class="form-control" placeholder="813-555-5555">
+  </div><!-- /.form-group -->
+
+  <div class="form-group">
+    <label for="form-country">Country</label>
+    <input type="text" id="form-country" class="form-control" placeholder="">
+  </div><!-- /.form-group -->
+
+  <div class="form-group">
+    <label for="form-street-1">Street 1</label>
+    <input type="text" id="form-street-1" class="form-control" placeholder="">
+  </div><!-- /.form-group -->
+
+  <div class="form-group">
+    <label for="form-street-2">Street 2</label>
+    <input type="text" id="form-street-2" class="form-control" placeholder="">
+  </div><!-- /.form-group -->
+
+  <div class="form-group">
+    <label for="form-city">City</label>
+    <input type="text" id="form-city" class="form-control" placeholder="">
+  </div><!-- /.form-group -->
+
+  <div class="form-group">
+    <label for="form-zip">Zip</label>
+    <input type="number" id="form-zip" class="form-control" placeholder="33602">
+  </div><!-- /.form-group -->
+
+  <div class="form-button-group">
+    <button type="submit" class="btn btn-muted rounded">Cancel</button>
+    <button type="submit" class="btn btn-primary rounded">Update</button>
+  </div><!-- /.form-button-group -->
+
+
+</form><!-- /.form.form-contacts -->
         </div><!-- /.card-body.card-body-contacts-edit -->
       </div><!-- /.collapse -->
     </div><!-- /.card.card-contacts -->

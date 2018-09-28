@@ -5,9 +5,27 @@
 .btn {
   border: 0;
   border-radius: 0;
+  padding: rem(7);
+  min-width: 120px;
+}
+
+.btn-primary {
+  background: $color__primary;
+  color: $color__white;
+  &:hover {
+    background: $color__primary--dark;
+  }
 }
 
 .btn-white {
   background: $color__white;
   color: $color__text;
+}
+
+.btn-muted {
+  background: $color__border--dark;
+  color: $color__white;
+  &:hover {
+    background: darken($color__border--dark, 5%);
+  }
 }
