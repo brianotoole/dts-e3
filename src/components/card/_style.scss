@@ -64,6 +64,8 @@
   height: auto;
   margin-top: rem(-6.5);
   font-size: rem(14);
+  border-bottom-left-radius: $border-radius;
+  border-bottom-right-radius: $border-radius;
   @include media-breakpoint-up(sm) {
     font-size: rem(15);
   }
@@ -75,6 +77,10 @@
   background-color: $color__border;
   &:nth-child(even) {
     background-color: $color__white;
+  }
+  &:last-child() {
+    border-bottom-left-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
   }
 }
 

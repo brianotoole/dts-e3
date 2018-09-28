@@ -4913,7 +4913,9 @@ p,
   width: 100%;
   height: auto;
   margin-top: -0.40625rem;
-  font-size: 0.875rem; }
+  font-size: 0.875rem;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem; }
   @media (min-width: 576px) {
     .card-body-details {
       font-size: 0.9375rem; } }
@@ -4924,6 +4926,9 @@ p,
   background-color: #e6e6e6; }
   .card-body-details-data:nth-child(even) {
     background-color: #fff; }
+  .card-body-details-data:last-child {
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem; }
 
 .card-body-details-key {
   flex-basis: 40%;
