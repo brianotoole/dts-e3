@@ -4905,6 +4905,36 @@ p,
   color: rgba(118, 118, 118, 0.5); }
 
 /*********************************************************
+  Card Body - Details
+  An accordion card's expanded content
+*********************************************************/
+.card-body-details {
+  background-color: #fff;
+  width: 100%;
+  height: auto;
+  margin-top: -0.40625rem;
+  font-size: 0.875rem; }
+  @media (min-width: 576px) {
+    .card-body-details {
+      font-size: 0.9375rem; } }
+
+.card-body-details-data {
+  display: flex;
+  padding: 0.9375rem 1.25rem;
+  background-color: #e6e6e6; }
+  .card-body-details-data:nth-child(even) {
+    background-color: #fff; }
+
+.card-body-details-key {
+  flex-basis: 40%;
+  max-width: 40%;
+  font-weight: 700; }
+
+.card-body-details-value {
+  flex-basis: auto;
+  max-width: auto; }
+
+/*********************************************************
   Org Card
 *********************************************************/
 .org-card {
