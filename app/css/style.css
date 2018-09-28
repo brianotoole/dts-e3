@@ -4906,30 +4906,36 @@ p,
 
 /*********************************************************
   Card Body - Details
-  An accordion card's expanded content
+  An accordion card's expanded content of Dates/Assignments
 *********************************************************/
 .card-body-details {
   background-color: #fff;
   width: 100%;
   height: auto;
   margin-top: -0.40625rem;
-  font-size: 0.875rem;
-  border-bottom-left-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem; }
+  font-size: 0.875rem; }
   @media (min-width: 576px) {
     .card-body-details {
       font-size: 0.9375rem; } }
 
+.card-body-details-assignments {
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem; }
+  .card-body-details-assignments .card-body-details-data:last-child {
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem; }
+
 .card-body-details-data {
   display: flex;
   justify-content: space-between;
-  padding: 0.9375rem 1.25rem;
+  align-items: center;
+  padding: 0.9375rem 0.625rem 0.9375rem 1.25rem;
   background-color: #f0f0f0; }
   .card-body-details-data:nth-child(even) {
     background-color: #fff; }
-  .card-body-details-data:last-child {
-    border-bottom-left-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem; }
+
+.card-body-details-dates .card-body-details-data {
+  padding: 0.9375rem 1.875rem; }
 
 .card-body-details-key {
   flex-basis: 40%;
@@ -4939,6 +4945,44 @@ p,
 .card-body-details-value {
   flex-basis: auto;
   max-width: auto; }
+
+/*********************************************************
+  Card Body - Contacts
+  An accordion card's expanded of Contacts
+*********************************************************/
+.card-contacts .card-body {
+  display: flex;
+  justify-content: center; }
+
+.card-contacts .card-body-details {
+  padding: 0; }
+
+.card-contacts .card-body-details-data {
+  position: relative;
+  padding: 1.25rem;
+  background-color: #e6e6e6; }
+  .card-contacts .card-body-details-data:nth-child(even) {
+    background-color: #f0f0f0; }
+
+.card-contacts .card-body-details-value {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 0; }
+
+.card-contacts .card-body-details-icon {
+  height: 100%;
+  padding: 1.25rem;
+  color: #ea8c2a;
+  border-left: 2px solid #d9d9d9;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.2s ease-out; }
+  .card-contacts .card-body-details-icon:hover {
+    background-color: #d9d9d9;
+    color: #e47f16; }
 
 /*********************************************************
   Org Card

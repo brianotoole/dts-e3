@@ -55,7 +55,7 @@
 
 /*********************************************************
   Card Body - Details
-  An accordion card's expanded content
+  An accordion card's expanded content of Dates/Assignments
 *********************************************************/
 
 .card-body-details {
@@ -64,25 +64,35 @@
   height: auto;
   margin-top: rem(-6.5);
   font-size: rem(14);
-  border-bottom-left-radius: $border-radius;
-  border-bottom-right-radius: $border-radius;
   @include media-breakpoint-up(sm) {
     font-size: rem(15);
+  }
+}
+
+.card-body-details-assignments {
+  border-bottom-left-radius: $border-radius;
+  border-bottom-right-radius: $border-radius;
+  .card-body-details-data {
+    &:last-child() {
+      border-bottom-left-radius: $border-radius;
+      border-bottom-right-radius: $border-radius;
+    }
   }
 }
 
 .card-body-details-data {
   display: flex;
   justify-content: space-between;
-  padding: rem(15) rem(20);
+  align-items: center;
+  padding: rem(15) rem(10) rem(15) rem(20); //account for border-left from card
   background-color: $color__border--light;
   &:nth-child(even) {
     background-color: $color__white;
   }
-  &:last-child() {
-    border-bottom-left-radius: $border-radius;
-    border-bottom-right-radius: $border-radius;
-  }
+}
+
+.card-body-details-dates .card-body-details-data {
+  padding: rem(15) rem(30);
 }
 
 .card-body-details-key {
@@ -94,6 +104,55 @@
 .card-body-details-value {
   flex-basis: auto;
   max-width: auto;
+}
+
+/*********************************************************
+  Card Body - Contacts
+  An accordion card's expanded of Contacts
+*********************************************************/
+
+.card-contacts {
+}
+
+.card-contacts .card-body {
+  display: flex;
+  justify-content: center;
+}
+
+.card-contacts .card-body-details {
+  padding: 0;
+}
+
+.card-contacts .card-body-details-data {
+  position: relative;
+  padding: rem(20);
+  background-color: $color__border;
+  &:nth-child(even) {
+    background-color: $color__border--light;
+  }
+}
+
+.card-contacts .card-body-details-value {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 0;
+}
+
+.card-contacts .card-body-details-icon {
+  height: 100%;
+  padding: rem(20);
+  color: $color__primary;
+  border-left: 2px solid $color__border--dark;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+  &:hover {
+    background-color: $color__border--dark;
+    color: $color__primary--dark;
+  }
 }
 
 /*********************************************************
