@@ -140,7 +140,7 @@
 .card-contacts .card-body-details-icon {
   height: 100%;
   padding: rem(20);
-  color: $color__primary;
+  color: $color__primary !important;
   border-left: 2px solid $color__border--dark;
   overflow: hidden;
   cursor: pointer;

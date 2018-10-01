@@ -3,4 +3,29 @@
 *********************************************************/
 @import "~bootstrap/scss/modal";
 
-// modal overrides can go here
+.modal-dialog-centered {
+  margin-left: rem(15);
+  margin-right: rem(15);
+}
+
+.modal-content {
+  border: none;
+  padding: rem(30);
+  text-align: center;
+  @include media-breakpoint-up(sm) {
+    padding: rem(45);
+  }
+}
+
+.modal-footer {
+  justify-content: center;
+  border: none;
+}
+
+.modal-body {
+  padding: 0;
+}
+
+.modal-footer > :not(:last-child) {
+  margin-right: rem(15);
+}

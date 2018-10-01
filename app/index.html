@@ -253,15 +253,15 @@
         <div class="card-body-details-data">
           <div class="card-body-details-key">Children's School</div>
           <div class="card-body-details-value">
-            <div class="card-body-details-icon card-body-details-icon-edit"><i class="material-icons">edit</i></div>
-            <div class="card-body-details-icon card-body-details-delete"><i class="material-icons">delete</i></div>
+            <a class="card-body-details-icon card-body-details-icon-edit"><i class="material-icons">edit</i></a>
+            <a class="card-body-details-icon card-body-details-delete" data-toggle="modal" data-target="#modal-delete"><i class="material-icons">delete</i></a>
           </div><!-- /card-body-details-value -->
         </div><!-- /.card-body-details-data -->
         <div class="card-body-details-data">
         <div class="card-body-details-key">Emergency Contact</div>
           <div class="card-body-details-value">
             <div class="card-body-details-icon card-body-details-icon-edit"><i class="material-icons">edit</i></div>
-            <div class="card-body-details-icon card-body-details-delete"><i class="material-icons">delete</i></div>
+            <div class="card-body-details-icon card-body-details-delete" data-toggle="modal" data-target="#modal-delete"><i class="material-icons">delete</i></div>
           </div><!-- /card-body-details-value -->
         </div><!-- /.card-body-details-data -->
       </div><!-- /.card-body-details -->
@@ -524,6 +524,26 @@
         </div><!-- /.page-body__footer -->
       </div><!-- /.page-body__content -->
     </div><!-- /.page-body -->
+
+    <!-- Button trigger modal -->
+<!--
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Modal Button</button>
+-->
+
+<!-- Modal -->
+<div class="modal fade" id="modal-delete" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <h3>Are you sure you want to delete this contact?</h3>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary rounded">Yes</button>
+        <button type="button" class="btn btn-primary rounded" data-dismiss="modal">No</button>
+      </div>
+    </div>
+  </div>
+</div>
 
   <script type="text/javascript" src="./js/app.js"></script></body>
 
