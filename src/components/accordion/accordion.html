@@ -51,14 +51,14 @@
         <div class="btn btn-white align-middle">Add Contact</div>
       </div><!-- /.card-body -->
       <div class="card-body-details">
-        <div class="card-body-details-data">
+        <div class="card-body-details-data" id="contact-accordion" data-toggle="collapse" data-target="#contact-details">
           <div class="card-body-details-key">Children's School</div>
           <div class="card-body-details-value">
             <a class="card-body-details-icon card-body-details-icon-edit"><i class="material-icons">edit</i></a>
             <a class="card-body-details-icon card-body-details-delete" data-toggle="modal" data-target="#modal-delete"><i class="material-icons">delete</i></a>
           </div><!-- /card-body-details-value -->
         </div><!-- /.card-body-details-data -->
-        <div class="card-body-inner">
+        <div class="card-body-inner collapse" id="contact-details" data-parrent="#contact-accordion">
           <div class="card-body-inner-item">
             <div class="card-body-inner-icon"><i class="material-icons">person</i></div>
             <div class="card-body-inner-text">Jane Smith, Friend</div>

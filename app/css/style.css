@@ -5608,7 +5608,8 @@ p,
   justify-content: center; }
 
 .card-contacts .card-body-details {
-  padding: 0; }
+  padding: 0;
+  cursor: pointer; }
 
 .card-contacts .card-body-details-data {
   display: block;
