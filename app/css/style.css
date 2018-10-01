@@ -5852,10 +5852,6 @@ form .form-button-group,
   .modal-lg {
     max-width: 800px; } }
 
-.modal-dialog-centered {
-  margin-left: 0.9375rem;
-  margin-right: 0.9375rem; }
-
 .modal-content {
   border: none;
   padding: 1.875rem;
