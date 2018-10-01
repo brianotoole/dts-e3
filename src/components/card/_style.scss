@@ -120,6 +120,7 @@
 }
 
 .card-contacts .card-body-details-data {
+  display: block;
   position: relative;
   padding: rem(20);
   background-color: $color__border;
@@ -149,6 +150,27 @@
     background-color: $color__border--dark;
     color: $color__primary--dark;
   }
+}
+
+.card-contacts .card-body-inner {
+  padding: rem(20);
+  background-color: $color__border--dark;
+}
+
+.card-contacts .card-body-inner-item {
+  display: flex;
+  padding: rem(15) 0;
+  + .card-body-inner-item {
+    border-top: 1px solid $color__border;
+  }
+}
+
+.card-contacts .card-body-inner-icon {
+  color: $color__primary;
+}
+
+.card-contacts .card-body-inner-text {
+  padding-left: rem(10);
 }
 
 /*********************************************************

@@ -3,6 +3,10 @@
 *********************************************************/
 @import "~bootstrap/scss/modal";
 
+.modal-backdrop.show {
+  opacity: 0.8;
+}
+
 .modal-content {
   border: none;
   padding: rem(30);

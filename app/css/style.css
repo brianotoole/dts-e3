@@ -5611,6 +5611,7 @@ p,
   padding: 0; }
 
 .card-contacts .card-body-details-data {
+  display: block;
   position: relative;
   padding: 1.25rem;
   background-color: #e6e6e6; }
@@ -5636,6 +5637,22 @@ p,
   .card-contacts .card-body-details-icon:hover {
     background-color: #d9d9d9;
     color: #e47f16; }
+
+.card-contacts .card-body-inner {
+  padding: 1.25rem;
+  background-color: #d9d9d9; }
+
+.card-contacts .card-body-inner-item {
+  display: flex;
+  padding: 0.9375rem 0; }
+  .card-contacts .card-body-inner-item + .card-body-inner-item {
+    border-top: 1px solid #e6e6e6; }
+
+.card-contacts .card-body-inner-icon {
+  color: #ea8c2a; }
+
+.card-contacts .card-body-inner-text {
+  padding-left: 0.625rem; }
 
 /*********************************************************
   Card Body - Contacts-Edit
@@ -5851,6 +5868,9 @@ form .form-button-group,
 @media (min-width: 992px) {
   .modal-lg {
     max-width: 800px; } }
+
+.modal-backdrop.show {
+  opacity: 0.8; }
 
 .modal-content {
   border: none;
