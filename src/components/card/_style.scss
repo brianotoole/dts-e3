@@ -227,9 +227,22 @@ $card-img-width: 75px;
 
 .org-card .card-inner-body {
   padding-left: rem(30);
+  font-weight: 300;
   @include media-breakpoint-up(md) {
     padding-left: rem(45);
   }
+}
+
+.org-card .card-inner-title {
+  font-size: rem(18);
+}
+
+.org-card .card-inner-subtitle {
+  font-weight: 300 !important;
+}
+
+.org-card .card-inner-subtitle {
+  font-size: rem(15);
 }
 
 .org-card .profile__content {
