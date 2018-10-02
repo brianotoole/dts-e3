@@ -5534,6 +5534,22 @@ p,
 .card .card-header a:hover, .card .card-header a:focus, .card .card-header a:active {
   text-decoration: none; }
 
+.card-image.is-featured {
+  position: relative; }
+  .card-image.is-featured i,
+  .card-image.is-featured .icon {
+    position: absolute;
+    padding: 0.1875rem;
+    font-size: 1.125rem;
+    background: #ea8c2a;
+    color: #fff;
+    border-radius: 100%; }
+    @media (min-width: 576px) {
+      .card-image.is-featured i,
+      .card-image.is-featured .icon {
+        padding: 0.3125rem;
+        font-size: 1.5rem; } }
+
 .card .card-inner-body .card-inner-title,
 .card .card-inner-body .card-inner-subtitle {
   margin-bottom: 0.125rem;

@@ -19,6 +19,23 @@
   }
 }
 
+.card-image.is-featured {
+  position: relative;
+  i,
+  .icon {
+    position: absolute;
+    padding: rem(3);
+    font-size: rem(18);
+    background: $color__primary;
+    color: $color__white;
+    border-radius: 100%;
+    @include media-breakpoint-up(sm) {
+      padding: rem(5);
+      font-size: rem(24);
+    }
+  }
+}
+
 .card .card-inner-body .card-inner-title,
 .card .card-inner-body .card-inner-subtitle {
   margin-bottom: rem(2);
