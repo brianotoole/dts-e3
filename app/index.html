@@ -212,24 +212,24 @@
 
       <!-- Card Body Details (Expanded)-->
       <div class="card-body-details card-body-details-dates">
-          <div class="card-body-details-data">
-            <div class="card-body-details-key">Original Hire Date</div>
-            <div class="card-body-details-value">Feb 1, 2005</div>
-          </div><!-- /.card-body-details-data -->
-          <div class="card-body-details-data">
-            <div class="card-body-details-key">Last Hire Date</div>
-            <div class="card-body-details-value">Oct 8, 2006</div>
-          </div><!-- /.card-body-details-data -->
-          <div class="card-body-details-data">
-            <div class="card-body-details-key">Seniority Date</div>
-            <div class="card-body-details-value">Feb 4, 2005</div>
-          </div><!-- /.card-body-details-data -->
-          <div class="card-body-details-data">
-            <div class="card-body-details-key">Last Review Date</div>
-            <div class="card-body-details-value">Nov 8, 2013</div>
-          </div><!-- /.card-body-details-data -->
-        </div><!-- /.card-body-details -->
-        <!-- /Card Body Details (Expanded) -->
+        <div class="card-body-details-data">
+          <div class="card-body-details-key">Original Hire Date</div>
+          <div class="card-body-details-value">Feb 1, 2005</div>
+        </div><!-- /.card-body-details-data -->
+        <div class="card-body-details-data">
+          <div class="card-body-details-key">Last Hire Date</div>
+          <div class="card-body-details-value">Oct 8, 2006</div>
+        </div><!-- /.card-body-details-data -->
+        <div class="card-body-details-data">
+          <div class="card-body-details-key">Seniority Date</div>
+          <div class="card-body-details-value">Feb 4, 2005</div>
+        </div><!-- /.card-body-details-data -->
+        <div class="card-body-details-data">
+          <div class="card-body-details-key">Last Review Date</div>
+          <div class="card-body-details-value">Nov 8, 2013</div>
+        </div><!-- /.card-body-details-data -->
+      </div><!-- /.card-body-details -->
+      <!-- /Card Body Details (Expanded) -->
 
     </div><!-- /.collapse -->
   </div><!-- /.card.card-dates -->
@@ -253,7 +253,7 @@
         <div class="card-body-details-data" id="contact-accordion" data-toggle="collapse" data-target="#contact-details">
           <div class="card-body-details-key">Children's School</div>
           <div class="card-body-details-value">
-            <a class="card-body-details-icon card-body-details-icon-edit"><i class="material-icons">edit</i></a>
+            <a class="card-body-details-icon card-body-details-icon-edit" data-toggle="modal" data-target="#modal-approve"><i class="material-icons">edit</i></a>
             <a class="card-body-details-icon card-body-details-delete" data-toggle="modal" data-target="#modal-delete"><i class="material-icons">delete</i></a>
           </div><!-- /card-body-details-value -->
         </div><!-- /.card-body-details-data -->
@@ -275,14 +275,14 @@
             <div class="card-body-inner-text">813-555-5555</div>
           </div><!-- /.card-body-inner-item -->
           <div class="card-body-inner-item">
-             <div class="card-body-inner-icon"><i class="material-icons">location_on</i></div>
+            <div class="card-body-inner-icon"><i class="material-icons">location_on</i></div>
             <div class="card-body-inner-text">Tampa, 33602</div>
           </div><!-- /.card-body-inner-item -->
         </div><!-- /.card-body-inner -->
         <div class="card-body-details-data">
-        <div class="card-body-details-key">Emergency Contact</div>
+          <div class="card-body-details-key">Emergency Contact</div>
           <div class="card-body-details-value">
-            <div class="card-body-details-icon card-body-details-icon-edit"><i class="material-icons">edit</i></div>
+            <div class="card-body-details-icon card-body-details-icon-edit" data-toggle="modal" data-target="#modal-delete"><i class="material-icons">edit</i></div>
             <div class="card-body-details-icon card-body-details-delete" data-toggle="modal" data-target="#modal-delete"><i class="material-icons">delete</i></div>
           </div><!-- /card-body-details-value -->
         </div><!-- /.card-body-details-data -->
@@ -295,14 +295,15 @@
 
   <!-- CONTACTS-EDIT -->
   <div class="card card-contacts">
-      <div class="card-header" id="accordion-heading-contacts">
-        <a class="collapsed" href="#accordion-contacts" data-toggle="collapse" data-target="#accordion-contacts" aria-expanded="false" aria-controls="accordion-contacts">
-          <h5 class="card-title">Contacts (Edit)<i class="card-arrow material-icons">keyboard_arrow_down</i></h5>
-        </a>
-      </div><!-- /.card-header -->
-      <div id="accordion-contacts" class="collapse" data-parent="#accordion">
-        <div class="card-body card-body-contacts-edit">
-          <form class="form form-contacts">
+    <div class="card-header" id="accordion-heading-contacts">
+      <a class="collapsed" href="#accordion-contacts" data-toggle="collapse" data-target="#accordion-contacts" aria-expanded="false" aria-controls="accordion-contacts">
+        <h5 class="card-title">Contacts (Edit)<i class="card-arrow
+            material-icons">keyboard_arrow_down</i></h5>
+      </a>
+    </div><!-- /.card-header -->
+    <div id="accordion-contacts" class="collapse" data-parent="#accordion">
+      <div class="card-body card-body-contacts-edit">
+        <form class="form form-contacts">
 
   <div class="form-group">
     <label for="form-contacts-name">Contact Name</label>
@@ -371,134 +372,136 @@
 
 
 </form><!-- /.form.form-contacts -->
-        </div><!-- /.card-body.card-body-contacts-edit -->
-      </div><!-- /.collapse -->
-    </div><!-- /.card.card-contacts -->
-    <!-- /CONTACTS-EDIT -->
+      </div><!-- /.card-body.card-body-contacts-edit -->
+    </div><!-- /.collapse -->
+  </div><!-- /.card.card-contacts -->
+  <!-- /CONTACTS-EDIT -->
 
 
 
   <!-- ASSIGNMENTS -->
   <div class="card card-assignments">
-      <div class="card-header" id="accordion-heading-1">
-        <a class="collapsed" href="#accordion-1" data-toggle="collapse" data-target="#accordion-1" aria-expanded="false" aria-controls="accordion-1">
-          <h5 class="card-title">Assignments
-            <div class="card-badge">
-              <span class="badge">9</span>
-              <span class="sr-only">unread messages</span>
-            </div><!-- /.card-badge -->
-            <i class="card-arrow material-icons">keyboard_arrow_down</i>
-          </h5>
-        </a>
-      </div><!-- /.card-header -->
-      <div id="accordion-1" class="collapse" data-parent="#accordion">
-        <div class="card-body">
-          <div class="pagination-dots">
-            <span class="pagination-dot pagination-dot-active"></span>
-            <span class="pagination-dot"></span>
-          </div><!-- /.pagination-dots -->
-          <div class="card-inner card-inner-active">
-            <div class="card-inner-body">
-              <h4 class="card-inner-title">HR Manager</h4>
-              <h5 class="card-inner-subtitle">Position 293</h5>
-              <hr>
-              <div class="card-inner-hours card-inner-text">40 weekly hours</div>
-              <div class="card-inner-footer">
-                <div class="card-inner-years card-inner-text">16 years, 6 months</div>
-                <div class="card-inner-position card-inner-text card-inner-text-muted">Primary Position</div>
-              </div><!-- /.card-inner-footer -->
-            </div><!-- /.card-inner-body -->
-          </div><!-- /.card-inner -->
+    <div class="card-header" id="accordion-heading-1">
+      <a class="collapsed" href="#accordion-1" data-toggle="collapse" data-target="#accordion-1" aria-expanded="false" aria-controls="accordion-1">
+        <h5 class="card-title">Assignments
+          <div class="card-badge">
+            <span class="badge">9</span>
+            <span class="sr-only">unread messages</span>
+          </div><!-- /.card-badge -->
+          <i class="card-arrow material-icons">keyboard_arrow_down</i>
+        </h5>
+      </a>
+    </div><!-- /.card-header -->
+    <div id="accordion-1" class="collapse" data-parent="#accordion">
+      <div class="card-body">
+        <div class="pagination-dots">
+          <span class="pagination-dot pagination-dot-active"></span>
+          <span class="pagination-dot"></span>
+        </div><!-- /.pagination-dots -->
+        <div class="card-inner card-inner-active">
+          <div class="card-inner-body">
+            <h4 class="card-inner-title">HR Manager</h4>
+            <h5 class="card-inner-subtitle">Position 293</h5>
+            <hr>
+            <div class="card-inner-hours card-inner-text">40 weekly hours</div>
+            <div class="card-inner-footer">
+              <div class="card-inner-years card-inner-text">16 years, 6 months</div>
+              <div class="card-inner-position card-inner-text
+                card-inner-text-muted">Primary Position</div>
+            </div><!-- /.card-inner-footer -->
+          </div><!-- /.card-inner-body -->
+        </div><!-- /.card-inner -->
 
-          <!-- Card Body Details (Expanded)-->
-          <div class="card-body-details card-body-details-assignments">
-            <div class="card-body-details-data">
-              <div class="card-body-details-key">From</div>
-              <div class="card-body-details-value">Feb 18, 2002 - current</div>
-            </div><!-- /.card-body-details-data -->
-            <div class="card-body-details-data">
-              <div class="card-body-details-key">Job</div>
-              <div class="card-body-details-value">HR Manager</div>
-            </div><!-- /.card-body-details-data -->
-            <div class="card-body-details-data">
-              <div class="card-body-details-key">FLSA</div>
-              <div class="card-body-details-value">Hourly/Non-Exempt</div>
-            </div><!-- /.card-body-details-data -->
-            <div class="card-body-details-data">
-              <div class="card-body-details-key">Emp Status</div>
-              <div class="card-body-details-value">Regular Full Time</div>
-            </div><!-- /.card-body-details-data -->
-          </div><!-- /.card-body-details -->
-          <!-- /Card Body Details (Expanded) -->
+        <!-- Card Body Details (Expanded)-->
+        <div class="card-body-details card-body-details-assignments">
+          <div class="card-body-details-data">
+            <div class="card-body-details-key">From</div>
+            <div class="card-body-details-value">Feb 18, 2002 - current</div>
+          </div><!-- /.card-body-details-data -->
+          <div class="card-body-details-data">
+            <div class="card-body-details-key">Job</div>
+            <div class="card-body-details-value">HR Manager</div>
+          </div><!-- /.card-body-details-data -->
+          <div class="card-body-details-data">
+            <div class="card-body-details-key">FLSA</div>
+            <div class="card-body-details-value">Hourly/Non-Exempt</div>
+          </div><!-- /.card-body-details-data -->
+          <div class="card-body-details-data">
+            <div class="card-body-details-key">Emp Status</div>
+            <div class="card-body-details-value">Regular Full Time</div>
+          </div><!-- /.card-body-details-data -->
+        </div><!-- /.card-body-details -->
+        <!-- /Card Body Details (Expanded) -->
 
-        </div><!-- /.card-body -->
-        <div class="card-body">
-          <div class="card-inner">
-            <div class="card-inner-body">
-              <h4 class="card-inner-title">HR Manager</h4>
-              <h5 class="card-inner-subtitle">Position 293</h5>
-              <hr>
-              <div class="card-inner-hours card-inner-text">40 weekly hours</div>
-              <div class="card-inner-footer">
-                <div class="card-inner-years card-inner-text">16 years, 6 months</div>
-              </div><!-- /.card-inner-footer -->
-            </div><!-- /.card-inner-body -->
-          </div><!-- /.card-inner -->
-        </div><!-- /.card-body -->
-        <div class="card-body">
-          <div class="card-inner">
-            <div class="card-inner-body">
-              <h4 class="card-inner-title">HR Manager</h4>
-              <h5 class="card-inner-subtitle">Position 293</h5>
-              <hr>
-              <div class="card-inner-hours card-inner-text">40 weekly hours</div>
-              <div class="card-inner-footer">
-                <div class="card-inner-years card-inner-text">16 years, 6 months</div>
-              </div><!-- /.card-inner-footer -->
-            </div><!-- /.card-inner-body -->
-          </div><!-- /.card-inner -->
-        </div><!-- /.card-body -->
-      </div><!-- /.collapse -->
-    </div><!-- /.card.card-assignments -->
-    <!-- /ASSIGNMENTS -->
+      </div><!-- /.card-body -->
+      <div class="card-body">
+        <div class="card-inner">
+          <div class="card-inner-body">
+            <h4 class="card-inner-title">HR Manager</h4>
+            <h5 class="card-inner-subtitle">Position 293</h5>
+            <hr>
+            <div class="card-inner-hours card-inner-text">40 weekly hours</div>
+            <div class="card-inner-footer">
+              <div class="card-inner-years card-inner-text">16 years, 6 months</div>
+            </div><!-- /.card-inner-footer -->
+          </div><!-- /.card-inner-body -->
+        </div><!-- /.card-inner -->
+      </div><!-- /.card-body -->
+      <div class="card-body">
+        <div class="card-inner">
+          <div class="card-inner-body">
+            <h4 class="card-inner-title">HR Manager</h4>
+            <h5 class="card-inner-subtitle">Position 293</h5>
+            <hr>
+            <div class="card-inner-hours card-inner-text">40 weekly hours</div>
+            <div class="card-inner-footer">
+              <div class="card-inner-years card-inner-text">16 years, 6 months</div>
+            </div><!-- /.card-inner-footer -->
+          </div><!-- /.card-inner-body -->
+        </div><!-- /.card-inner -->
+      </div><!-- /.card-body -->
+    </div><!-- /.collapse -->
+  </div><!-- /.card.card-assignments -->
+  <!-- /ASSIGNMENTS -->
 
 
   <div class="card">
-      <div class="card-header" id="accordion-heading-4">
-        <a class="collapsed" href="#accordion4" data-toggle="collapse" data-target="#accordion-4" aria-expanded="false" aria-controls="accordion-4">
-          <h5 class="card-title">Assignments<i class="card-arrow material-icons">keyboard_arrow_down</i></h5>
-        </a>
-      </div><!-- /.card-header -->
-      <div id="accordion-4" class="collapse" data-parent="#accordion">
-        <div class="card-body">
-          <div class="card-inner card-inner-active">
-            <div class="card-inner-body">
-              <h4 class="card-inner-title">HR Manager</h4>
-              <h5 class="card-inner-subtitle">Position 293</h5>
-              <hr>
-              <div class="card-inner-hours card-inner-text">40 weekly hours</div>
-              <div class="card-inner-footer">
-                <div class="card-inner-years card-inner-text">16 years, 6 months</div>
-                <div class="card-inner-position card-inner-text card-inner-text-muted">Primary Position</div>
-              </div><!-- /.card-inner-footer -->
-            </div><!-- /.card-inner-body -->
-          </div><!-- /.card-inner -->
-        </div><!-- /.card-body -->
-        <div class="card-body">
-          <div class="card-inner">
-            <div class="card-inner-body">
-              <h4 class="card-inner-title">HR Manager</h4>
-              <h5 class="card-inner-subtitle">Position 293</h5>
-              <hr>
-              <div class="card-inner-hours card-inner-text">40 weekly hours</div>
-              <div class="card-inner-footer">
-                <div class="card-inner-years card-inner-text">16 years, 6 months</div>
-              </div><!-- /.card-inner-footer -->
-            </div><!-- /.card-inner-body -->
-          </div><!-- /.card-inner -->
-        </div><!-- /.card-body -->
-      </div><!-- /.collapse -->
-    </div><!-- /.card -->
+    <div class="card-header" id="accordion-heading-4">
+      <a class="collapsed" href="#accordion4" data-toggle="collapse" data-target="#accordion-4" aria-expanded="false" aria-controls="accordion-4">
+        <h5 class="card-title">Assignments<i class="card-arrow material-icons">keyboard_arrow_down</i></h5>
+      </a>
+    </div><!-- /.card-header -->
+    <div id="accordion-4" class="collapse" data-parent="#accordion">
+      <div class="card-body">
+        <div class="card-inner card-inner-active">
+          <div class="card-inner-body">
+            <h4 class="card-inner-title">HR Manager</h4>
+            <h5 class="card-inner-subtitle">Position 293</h5>
+            <hr>
+            <div class="card-inner-hours card-inner-text">40 weekly hours</div>
+            <div class="card-inner-footer">
+              <div class="card-inner-years card-inner-text">16 years, 6 months</div>
+              <div class="card-inner-position card-inner-text
+                card-inner-text-muted">Primary Position</div>
+            </div><!-- /.card-inner-footer -->
+          </div><!-- /.card-inner-body -->
+        </div><!-- /.card-inner -->
+      </div><!-- /.card-body -->
+      <div class="card-body">
+        <div class="card-inner">
+          <div class="card-inner-body">
+            <h4 class="card-inner-title">HR Manager</h4>
+            <h5 class="card-inner-subtitle">Position 293</h5>
+            <hr>
+            <div class="card-inner-hours card-inner-text">40 weekly hours</div>
+            <div class="card-inner-footer">
+              <div class="card-inner-years card-inner-text">16 years, 6 months</div>
+            </div><!-- /.card-inner-footer -->
+          </div><!-- /.card-inner-body -->
+        </div><!-- /.card-inner -->
+      </div><!-- /.card-body -->
+    </div><!-- /.collapse -->
+  </div><!-- /.card -->
 
 </div><!-- /.accordion -->
             </div><!-- /.col -->
@@ -562,10 +565,40 @@
       <div class="modal-footer">
         <button type="button" class="btn btn-primary rounded">Yes</button>
         <button type="button" class="btn btn-primary rounded" data-dismiss="modal">No</button>
-      </div>
-    </div>
-  </div>
-</div>
+      </div><!-- /.modal-footer -->
+    </div><!-- /.modal-body -->
+  </div><!-- /.modal-content -->
+</div><!-- /.modal -->
+    <!-- Button trigger modal -->
+<!--
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Modal Button</button>
+-->
+
+<!-- Modal w/ Header -->
+<div class="modal modal-with-header fade" id="modal-approve" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Approve</h5>
+      </div><!-- /.modal-header -->
+      <div class="modal-body">
+        <p>Your decision has not been submitted yet, please enter any comments
+          below to support your decision and click submit.</p>
+        <form class="form">
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Comments</label>
+            <textarea class="form-control" id="" rows="4"></textarea>
+          </div><!-- /.form-group -->
+        </form><!-- .form -->
+      </div><!-- /.modal-body -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary btn-block rounded">View
+          Details</button>
+        <button type="button" class="btn btn-muted btn-block rounded" data-dismiss="modal">Cancel</button>
+      </div><!-- /.modal-footer -->
+    </div><!-- /.modal-body -->
+  </div><!-- /.modal-content -->
+</div><!-- /.modal -->
 
   <script type="text/javascript" src="./js/app.js"></script></body>
 

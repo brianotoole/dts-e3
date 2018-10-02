@@ -23,9 +23,9 @@
 }
 
 .btn-muted {
-  background: $color__border--dark;
+  background: #9b9b9b;
   color: $color__white;
   &:hover {
-    background: darken($color__border--dark, 5%);
+    background: darken(#9b9b9b, 5%);
   }
 }
