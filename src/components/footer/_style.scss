@@ -20,6 +20,7 @@
 
 .nav-footer .nav__btns {
   a {
+    min-width: auto;
     padding: rem(22) 0 rem(16);
     color: $color__white;
     border-radius: 0;

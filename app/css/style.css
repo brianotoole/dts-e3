@@ -6156,6 +6156,7 @@ body.sidebar-active .sidebar-collapse {
   border-color: #213552; }
 
 .nav-footer .nav__btns a {
+  min-width: auto;
   padding: 1.375rem 0 1rem;
   color: #fff;
   border-radius: 0; }
