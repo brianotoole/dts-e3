@@ -67,6 +67,7 @@ hr {
 .page-body-group .page-body__content {
   margin: 0;
   padding: 0;
+  padding-bottom: rem(200); //account for fixed controls
 }
 
 .container {

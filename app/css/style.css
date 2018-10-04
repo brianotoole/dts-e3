@@ -4920,7 +4920,8 @@ hr {
 
 .page-body-group .page-body__content {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  padding-bottom: 12.5rem; }
 
 .container--narrow {
   width: 88%; }
@@ -5828,6 +5829,9 @@ p,
 /*********************************************************
   Group-Details Card
 *********************************************************/
+.group-details .accordion {
+  padding-bottom: 0.9375rem; }
+
 .group-details .accordion .card:first-child {
   padding-top: 0.9375rem; }
 
@@ -5836,6 +5840,8 @@ p,
   padding-top: 2.8125rem;
   padding-bottom: 0;
   background-color: #e6e6e6; }
+  .group-details-card .card-body + .card-body {
+    padding-top: 0.9375rem; }
 
 .group-details-card .card-status {
   margin-top: 1.6875rem;

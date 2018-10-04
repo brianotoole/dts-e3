@@ -342,6 +342,10 @@ $card-img-width: 75px;
   Group-Details Card
 *********************************************************/
 
+.group-details .accordion {
+  padding-bottom: rem(15);
+}
+
 .group-details .accordion .card:first-child {
   padding-top: rem(15);
 }
@@ -351,6 +355,9 @@ $card-img-width: 75px;
   padding-top: rem(45);
   padding-bottom: 0;
   background-color: $color__border;
+  + .card-body {
+    padding-top: rem(15);
+  }
 }
 
 .group-details-card .card-status {
