@@ -17,6 +17,7 @@ require("./global/animations.js");
 // components
 require("./components/header/header.js");
 require("./components/sidebar/sidebar.js");
+require("./components/popover/popover.js");
 
 //import MobileMenu from './MobileMenu';
 //import Modal from './Modal';

@@ -1,0 +1,21 @@
+/*********************************************************
+  Popover
+*********************************************************/
+
+.popover {
+  display: none;
+  position:absolute;
+  opacity: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.popover.in {
+  position: static;
+  opacity: 1;
+  transition: 0.2s opacity linear;
+}
+
+.popover.out {
+  animation: 0.2s opacity linear;
+}

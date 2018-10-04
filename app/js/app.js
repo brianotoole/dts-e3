@@ -27136,6 +27136,7 @@ __webpack_require__(10);
 // components
 __webpack_require__(13);
 __webpack_require__(14);
+__webpack_require__(15);
 
 //import MobileMenu from './MobileMenu';
 //import Modal from './Modal';
@@ -32229,6 +32230,30 @@ $(document).click(function (e) {
   if (e.keyCode == 27 && $("body").hasClass("sidebar-active")) {
     $("#js-sidebar-toggle").trigger("click");
   }
+});
+
+/***/ }),
+/* 15 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+// Popover
+
+$(document).ready(function () {
+  var popover = $('.popover');
+  $('#js-popover').on('click', function () {
+    popover.toggleClass('in');
+    var isOpen = popover.hasClass('in');
+    if (isOpen) {
+      popover.addClass('in');
+      popover.removeClass('out');
+    } else {
+      popover.addClass('out');
+      popover.removeClass('in');
+    }
+  });
 });
 
 /***/ })

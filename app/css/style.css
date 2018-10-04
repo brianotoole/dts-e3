@@ -4921,7 +4921,7 @@ hr {
 .page-body-group .page-body__content {
   margin: 0;
   padding: 0;
-  padding-bottom: 12.5rem; }
+  padding-bottom: 11.5625rem; }
 
 .container--narrow {
   width: 88%; }
@@ -6108,6 +6108,25 @@ form .form-button-group,
   .modal-with-header .modal-footer .btn {
     margin-left: 0;
     margin-top: 0.9375rem; }
+
+/*********************************************************
+  Popover
+*********************************************************/
+.popover {
+  display: none;
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  overflow: hidden; }
+
+.popover.in {
+  position: static;
+  opacity: 1;
+  transition: 0.2s opacity linear; }
+
+.popover.out {
+  -webkit-animation: 0.2s opacity linear;
+          animation: 0.2s opacity linear; }
 
 /*********************************************************
   Sidebar
