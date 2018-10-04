@@ -233,8 +233,8 @@ $card-img-width: 75px;
 }
 
 .org-card .profile__img {
-  width: 75px;
-  height: 75px;
+  width: $card-img-width;
+  height: $card-img-width;
   border: 3.5px solid $color__white;
   @include media-breakpoint-up(md) {
     width: 105px;
@@ -268,4 +268,62 @@ $card-img-width: 75px;
 
 .org-card .card-inner-footer {
   padding-top: 0;
+}
+
+
+/*********************************************************
+  Group-Swiper Card
+  The card within group swiper area
+*********************************************************/
+
+.group-swiper-card {
+  background: red !important;
+  position: relative;
+  border-radius: 0;
+  border-top-left-radius: $border-radius;
+  border-bottom-left-radius: $border-radius;
+  background-color: $color__white;
+  margin: rem(15) 0;
+  padding: 0;
+  @include media-breakpoint-up(md) {
+    border-radius: $border-radius;
+  }
+}
+
+.group-swiper-card .card-header {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid $color__border;
+}
+
+.group-swiper-card .card-header .profile__img {
+  width: $card-img-width;
+  height: auto;
+}
+
+.group-swiper-card .card-header,
+.group-swiper-card .card-body {
+  padding: rem(15);
+}
+
+.group-swiper-card .card-header-title {
+  padding-left: rem(30);
+  font-weight: 300;
+  @include media-breakpoint-up(md) {
+    padding-left: rem(45);
+  }
+}
+
+.group-swiper-card .card-inner-subtitle {
+  margin-bottom: rem(1);
+}
+
+.group-swiper-card .card-inner-title {
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.group-swiper-card .card-body {
+  padding-left: rem(60);
+  padding-right: rem(60);
 }

@@ -4918,6 +4918,11 @@ hr {
     .page-body-org .page-body__content {
       margin-top: 0.75rem; } }
 
+.page-body-group .page-body__content {
+  background: #767676;
+  margin: 0;
+  padding: 0; }
+
 .container--narrow {
   width: 88%; }
 
@@ -5735,6 +5740,54 @@ p,
 
 .org-card .card-inner-footer {
   padding-top: 0; }
+
+/*********************************************************
+  Group-Swiper Card
+  The card within group swiper area
+*********************************************************/
+.group-swiper-card {
+  background: red !important;
+  position: relative;
+  border-radius: 0;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  background-color: #fff;
+  margin: 0.9375rem 0;
+  padding: 0; }
+  @media (min-width: 768px) {
+    .group-swiper-card {
+      border-radius: 0.5rem; } }
+
+.group-swiper-card .card-header {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e6e6e6; }
+
+.group-swiper-card .card-header .profile__img {
+  width: 75px;
+  height: auto; }
+
+.group-swiper-card .card-header,
+.group-swiper-card .card-body {
+  padding: 0.9375rem; }
+
+.group-swiper-card .card-header-title {
+  padding-left: 1.875rem;
+  font-weight: 300; }
+  @media (min-width: 768px) {
+    .group-swiper-card .card-header-title {
+      padding-left: 2.8125rem; } }
+
+.group-swiper-card .card-inner-subtitle {
+  margin-bottom: 0.0625rem; }
+
+.group-swiper-card .card-inner-title {
+  font-weight: 700;
+  margin-bottom: 0; }
+
+.group-swiper-card .card-body {
+  padding-left: 3.75rem;
+  padding-right: 3.75rem; }
 
 /*********************************************************
   Form
