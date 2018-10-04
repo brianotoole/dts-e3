@@ -5137,6 +5137,36 @@ p,
 /*********************************************************
   Utility
 *********************************************************/
+.u-bg-primary {
+  background: #ea8c2a !important; }
+
+.u-bg-secondary {
+  background: #1a2940 !important; }
+
+.u-bg-tertiary {
+  background: #0078ff !important; }
+
+.u-bg-error {
+  background: #ff5758 !important; }
+
+.u-bg-success {
+  background: #02d852 !important; }
+
+.u-color-primary {
+  color: #ea8c2a !important; }
+
+.u-color-secondary {
+  color: #1a2940 !important; }
+
+.u-color-tertiary {
+  color: #0078ff !important; }
+
+.u-color-error {
+  color: #ff5758 !important; }
+
+.u-color-success {
+  color: #02d852 !important; }
+
 .u-m-x {
   margin: 0 auto !important; }
 
@@ -5875,6 +5905,38 @@ form .form-button-group,
   form .form-button-group .btn + .btn,
   .form .form-button-group .btn + .btn {
     margin-left: 1.25rem; }
+
+/*********************************************************
+  Controls
+*********************************************************/
+.group-controls .fixed-bottom {
+  bottom: 67px; }
+
+.controls {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1.875rem;
+  background-color: #fff;
+  border-top: 1px solid #e6e6e6; }
+
+.control {
+  margin: auto 0.625rem; }
+
+.control a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  min-width: auto;
+  background: #0078ff;
+  border-radius: 100%; }
+
+.control i {
+  color: #fff;
+  font-size: 40px; }
 
 /*********************************************************
   Modal

@@ -2,6 +2,18 @@
   Utility
 *********************************************************/
 
+.u-bg-primary { background: $color__primary !important; }
+.u-bg-secondary { background: $color__secondary !important; }
+.u-bg-tertiary { background: $color__tertiary !important; }
+.u-bg-error { background: $color__error !important; }
+.u-bg-success { background: $color__success !important; }
+
+.u-color-primary { color: $color__primary !important; }
+.u-color-secondary { color: $color__secondary !important; }
+.u-color-tertiary { color: $color__tertiary !important; }
+.u-color-error { color: $color__error !important; }
+.u-color-success { color: $color__success !important; }
+
 .u-m-x {
   margin: 0 auto !important;
 }
