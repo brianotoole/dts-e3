@@ -5492,12 +5492,12 @@ p,
 .accordion .card-inner .card-inner-body {
   padding: 0.625rem; }
 
-.accordion .card-inner .card-inner-body .card-inner-title,
-.accordion .card-inner .card-inner-body .card-inner-subtitle {
+.accordion .card-inner-title,
+.accordion .card-inner-subtitle {
   font-weight: bold;
   color: #111; }
 
-.accordion .card-inner .card-inner-body .card-inner-title {
+.accordion .card-inner-title {
   margin-bottom: 0.9375rem; }
 
 .accordion .card-inner-text {
@@ -5794,6 +5794,43 @@ p,
     .group-swiper-card .card-body {
       padding-left: 2.8125rem;
       padding-right: 2.8125rem; } }
+
+/*********************************************************
+  Group-Details Card
+*********************************************************/
+.group-details .accordion .card:first-child {
+  padding-top: 0.9375rem; }
+
+.group-details-card .card-body {
+  display: flex;
+  padding-bottom: 0;
+  background-color: #e6e6e6; }
+
+.group-details-card .card-status {
+  margin-top: 1.6875rem;
+  margin-right: 1.6875rem; }
+
+.group-details-card .card-status span {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%; }
+  .group-details-card .card-status span.active {
+    background-color: #02d852; }
+
+.group-details-card .card-inner {
+  width: 100%;
+  padding: 0.9375rem;
+  box-shadow: none !important;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0; }
+
+.group-details-card .card-inner-title {
+  font-weight: 700;
+  margin-bottom: 0.3125rem; }
+
+.group-details-card .card-inner-text {
+  margin-top: 1.875rem; }
 
 /*********************************************************
   Form

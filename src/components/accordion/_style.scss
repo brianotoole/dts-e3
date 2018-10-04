@@ -86,13 +86,13 @@
   padding: rem(10);
 }
 
-.accordion .card-inner .card-inner-body .card-inner-title,
-.accordion .card-inner .card-inner-body .card-inner-subtitle {
+.accordion .card-inner-title,
+.accordion .card-inner-subtitle {
   font-weight: bold;
   color: $color__text;
 }
 
-.accordion .card-inner .card-inner-body .card-inner-title {
+.accordion .card-inner-title {
   margin-bottom: rem(15);
 }
 

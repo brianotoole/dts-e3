@@ -336,3 +336,50 @@ $card-img-width: 75px;
     padding-right: rem(45);
   }
 }
+
+
+/*********************************************************
+  Group-Details Card
+*********************************************************/
+
+.group-details .accordion .card:first-child {
+  padding-top: rem(15);
+}
+
+.group-details-card .card-body {
+  display: flex;
+  padding-bottom: 0;
+  background-color: $color__border;
+}
+
+.group-details-card .card-status {
+  margin-top: rem(27);
+  margin-right: rem(27);
+}
+
+.group-details-card .card-status span {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  &.active {
+    background-color: $color__success;
+  }
+}
+
+.group-details-card .card-inner {
+  width: 100%;
+  padding: rem(15);
+  box-shadow: none !important;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.group-details-card .card-inner-title {
+  font-weight: 700;
+  margin-bottom: rem(5);
+}
+
+.group-details-card .card-inner-text {
+  margin-top: rem(30);
+}
