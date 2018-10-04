@@ -5803,6 +5803,7 @@ p,
 
 .group-details-card .card-body {
   display: flex;
+  padding-top: 2.8125rem;
   padding-bottom: 0;
   background-color: #e6e6e6; }
 
@@ -5829,8 +5830,17 @@ p,
   font-weight: 700;
   margin-bottom: 0.3125rem; }
 
+.group-details-card .card-inner-title span {
+  font-weight: normal; }
+
 .group-details-card .card-inner-text {
-  margin-top: 1.875rem; }
+  margin-top: 1.875rem;
+  color: inherit; }
+
+.group-details-card .card-inner-icons {
+  color: inherit; }
+  .group-details-card .card-inner-icons i {
+    font-size: 40px; }
 
 /*********************************************************
   Form

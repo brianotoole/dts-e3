@@ -348,6 +348,7 @@ $card-img-width: 75px;
 
 .group-details-card .card-body {
   display: flex;
+  padding-top: rem(45);
   padding-bottom: 0;
   background-color: $color__border;
 }
@@ -379,7 +380,18 @@ $card-img-width: 75px;
   font-weight: 700;
   margin-bottom: rem(5);
 }
+.group-details-card .card-inner-title span {
+  font-weight: normal;
+}
 
 .group-details-card .card-inner-text {
   margin-top: rem(30);
+  color: inherit;
+}
+
+.group-details-card .card-inner-icons {
+  color: inherit;
+  i {
+    font-size: 40px;
+  }
 }
