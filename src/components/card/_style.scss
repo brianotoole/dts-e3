@@ -276,18 +276,23 @@ $card-img-width: 75px;
   The card within group swiper area
 *********************************************************/
 
+.group-swiper {
+  background-color: $color__grey;
+  padding-top: rem(15);
+  padding-bottom: rem(15);
+}
+
+.group-swiper .pagination-dots {
+  padding-top: rem(30);
+  padding-bottom: rem(15);
+}
+
 .group-swiper-card {
-  background: red !important;
   position: relative;
-  border-radius: 0;
-  border-top-left-radius: $border-radius;
-  border-bottom-left-radius: $border-radius;
+  border-radius: $border-radius;
   background-color: $color__white;
-  margin: rem(15) 0;
+  margin: 0;
   padding: 0;
-  @include media-breakpoint-up(md) {
-    border-radius: $border-radius;
-  }
 }
 
 .group-swiper-card .card-header {
@@ -324,6 +329,10 @@ $card-img-width: 75px;
 }
 
 .group-swiper-card .card-body {
-  padding-left: rem(60);
-  padding-right: rem(60);
+  padding-left: rem(30);
+  padding-right: rem(30);
+  @include media-breakpoint-up(md) {
+    padding-left: rem(45);
+    padding-right: rem(45);
+  }
 }
