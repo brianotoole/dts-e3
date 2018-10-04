@@ -86,6 +86,10 @@ module.exports = {
       filename: "org.html",
       template: path.resolve(__dirname, "src/layouts/org.html")
     }),
+    new HtmlWebpackPlugin({
+      filename: "group.html",
+      template: path.resolve(__dirname, "src/layouts/group.html")
+    }),
     new ExtractTextPlugin({
       filename: "css/style.css",
       allChunks: true
