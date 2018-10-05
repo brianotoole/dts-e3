@@ -6900,19 +6900,48 @@ form .form-button-group,
 *********************************************************/
 .popover {
   position: absolute;
-  opacity: 0;
+  visibility: hidden;
   width: 100%;
   overflow: hidden; }
 
 .popover.in {
   position: static;
-  opacity: 1;
-  transition: 0.2s opacity linear; }
+  -webkit-animation: slideInUp 0.3s forwards;
+          animation: slideInUp 0.3s forwards; }
 
 .popover.out {
-  opacity: 0;
-  -webkit-animation: 0.2s opacity linear;
-          animation: 0.2s opacity linear; }
+  -webkit-animation: slideOutDown 0.3s forwards;
+          animation: slideOutDown 0.3s forwards; }
+
+@keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+    visibility: hidden; }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    visibility: visible; } }
+
+@-webkit-keyframes slideOutDown {
+  from {
+    visibility: visible;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); }
+  to {
+    visibility: hidden;
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0); } }
+
+@keyframes slideOutDown {
+  from {
+    visibility: visible;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); }
+  to {
+    visibility: hidden;
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0); } }
 
 /*********************************************************
   Sidebar
