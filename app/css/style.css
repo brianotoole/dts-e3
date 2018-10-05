@@ -6906,13 +6906,12 @@ form .form-button-group,
   Popover
 *********************************************************/
 .popover {
-  position: absolute;
+  position: static;
   visibility: hidden;
   width: 100%;
   overflow: hidden; }
 
 .popover.in {
-  position: static;
   -webkit-animation: slideInUp 0.3s forwards;
           animation: slideInUp 0.3s forwards; }
 

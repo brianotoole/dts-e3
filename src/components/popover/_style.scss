@@ -3,14 +3,13 @@
 *********************************************************/
 
 .popover {
-  position: absolute;
+  position: static;
   visibility: hidden;
   width: 100%;
   overflow: hidden;
 }
 
 .popover.in {
-  position: static;
   animation: slideInUp 0.3s forwards;
 }
 
