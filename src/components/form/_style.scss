@@ -83,3 +83,11 @@ form .form-button-group,
   color: $color__success;
   stroke: $color__success;
 }
+
+.pretty input:checked ~ .state.p-primary label:after, .pretty.p-toggle .state.p-primary label:after {
+  background-color: $color__success !important;
+}
+
+.pretty.p-icon input:checked ~ .state label:before {
+  border-color: #cfd3d6;
+}

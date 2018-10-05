@@ -6698,6 +6698,13 @@ form .form-button-group,
   color: #02d852;
   stroke: #02d852; }
 
+.pretty input:checked ~ .state.p-primary label:after,
+.pretty.p-toggle .state.p-primary label:after {
+  background-color: #02d852 !important; }
+
+.pretty.p-icon input:checked ~ .state label:before {
+  border-color: #cfd3d6; }
+
 /*********************************************************
   Controls
 *********************************************************/
