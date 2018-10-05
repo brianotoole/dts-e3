@@ -3,7 +3,6 @@
 *********************************************************/
 
 .popover {
-  display: none;
   position:absolute;
   opacity: 0;
   width: 100%;
@@ -17,5 +16,6 @@
 }
 
 .popover.out {
+  opacity: 0;
   animation: 0.2s opacity linear;
 }

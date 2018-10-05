@@ -7,7 +7,10 @@ form,
   width: 100%;
 }
 
-form,
+.form-pad {
+  padding: rem(15);
+}
+
 .form label {
   font-weight: 700;
 }
@@ -38,4 +41,45 @@ form .form-button-group,
   .btn + .btn {
     margin-left: rem(20);
   }
+}
+
+.form-header {
+  background-color: $color__border;
+  color: $color__text;
+  font-weight: 700;
+  padding: rem(15) 0;
+  text-align: center;
+}
+
+.form-text {
+  text-align: center;
+  padding-top: rem(15);
+  padding-bottom: rem(15);
+}
+
+/*********************************************************
+  Checkboxes
+  @NOTE - uses pretty checkboxes
+  //lokesh-coder.github.io/pretty-checkbox/#radio
+*********************************************************/
+
+.pretty-size {
+  font-size: 45px;
+}
+
+.pretty {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.pretty span {
+  font-size: rem(16);
+  position: absolute;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.pretty input:checked ~ .state.p-success-o .icon {
+  color: $color__success;
+  stroke: $color__success;
 }
