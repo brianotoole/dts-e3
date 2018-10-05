@@ -3,7 +3,7 @@
 *********************************************************/
 
 .group-controls .fixed-bottom {
-  bottom: 67px;
+  bottom: 66px;
 }
 
 .controls {
@@ -11,7 +11,7 @@
   justify-content: center;
   width: 100%;
   margin: 0 auto;
-  padding: rem(30);
+  padding: rem(15);
   background-color: $color__white;
   border-top: 1px solid $color__border;
 }
@@ -24,8 +24,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 60px;
-  height: 60px;
+  width: 55px;
+  height: 55px;
   min-width: auto;
   background: $color__tertiary;
   border-radius: 100%;

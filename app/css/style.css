@@ -5829,6 +5829,9 @@ p,
 /*********************************************************
   Group-Details Card
 *********************************************************/
+.group-details {
+  background-color: #e6e6e6; }
+
 .group-details .accordion {
   padding-bottom: 0.9375rem; }
 
@@ -5838,8 +5841,7 @@ p,
 .group-details-card .card-body {
   display: flex;
   padding-top: 2.8125rem;
-  padding-bottom: 0;
-  background-color: #e6e6e6; }
+  padding-bottom: 0; }
   .group-details-card .card-body + .card-body {
     padding-top: 0.9375rem; }
 
@@ -5859,6 +5861,8 @@ p,
   width: 100%;
   padding: 0.9375rem;
   box-shadow: none !important;
+  background-color: #fff;
+  border-radius: 0.5rem;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0; }
 
@@ -5877,6 +5881,13 @@ p,
   color: inherit; }
   .group-details-card .card-inner-icons i {
     font-size: 40px; }
+
+/*********************************************************
+  Group-Comments
+*********************************************************/
+.group-comments {
+  padding-top: 1.875rem;
+  padding-bottom: 0; }
 
 /*********************************************************
   Form
@@ -5916,14 +5927,14 @@ form .form-button-group,
   Controls
 *********************************************************/
 .group-controls .fixed-bottom {
-  bottom: 67px; }
+  bottom: 66px; }
 
 .controls {
   display: flex;
   justify-content: center;
   width: 100%;
   margin: 0 auto;
-  padding: 1.875rem;
+  padding: 0.9375rem;
   background-color: #fff;
   border-top: 1px solid #e6e6e6; }
 
@@ -5934,8 +5945,8 @@ form .form-button-group,
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 60px;
-  height: 60px;
+  width: 55px;
+  height: 55px;
   min-width: auto;
   background: #0078ff;
   border-radius: 100%; }

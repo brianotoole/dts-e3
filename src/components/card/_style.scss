@@ -342,6 +342,9 @@ $card-img-width: 75px;
   Group-Details Card
 *********************************************************/
 
+.group-details {
+  background-color: $color__border;
+}
 .group-details .accordion {
   padding-bottom: rem(15);
 }
@@ -354,7 +357,6 @@ $card-img-width: 75px;
   display: flex;
   padding-top: rem(45);
   padding-bottom: 0;
-  background-color: $color__border;
   + .card-body {
     padding-top: rem(15);
   }
@@ -379,6 +381,8 @@ $card-img-width: 75px;
   width: 100%;
   padding: rem(15);
   box-shadow: none !important;
+  background-color: $color__white;
+  border-radius: $border-radius;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
@@ -401,4 +405,14 @@ $card-img-width: 75px;
   i {
     font-size: 40px;
   }
+}
+
+
+/*********************************************************
+  Group-Comments
+*********************************************************/
+
+.group-comments {
+  padding-top: rem(30);
+  padding-bottom: 0;
 }
