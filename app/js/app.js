@@ -32249,10 +32249,15 @@ $(document).click(function (e) {
 $(document).ready(function () {
   var popover = $('.popover');
   $('#js-popover').on('click', function () {
-    popover.toggleClass('in');
+
     var isOpen = popover.hasClass('in');
-    if (!isOpen) {
-      popover.toggleClass('in out');
+
+    if (isOpen) {
+      popover.removeClass('in').addClass('out');
+      $("html, body").animate({ scrollTop: 0 }, "fast");
+    } else {
+      popover.removeClass("out").addClass("in");
+      $("html, body").animate({ scrollTop: popover.offset().top }, "fast");
     }
   });
 });
