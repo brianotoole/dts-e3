@@ -32246,7 +32246,7 @@ $(document).ready(function () {
   $('#js-popover').on('click', function () {
     popover.toggleClass('in');
     var isOpen = popover.hasClass('in');
-    if (isOpen) {
+    if (!isOpen) {
       popover.toggleClass('in out');
     }
   });

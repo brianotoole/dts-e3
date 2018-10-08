@@ -6906,7 +6906,6 @@ form .form-button-group,
   Popover
 *********************************************************/
 .popover {
-  position: static;
   visibility: hidden;
   width: 100%;
   overflow: hidden; }
