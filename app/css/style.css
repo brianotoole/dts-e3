@@ -5958,7 +5958,6 @@ p,
 
 .header-fixed .profile__img,
 .header-fixed .profile__content {
-  opacity: 0;
   -webkit-animation: slideInUp 0.3s 0.05s forwards;
           animation: slideInUp 0.3s 0.05s forwards; }
 
