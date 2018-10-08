@@ -293,6 +293,20 @@ $card-img-width: 75px;
   background-color: $color__white;
   margin: 0;
   padding: 0;
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    background: $color__white;
+    width: 96%;
+    height: 100%;
+    left: -100%;
+    top: 0;
+    border-radius: $border-radius;
+  }
+  &:after {
+    left: 104%;
+  }
 }
 
 .group-swiper-card .card-header {

@@ -5625,7 +5625,8 @@ hr {
   border-color: #d9d9d9; }
 
 .page-body {
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
 
 .page-body__header, .header-fixed {
   background-color: #ea8c2a;
@@ -6543,6 +6544,17 @@ p,
   background-color: #fff;
   margin: 0;
   padding: 0; }
+  .group-swiper-card:before, .group-swiper-card:after {
+    content: '';
+    position: absolute;
+    background: #fff;
+    width: 96%;
+    height: 100%;
+    left: -100%;
+    top: 0;
+    border-radius: 0.5rem; }
+  .group-swiper-card:after {
+    left: 104%; }
 
 .group-swiper-card .card-header {
   display: flex;
@@ -6922,9 +6934,11 @@ form .form-button-group,
 .popover {
   visibility: hidden;
   width: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+  display: none; }
 
 .popover.in {
+  display: block;
   -webkit-animation: slideInUp 0.3s forwards;
           animation: slideInUp 0.3s forwards; }
 

@@ -8,10 +8,10 @@ $(document).ready(function () {
 
     if (isOpen) {
       popover.removeClass('in').addClass('out');
-      $("html, body").animate({ scrollTop: 0 }, "fast");
+      $("html, body").animate({ scrollTop: 0 }, "slow");
     } else {
       popover.removeClass("out").addClass("in");
-      $("html, body").animate({ scrollTop: popover.offset().top}, "fast");
+      $("html, body").animate({ scrollTop: popover.offset().top-10}, "slow");
     }
   });
 
