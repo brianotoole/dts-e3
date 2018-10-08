@@ -41,9 +41,13 @@ $profile-img-width: 105px;
 }
 
 .profile__header .card-image-icon {
-  margin-top: -120px;
-  margin-left: -75px;
+  margin-top: -105px;
+  margin-left: -60px;
   z-index: 99;
+  @include media-breakpoint-up(md) {
+    margin-top: -120px;
+    margin-left: -75px;
+  }
   .header-fixed & {
     margin-top: 0;
     margin-left: 0;

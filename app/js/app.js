@@ -32193,9 +32193,9 @@ $(document).ready(function () {
     if (scrollPercent >= 0.5) {
       fixedHeader.removeClass("header-fixed");
       profile.removeClass("push-up");
-      targetProfileImage.css("transform", "scale(" + scrollPercent + ")");
-      imageIcon.css("margin-left", 55 + scrollPixels++);
-      imageIcon.css("transform", "scale(" + scrollPercent + ")");
+      //targetProfileImage.css("transform", "scale(" + scrollPercent + ")");
+      //imageIcon.css("margin-left", 55 + scrollPixels++);
+      //imageIcon.css("transform", "scale(" + scrollPercent + ")");
     } else {
       fixedHeader.addClass("header-fixed");
       profile.addClass("push-up");

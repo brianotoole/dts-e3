@@ -6101,9 +6101,13 @@ p,
   position: static; }
 
 .profile__header .card-image-icon {
-  margin-top: -120px;
-  margin-left: -75px;
+  margin-top: -105px;
+  margin-left: -60px;
   z-index: 99; }
+  @media (min-width: 768px) {
+    .profile__header .card-image-icon {
+      margin-top: -120px;
+      margin-left: -75px; } }
   .header-fixed .profile__header .card-image-icon {
     margin-top: 0;
     margin-left: 0; }
