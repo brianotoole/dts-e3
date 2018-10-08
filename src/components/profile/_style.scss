@@ -36,6 +36,20 @@ $profile-img-width: 105px;
   }
 }
 
+.profile__header .card-image.is-featured {
+  position: static;
+}
+
+.profile__header .card-image-icon {
+  margin-top: -120px;
+  margin-left: -75px;
+  z-index: 99;
+  .header-fixed & {
+    margin-top: 0;
+    margin-left: 0;
+  }
+}
+
 .profile__header {
   padding: rem(20);
 }

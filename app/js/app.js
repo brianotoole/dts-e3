@@ -32173,6 +32173,8 @@ $(document).ready(function () {
   var fixedHeader = $(".header");
   var profile = $(".page-body__header .profile");
   var targetHeader = $(".page-body__header");
+  var imageIcon = $(".page-body__header .profile__header .card-image-icon");
+  var imageIconHeight = imageIcon.outerHeight();
   var targetHeaderBgColor = targetHeader.css("backgroundColor"); // returns rgba value: rgb(234, 140, 42)
   var targetHeaderHeight = targetHeader.outerHeight();
 
@@ -32187,10 +32189,13 @@ $(document).ready(function () {
       //targetHeader.css('background-color', targetRGBString + ',' + scrollPercent);
     }
     var scrollPercent = (targetProfileImageHeight - window.scrollY) / targetProfileImageHeight;
+    var scrollPixels = window.scrollY - targetProfileImageHeight;
     if (scrollPercent >= 0.5) {
       fixedHeader.removeClass("header-fixed");
       profile.removeClass("push-up");
       targetProfileImage.css("transform", "scale(" + scrollPercent + ")");
+      imageIcon.css("margin-left", 55 + scrollPixels++);
+      imageIcon.css("transform", "scale(" + scrollPercent + ")");
     } else {
       fixedHeader.addClass("header-fixed");
       profile.addClass("push-up");
