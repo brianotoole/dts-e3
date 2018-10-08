@@ -11,7 +11,7 @@ $(document).ready(function () {
       $("html, body").animate({ scrollTop: 0 }, "slow");
     } else {
       popover.removeClass("out").addClass("in");
-      $("html, body").animate({ scrollTop: popover.offset().top-10}, "slow");
+      $("html, body").animate({ scrollTop: popover.offset().top - popover.outerHeight()}, "slow");
     }
   });
 
