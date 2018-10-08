@@ -6163,6 +6163,8 @@ p,
 
 .nav-profile-top {
   background-color: #f0f0f0; }
+  .nav-profile-top .nav__btns a {
+    min-width: 20%; }
 
 .nav-profile-bottom,
 .nav-profile-bottom > .row {

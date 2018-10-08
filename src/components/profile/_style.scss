@@ -119,6 +119,9 @@ $profile-img-width: 105px;
 // Nav-Profile-Top
 .nav-profile-top {
   background-color: $color__border--light;
+  .nav__btns a {
+    min-width: 20%;
+  }
 }
 
 
