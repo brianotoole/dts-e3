@@ -6293,6 +6293,12 @@ p,
     .accordion .card-inner-text {
       font-size: 0.875rem; } }
 
+.group-details-accordions {
+  padding-top: 0.9375rem;
+  padding-bottom: 0; }
+  .group-details-accordions .accordion {
+    padding-bottom: 0; }
+
 .pagination-dots {
   display: flex;
   justify-content: center;

@@ -29,78 +29,128 @@
           </div><!-- /.container -->
         </div><!-- /.group-swiper -->
 
-          <div class="group-details">
-            <div class="row mx-auto">
-              <div class="col-md-6 col-10 mx-auto px-0">
-                <div class="group-details-card">
-                  <div class="card-body">
-                    <div class="card-status">
-                      <span class="active"></span>
-                    </div><!-- /.card-status -->
-                    <div class="card-inner">
-                      <div class="card-inner-body">
-                        <h6 class="card-inner-title">Status: <span>Approved on
-                            12:00pm,
-                            Tuesday, March 28, 2018</span></h6>
-                        <h6 class="card-inner-title">Assigned to: <span>Lucas
-                            Gains</span></h6>
-                        <div class="card-inner-text">Lorem ipsum dolor sit amet
-                          consectetur
-                          adipisicing elit. Vero deserunt fuga temporibus esse
-                          quidem</div>
-                        <div class="card-inner-text card-inner-icons">
-                          <i class="material-icons">description</i>
-                          <i class="material-icons">description</i>
-                          <i class="material-icons">description</i>
-                        </div><!-- /.card-inner-icons -->
-                      </div><!-- /.card-inner-body -->
-                    </div><!-- /.card-inner -->
-                  </div><!-- /.card-body -->
-                </div><!-- /.group-details-card -->
-              </div><!-- /.col -->
-            </div><!-- /.row -->
-          </div><!-- /.group-details -->
-
-          <div class="group-comments">
-            <div class="row mx-auto">
-              <div class="col-md-6 col-10 mx-auto px-0">
-                <form class="form">
-                  <label for="form-comments">Comments</label>
-                  <textarea class="form-control" id="form-comments"
-                    rows="1" data-min-rows="1" placeholder="Comments"></textarea>
-                </form>
-              </div><!-- /.col -->
-            </div><!-- /.row -->
-          </div><!-- /.group-comments -->
-
+        <div class="group-details-accordions">
           <div class="row mx-auto">
-              <div class="col-md-8 col-sm-12 mx-auto u-sm-p-0">
-                <include src="components/form/form-time.html"></include>
-              </div>
+            <div class="col-md-6 col-12 mx-auto px-md-0 px-lg-0">
 
-        <div class="group-controls">
-          <div class="fixed-bottom">
-            <include src="components/controls/controls.html"></include>
-          </div>
-        </div><!-- /.group-controls -->
+              <div class="accordion" id="accordion">
+                <!-- GROUP DETAILS ACCORDION -->
+                <div class="card card-dates">
+                  <div class="card-header" id="accordion-heading-3">
+                    <a class="collapsed" href="#accordion2"
+                      data-toggle="collapse"
+                      data-target="#accordion-3" aria-expanded="false"
+                      aria-controls="accordion-3">
+                      <h5 class="card-title">Group Details<i class="card-arrow
+                          material-icons">keyboard_arrow_down</i></h5>
+                    </a>
+                  </div><!-- /.card-header -->
+                  <div id="accordion-3" class="collapse"
+                    data-parent="#accordion">
 
-        <div class="page-body__footer">
-          <div class="row mx-auto">
-            <div class="col-lg-8 col-md-8 col-sm-12 mx-auto u-sm-p-0">
-              <include src="components/footer/footer.html"></include>
+                    <!-- Card Body Details (Expanded)-->
+                    <div class="card-body-details card-body-details-dates">
+                      <div class="card-body-details-data">
+                        <div class="card-body-details-key">Original Hire Date</div>
+                        <div class="card-body-details-value">Feb 1, 2005</div>
+                      </div><!-- /.card-body-details-data -->
+                      <div class="card-body-details-data">
+                        <div class="card-body-details-key">Last Hire Date</div>
+                        <div class="card-body-details-value">Oct 8, 2006</div>
+                      </div><!-- /.card-body-details-data -->
+                      <div class="card-body-details-data">
+                        <div class="card-body-details-key">Seniority Date</div>
+                        <div class="card-body-details-value">Feb 4, 2005</div>
+                      </div><!-- /.card-body-details-data -->
+                      <div class="card-body-details-data">
+                        <div class="card-body-details-key">Last Review Date</div>
+                        <div class="card-body-details-value">Nov 8, 2013</div>
+                      </div><!-- /.card-body-details-data -->
+                    </div><!-- /.card-body-details -->
+                    <!-- /Card Body Details (Expanded) -->
+
+                  </div><!-- /.collapse -->
+                </div><!-- /.card.card-dates -->
+                <!-- /GROUP DETAILS ACCORDION -->
+
+              </div><!-- /.accordion -->
+
             </div><!-- /.col -->
           </div><!-- /.row -->
-        </div><!-- /.page-body__footer -->
-      </div><!-- /.page-body__content -->
+        </div><!-- /.group-details-accordions -->
 
-    </div><!-- /.page-body -->
+        <div class="group-details">
+          <div class="row mx-auto">
+            <div class="col-md-6 col-10 mx-auto px-0">
+              <div class="group-details-card">
+                <div class="card-body">
+                  <div class="card-status">
+                    <span class="active"></span>
+                  </div><!-- /.card-status -->
+                  <div class="card-inner">
+                    <div class="card-inner-body">
+                      <h6 class="card-inner-title">Status: <span>Approved on
+                          12:00pm,
+                          Tuesday, March 28, 2018</span></h6>
+                      <h6 class="card-inner-title">Assigned to: <span>Lucas
+                          Gains</span></h6>
+                      <div class="card-inner-text">Lorem ipsum dolor sit amet
+                        consectetur
+                        adipisicing elit. Vero deserunt fuga temporibus esse
+                        quidem</div>
+                      <div class="card-inner-text card-inner-icons">
+                        <i class="material-icons">description</i>
+                        <i class="material-icons">description</i>
+                        <i class="material-icons">description</i>
+                      </div><!-- /.card-inner-icons -->
+                    </div><!-- /.card-inner-body -->
+                  </div><!-- /.card-inner -->
+                </div><!-- /.card-body -->
+              </div><!-- /.group-details-card -->
+            </div><!-- /.col -->
+          </div><!-- /.row -->
+        </div><!-- /.group-details -->
 
-    <!--
+        <div class="group-comments">
+          <div class="row mx-auto">
+            <div class="col-md-6 col-10 mx-auto px-0">
+              <form class="form">
+                <label for="form-comments">Comments</label>
+                <textarea class="form-control" id="form-comments"
+                  rows="1" data-min-rows="1" placeholder="Comments"></textarea>
+              </form>
+            </div><!-- /.col -->
+          </div><!-- /.row -->
+        </div><!-- /.group-comments -->
+
+        <div class="row mx-auto">
+          <div class="col-md-8 col-sm-12 mx-auto u-sm-p-0">
+            <include src="components/form/form-time.html"></include>
+          </div>
+
+          <div class="group-controls">
+            <div class="fixed-bottom">
+              <include src="components/controls/controls.html"></include>
+            </div>
+          </div><!-- /.group-controls -->
+
+          <div class="page-body__footer">
+            <div class="row mx-auto">
+              <div class="col-lg-8 col-md-8 col-sm-12 mx-auto u-sm-p-0">
+                <include src="components/footer/footer.html"></include>
+              </div><!-- /.col -->
+            </div><!-- /.row -->
+          </div><!-- /.page-body__footer -->
+        </div><!-- /.page-body__content -->
+
+      </div><!-- /.page-body -->
+
+      <!--
     <div class="row mx-auto">
         <div class="col-md-6 col-10 mx-auto px-0">
           <include src="components/form/form-time.html"></include>
         </div>
       -->
-  </body>
+    </body>
 
-</html>
+  </html>
