@@ -32254,10 +32254,10 @@ $(document).ready(function () {
 
     if (isOpen) {
       popover.removeClass('in').addClass('out');
-      $("html, body").animate({ scrollTop: 0 }, "slow");
+      //$("html, body").animate({ scrollTop: 0 }, "fast");
     } else {
       popover.removeClass("out").addClass("in");
-      $("html, body").animate({ scrollTop: popover.offset().top - popover.outerHeight() }, "slow");
+      $("html, body").animate({ scrollTop: popover.offset().top - popover.outerHeight() }, "fast");
     }
   });
 });

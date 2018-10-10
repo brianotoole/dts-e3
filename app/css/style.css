@@ -6933,49 +6933,22 @@ form .form-button-group,
   Popover
 *********************************************************/
 .popover {
-  visibility: hidden;
+  position: absolute;
   width: 100%;
-  overflow: hidden;
-  display: none; }
+  height: 0;
+  bottom: -100%;
+  background-color: #fff;
+  visibility: hidden;
+  transition: all 0.3s; }
 
 .popover.in {
-  display: block;
-  -webkit-animation: slideInUp 0.3s forwards;
-          animation: slideInUp 0.3s forwards; }
+  height: 530px;
+  bottom: 0;
+  visibility: visible; }
 
 .popover.out {
-  -webkit-animation: slideOutDown 0.3s forwards;
-          animation: slideOutDown 0.3s forwards; }
-
-@keyframes slideInUp {
-  from {
-    -webkit-transform: translate3d(0, 100%, 0);
-            transform: translate3d(0, 100%, 0);
-    visibility: hidden; }
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-    visibility: visible; } }
-
-@-webkit-keyframes slideOutDown {
-  from {
-    visibility: visible;
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0); }
-  to {
-    visibility: hidden;
-    -webkit-transform: translate3d(0, 100%, 0);
-            transform: translate3d(0, 100%, 0); } }
-
-@keyframes slideOutDown {
-  from {
-    visibility: visible;
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0); }
-  to {
-    visibility: hidden;
-    -webkit-transform: translate3d(0, 100%, 0);
-            transform: translate3d(0, 100%, 0); } }
+  height: 0;
+  bottom: -100%; }
 
 /*********************************************************
   Sidebar

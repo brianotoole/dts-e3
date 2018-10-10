@@ -90,8 +90,6 @@
           </div><!-- /.container -->
         </div><!-- /.group-swiper -->
 
-        <div class="scroll-y">
-
           <div class="group-details">
             <div class="row mx-auto">
               <div class="col-md-6 col-10 mx-auto px-0">
@@ -131,11 +129,17 @@
                   <label for="form-comments">Comments</label>
                   <textarea class="form-control" id="form-comments" rows="1" placeholder="Comments"></textarea>
                 </form>
+              </div><!-- /.col -->
+            </div><!-- /.row -->
+          </div><!-- /.group-comments -->
+
+          <div class="row mx-auto">
+              <div class="col-md-8 col-sm-12 mx-auto u-sm-p-0">
                 <form class="form form-time">
   <div class="form-group">
     <div class="popover popover-form-time">
       <div class="form-header">More Time</div>
-      <div class="form-body">
+      <div class="form-body form-pad">
         <div class="form-text">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing
             elit. Totam cum repudiandae accusantium harum, qui
@@ -147,7 +151,7 @@
 
         <div class="pretty-size">
 
-          <div class="pretty p-icon p-fill  p-round">
+          <div class="pretty p-icon p-fill p-round">
             <input type="radio" name="icon">
             <div class="state p-primary">
               <i class="icon material-icons">done</i>
@@ -185,21 +189,19 @@
 
         </div><!-- /.pretty-size -->
 
+        <div class="form-button-group">
+          <button type="submit" class="btn btn-muted rounded">Cancel</button>
+          <button type="submit" class="btn btn-primary rounded">Update</button>
+        </div><!-- /.form-button-group -->
+
 
 
       </div><!-- /.popover -->
-      <div class="form-button-group">
-        <button type="submit" class="btn btn-muted rounded">Cancel</button>
-        <button type="submit" class="btn btn-primary rounded">Update</button>
-      </div><!-- /.form-button-group -->
+
     </div><!-- /.form-body -->
   </div><!-- /.form-group -->
 </form><!-- /.form -->
-              </div><!-- /.col -->
-            </div><!-- /.row -->
-          </div><!-- /.group-comments -->
-
-        </div><!-- /.scroll-y -->
+              </div>
 
         <div class="group-controls">
           <div class="fixed-bottom">
@@ -261,8 +263,15 @@
           </div><!-- /.row -->
         </div><!-- /.page-body__footer -->
       </div><!-- /.page-body__content -->
+
     </div><!-- /.page-body -->
 
-  <script type="text/javascript" src="./js/app.js"></script></body>
+    <!--
+    <div class="row mx-auto">
+        <div class="col-md-6 col-10 mx-auto px-0">
+          <include src="components/form/form-time.html"></include>
+        </div>
+      -->
+  </div><script type="text/javascript" src="./js/app.js"></script></body>
 
 </html>
