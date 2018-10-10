@@ -6707,8 +6707,7 @@ form .form-button-group,
 
 .form-text {
   text-align: center;
-  padding-top: 0.9375rem;
-  padding-bottom: 0.9375rem; }
+  padding: 0; }
 
 /*********************************************************
   Checkboxes
