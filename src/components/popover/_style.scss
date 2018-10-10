@@ -12,7 +12,7 @@
   bottom: 0;
   background-color: $color__white;
   visibility: hidden;
-  transition: all 0.3s;
+  transition: all 0.5s;
   @include media-breakpoint-up(md) {
     max-width: 50%;
   }
