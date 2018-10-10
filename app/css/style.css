@@ -6698,6 +6698,10 @@ form .form-button-group,
   padding: 0.9375rem 0;
   text-align: center; }
 
+.form-header-secondary {
+  background-color: #ea8c2a;
+  color: #fff; }
+
 .form-text {
   text-align: center;
   padding-top: 0.9375rem;
@@ -6716,10 +6720,13 @@ form .form-button-group,
   margin-bottom: 15px; }
 
 .pretty span {
-  font-size: 1rem;
+  font-size: 0.875rem;
   position: absolute;
-  margin-top: 15px;
-  margin-left: 15px; }
+  margin-top: 0.8125rem;
+  margin-left: 1rem; }
+  @media (min-width: 768px) {
+    .pretty span {
+      font-size: 1rem; } }
 
 .pretty input:checked ~ .state.p-success-o .icon {
   color: #02d852;

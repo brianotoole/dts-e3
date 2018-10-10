@@ -51,6 +51,11 @@ form .form-button-group,
   text-align: center;
 }
 
+.form-header-secondary {
+  background-color: $color__primary;
+  color: $color__white;
+}
+
 .form-text {
   text-align: center;
   padding-top: rem(15);
@@ -73,10 +78,13 @@ form .form-button-group,
 }
 
 .pretty span {
-  font-size: rem(16);
+  font-size: rem(14);
   position: absolute;
-  margin-top: 15px;
-  margin-left: 15px;
+  margin-top: rem(13);
+  margin-left: rem(16);
+  @include media-breakpoint-up(md) {
+    font-size: rem(16);
+  }
 }
 
 .pretty input:checked ~ .state.p-success-o .icon {
