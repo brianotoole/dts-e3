@@ -6953,9 +6953,9 @@ form .form-button-group,
   right: 0;
   bottom: 0;
   background-color: #fff;
+  overflow-y: auto;
   visibility: hidden;
-  z-index: 1040;
-  transition: all 0.5s; }
+  transition: height 0.5s, visibility 0.4s; }
   @media (min-width: 768px) {
     .popover {
       max-width: 50%; } }
@@ -6965,7 +6965,14 @@ form .form-button-group,
   visibility: visible; }
 
 .popover.out {
-  height: 0; }
+  height: 0;
+  padding-bottom: 0; }
+
+.popover .form-body {
+  padding-bottom: 12.5rem; }
+  @media (min-width: 768px) {
+    .popover .form-body {
+      padding-bottom: 0; } }
 
 /*********************************************************
   Sidebar
