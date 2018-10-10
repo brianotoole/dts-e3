@@ -13,6 +13,7 @@ $grey-dark: #767676;
 $black: #111;
 $green: #02d852;
 $red: #ff5758;
+$yellow: #ebc501;
 
 // color brands
 $color__primary: $orange;
@@ -28,8 +29,9 @@ $color__primary--dark: darken($color__primary, 5%);
 $color__secondary--dark: darken($color__secondary, 5%);
 
 // color utilites
-$color__error: $red;
 $color__success: $green;
+$color__warning: $yellow;
+$color__error: $red;
 
 // color borders
 $color__border: $grey;

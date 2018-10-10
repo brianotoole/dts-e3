@@ -359,20 +359,22 @@ $card-img-width: 75px;
 .group-details {
   background-color: $color__border;
 }
-.group-details .accordion {
-  padding-bottom: rem(15);
-}
 
-.group-details .accordion .card:first-child {
+.group-details-accordions {
   padding-top: rem(15);
+  padding-bottom: 0;
+  .accordion {
+    padding-bottom: 0;
+  }
 }
 
 .group-details-card .card-body {
   display: flex;
-  padding-top: rem(45);
+  padding-top: rem(30);
   padding-bottom: 0;
+  margin-bottom: rem(-7); //cover up bottom radius
   + .card-body {
-    padding-top: rem(15);
+    padding-top: rem(0);
   }
 }
 
@@ -386,8 +388,14 @@ $card-img-width: 75px;
   width: 20px;
   height: 20px;
   border-radius: 100%;
-  &.active {
+  &.approved {
     background-color: $color__success;
+  }
+  &.denied {
+    background-color: $color__error;
+  }
+  &.pending {
+    background-color: $color__warning;
   }
 }
 
@@ -397,8 +405,6 @@ $card-img-width: 75px;
   box-shadow: none !important;
   background-color: $color__white;
   border-radius: $border-radius;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
 }
 
 .group-details-card .card-inner-title {

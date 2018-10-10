@@ -69,7 +69,10 @@ form .form-button-group,
 *********************************************************/
 
 .pretty-size {
-  font-size: 45px;
+  font-size: 40px;
+  @include media-breakpoint-up(md) {
+    font-size: 45px;
+  }
 }
 
 .pretty {

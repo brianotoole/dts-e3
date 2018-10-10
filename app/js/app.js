@@ -32258,7 +32258,7 @@ $(document).ready(function () {
       //$("html, body").animate({ scrollTop: 0 }, "fast");
     } else {
       popover.removeClass("out").addClass("in");
-      $("html, body").animate({ scrollTop: popover.offset().top - popover.outerHeight() }, "fast");
+      //$("html, body").animate({ scrollTop: popover.offset().top - popover.outerHeight()}, "fast");
     }
   });
 });

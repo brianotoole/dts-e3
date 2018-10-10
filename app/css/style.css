@@ -6293,12 +6293,6 @@ p,
     .accordion .card-inner-text {
       font-size: 0.875rem; } }
 
-.group-details-accordions {
-  padding-top: 0.9375rem;
-  padding-bottom: 0; }
-  .group-details-accordions .accordion {
-    padding-bottom: 0; }
-
 .pagination-dots {
   display: flex;
   justify-content: center;
@@ -6604,18 +6598,19 @@ p,
 .group-details {
   background-color: #e6e6e6; }
 
-.group-details .accordion {
-  padding-bottom: 0.9375rem; }
-
-.group-details .accordion .card:first-child {
-  padding-top: 0.9375rem; }
+.group-details-accordions {
+  padding-top: 0.9375rem;
+  padding-bottom: 0; }
+  .group-details-accordions .accordion {
+    padding-bottom: 0; }
 
 .group-details-card .card-body {
   display: flex;
-  padding-top: 2.8125rem;
-  padding-bottom: 0; }
+  padding-top: 1.875rem;
+  padding-bottom: 0;
+  margin-bottom: -0.4375rem; }
   .group-details-card .card-body + .card-body {
-    padding-top: 0.9375rem; }
+    padding-top: 0rem; }
 
 .group-details-card .card-status {
   margin-top: 1.6875rem;
@@ -6626,17 +6621,19 @@ p,
   width: 20px;
   height: 20px;
   border-radius: 100%; }
-  .group-details-card .card-status span.active {
+  .group-details-card .card-status span.approved {
     background-color: #02d852; }
+  .group-details-card .card-status span.denied {
+    background-color: #ff5758; }
+  .group-details-card .card-status span.pending {
+    background-color: #ebc501; }
 
 .group-details-card .card-inner {
   width: 100%;
   padding: 0.9375rem;
   box-shadow: none !important;
   background-color: #fff;
-  border-radius: 0.5rem;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0; }
+  border-radius: 0.5rem; }
 
 .group-details-card .card-inner-title {
   font-weight: 700;
@@ -6719,7 +6716,10 @@ form .form-button-group,
   //lokesh-coder.github.io/pretty-checkbox/#radio
 *********************************************************/
 .pretty-size {
-  font-size: 45px; }
+  font-size: 40px; }
+  @media (min-width: 768px) {
+    .pretty-size {
+      font-size: 45px; } }
 
 .pretty {
   display: block;
@@ -6946,22 +6946,26 @@ form .form-button-group,
   Popover
 *********************************************************/
 .popover {
-  position: absolute;
-  width: 100%;
+  position: fixed;
+  max-width: 100%;
+  margin: 0 auto;
   height: 0;
-  bottom: -100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-color: #fff;
   visibility: hidden;
   transition: all 0.3s; }
+  @media (min-width: 768px) {
+    .popover {
+      max-width: 50%; } }
 
 .popover.in {
-  height: 530px;
-  bottom: 0;
+  height: 100%;
   visibility: visible; }
 
 .popover.out {
-  height: 0;
-  bottom: -100%; }
+  height: 0; }
 
 /*********************************************************
   Sidebar
