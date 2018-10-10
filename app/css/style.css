@@ -6955,6 +6955,7 @@ form .form-button-group,
   bottom: 0;
   background-color: #fff;
   visibility: hidden;
+  z-index: 1040;
   transition: all 0.5s; }
   @media (min-width: 768px) {
     .popover {

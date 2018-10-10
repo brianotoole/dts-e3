@@ -12,6 +12,7 @@
   bottom: 0;
   background-color: $color__white;
   visibility: hidden;
+  z-index: 1040;
   transition: all 0.5s;
   @include media-breakpoint-up(md) {
     max-width: 50%;
