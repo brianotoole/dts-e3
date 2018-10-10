@@ -27137,6 +27137,7 @@ __webpack_require__(10);
 __webpack_require__(13);
 __webpack_require__(14);
 __webpack_require__(15);
+__webpack_require__(16);
 
 //import MobileMenu from './MobileMenu';
 //import Modal from './Modal';
@@ -32260,6 +32261,27 @@ $(document).ready(function () {
       $("html, body").animate({ scrollTop: popover.offset().top - popover.outerHeight() }, "fast");
     }
   });
+});
+
+/***/ }),
+/* 16 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+// Applied globally on all textareas
+$(document).one("focus.textarea", "textarea", function () {
+  var savedValue = this.value;
+  this.value = "";
+  this.baseScrollHeight = this.scrollHeight;
+  this.value = savedValue;
+}).on("input.textarea", "textarea", function () {
+  var minRows = this.getAttribute("data-min-rows") | 0,
+      rows;
+  this.rows = minRows;
+  rows = Math.ceil((this.scrollHeight - this.baseScrollHeight) / 16);
+  this.rows = minRows + rows;
 });
 
 /***/ })
